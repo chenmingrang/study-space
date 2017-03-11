@@ -4,11 +4,10 @@
 package mail;
 
 import java.util.Properties;
+import java.util.Scanner;
 
-import javax.mail.Authenticator;
 import javax.mail.Message.RecipientType;
 import javax.mail.MessagingException;
-import javax.mail.PasswordAuthentication;
 import javax.mail.Session;
 import javax.mail.Transport;
 import javax.mail.internet.InternetAddress;
@@ -39,7 +38,13 @@ public class MailTest {
 		//设置内容
 		msg.setContent("这是测试内容","text/plain;charset=UTF-8");
 		//第三步：发邮件
-		Transport.send(msg);
+		Transport ts = mailSession.getTransport();
+		Scanner scanner = new Scanner(System.in);
+		System.out.println("请输入密码：");
+		String password = scanner.nextLine().trim();
+		scanner.close();
+		ts.connect("chenmingrang", password);
+		ts.sendMessage(msg, msg.getAllRecipients());
 
 	}
 }
