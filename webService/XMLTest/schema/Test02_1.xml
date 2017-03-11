@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<books  xmlns="http://www.example.org/Test02"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <book id="1">
+      <title>thinking in java</title>
+      <content>学习java的经典书籍</content>
+      <author>cmr</author>
+   </book>
+   <book id="2">
+      <title>javaScript</title>
+      <content>web开发前台脚本语言</content>
+      <!-- all 无顺序 -->
+      <authors>
+          <author1>张三</author1>
+          <author2>李四</author2>
+          <author4>王五</author4>
+          <author3>赵六</author3>
+      </authors>
+     <!--  <authors>
+         <author>张三</author>
+         <author>李四</author>
+      </authors> -->
+   </book>
+</books>

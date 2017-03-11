@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+	<package name="aop" namespace="/aop" extends="struts-default">
+		
+		<interceptors>
+			<!-- 声明自定义的拦截器 -->
+			<interceptor name="expessionInterceptor" class="aop.ExpessionInterceptor" />
+			
+			<!-- 声明自定义拦截器栈 -->
+			<interceptor-stack name="expessionStack">
+                <interceptor-ref name="defaultStack"/>
+                
+                <!-- 配置使用自定义拦截器 -->
+                <interceptor-ref name="expessionInterceptor"/>
+                
+            </interceptor-stack>
+		</interceptors>
+		
+		<!-- 配置修改struts2框架运行时，默认执行的是自定义拦截器栈 -->
+		<default-interceptor-ref name="expessionStack" />
+		
+		<action name="userAction_save" class="aop.UserAction" method="save">
+			<result name="success">/aop/success.jsp</result>
+			<result name="error">/aop/error.jsp</result>
+		</action>
+	</package>
+</struts>

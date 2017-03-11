@@ -1,0 +1,356 @@
+2016-05-10 21:15:19.876  INFO  (StdSchedulerFactory.java:1172) - Using default implementation for ThreadExecutor
+ 2016-05-10 21:15:19.884  INFO  (SimpleThreadPool.java:268) - Job execution threads will use class loader of thread: main
+ 2016-05-10 21:15:19.903  INFO  (SchedulerSignalerImpl.java:61) - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+ 2016-05-10 21:15:19.906  INFO  (QuartzScheduler.java:240) - Quartz Scheduler v.2.2.2 created.
+ 2016-05-10 21:15:19.907  INFO  (RAMJobStore.java:155) - RAMJobStore initialized.
+ 2016-05-10 21:15:19.908  INFO  (QuartzScheduler.java:305) - Scheduler meta-data: Quartz Scheduler (v2.2.2) 'DefaultQuartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+ 2016-05-10 21:15:19.909  INFO  (StdSchedulerFactory.java:1327) - Quartz scheduler 'DefaultQuartzScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+ 2016-05-10 21:15:19.909  INFO  (StdSchedulerFactory.java:1331) - Quartz scheduler version: 2.2.2
+ 2016-05-10 21:15:19.909  INFO  (LoadExample.java:37) - ------- Initialization Complete -----------
+ 2016-05-10 21:15:19.936  INFO  (LoadExample.java:62) - ...scheduled 25 jobs
+ 2016-05-10 21:15:19.940  INFO  (LoadExample.java:62) - ...scheduled 50 jobs
+ 2016-05-10 21:15:19.943  INFO  (LoadExample.java:62) - ...scheduled 75 jobs
+ 2016-05-10 21:15:19.946  INFO  (LoadExample.java:62) - ...scheduled 100 jobs
+ 2016-05-10 21:15:19.950  INFO  (LoadExample.java:62) - ...scheduled 125 jobs
+ 2016-05-10 21:15:19.953  INFO  (LoadExample.java:62) - ...scheduled 150 jobs
+ 2016-05-10 21:15:19.956  INFO  (LoadExample.java:62) - ...scheduled 175 jobs
+ 2016-05-10 21:15:19.961  INFO  (LoadExample.java:62) - ...scheduled 200 jobs
+ 2016-05-10 21:15:19.965  INFO  (LoadExample.java:62) - ...scheduled 225 jobs
+ 2016-05-10 21:15:19.969  INFO  (LoadExample.java:62) - ...scheduled 250 jobs
+ 2016-05-10 21:15:19.973  INFO  (LoadExample.java:62) - ...scheduled 275 jobs
+ 2016-05-10 21:15:19.977  INFO  (LoadExample.java:62) - ...scheduled 300 jobs
+ 2016-05-10 21:15:19.980  INFO  (LoadExample.java:62) - ...scheduled 325 jobs
+ 2016-05-10 21:15:19.983  INFO  (LoadExample.java:62) - ...scheduled 350 jobs
+ 2016-05-10 21:15:19.987  INFO  (LoadExample.java:62) - ...scheduled 375 jobs
+ 2016-05-10 21:15:19.991  INFO  (LoadExample.java:62) - ...scheduled 400 jobs
+ 2016-05-10 21:15:19.995  INFO  (LoadExample.java:62) - ...scheduled 425 jobs
+ 2016-05-10 21:15:19.999  INFO  (LoadExample.java:62) - ...scheduled 450 jobs
+ 2016-05-10 21:15:20.003  INFO  (LoadExample.java:62) - ...scheduled 475 jobs
+ 2016-05-10 21:15:20.006  INFO  (LoadExample.java:62) - ...scheduled 500 jobs
+ 2016-05-10 21:15:20.007  INFO  (LoadExample.java:66) - ------- Starting Scheduler ----------------
+ 2016-05-10 21:15:20.007  INFO  (QuartzScheduler.java:575) - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+ 2016-05-10 21:15:20.007  INFO  (LoadExample.java:71) - ------- Started Scheduler -----------------
+ 2016-05-10 21:15:20.007  INFO  (LoadExample.java:73) - ------- Waiting five minutes... -----------
+ 2016-05-10 21:15:20.009  DEBUG (QuartzSchedulerThread.java:276) - batch acquisition of 1 triggers
+ 2016-05-10 21:15:30.036  DEBUG (SimpleJobFactory.java:51) - Producing instance of Job 'group_1.job1', class=quartaDemos.demo11.SimpleJob
+ 2016-05-10 21:15:30.053  DEBUG (QuartzSchedulerThread.java:276) - batch acquisition of 1 triggers
+ 2016-05-10 21:15:30.053  DEBUG (JobRunShell.java:201) - Calling execute on job group_1.job1
+ 2016-05-10 21:15:30.061  INFO  (SimpleJob.java:46) - Executing job: group_1.job1 executing at Tue May 10 21:15:30 CST 2016
+ 2016-05-10 21:15:30.134  DEBUG (SimpleJobFactory.java:51) - Producing instance of Job 'group_1.job2', class=quartaDemos.demo11.SimpleJob
+ 2016-05-10 21:15:30.134  DEBUG (QuartzSchedulerThread.java:276) - batch acquisition of 1 triggers
+ 2016-05-10 21:15:30.134  DEBUG (JobRunShell.java:201) - Calling execute on job group_1.job2
+ 2016-05-10 21:15:30.135  INFO  (SimpleJob.java:46) - Executing job: group_1.job2 executing at Tue May 10 21:15:30 CST 2016
+ 2016-05-10 21:15:30.234  DEBUG (SimpleJobFactory.java:51) - Producing instance of Job 'group_1.job3', class=quartaDemos.demo11.SimpleJob
+ 2016-05-10 21:15:30.234  DEBUG (QuartzSchedulerThread.java:276) - batch acquisition of 1 triggers
+ 2016-05-10 21:15:30.234  DEBUG (JobRunShell.java:201) - Calling execute on job group_1.job3
+ 2016-05-10 21:15:30.235  INFO  (SimpleJob.java:46) - Executing job: group_1.job3 executing at Tue May 10 21:15:30 CST 2016
+ 2016-05-10 21:15:30.334  DEBUG (SimpleJobFactory.java:51) - Producing instance of Job 'group_1.job4', class=quartaDemos.demo11.SimpleJob
+ 2016-05-10 21:15:30.334  DEBUG (JobRunShell.java:201) - Calling execute on job group_1.job4
+ 2016-05-10 21:15:30.334  DEBUG (QuartzSchedulerThread.java:276) - batch acquisition of 1 triggers
+ 2016-05-10 21:15:30.334  INFO  (SimpleJob.java:46) - Executing job: group_1.job4 executing at Tue May 10 21:15:30 CST 2016
+ 2016-05-10 21:15:30.434  DEBUG (SimpleJobFactory.java:51) - Producing instance of Job 'group_1.job5', class=quartaDemos.demo11.SimpleJob
+ 2016-05-10 21:15:30.437  DEBUG (JobRunShell.java:201) - Calling execute on job group_1.job5
+ 2016-05-10 21:15:30.438  INFO  (SimpleJob.java:46) - Executing job: group_1.job5 executing at Tue May 10 21:15:30 CST 2016
+ 2016-05-10 21:15:30.437  DEBUG (QuartzSchedulerThread.java:276) - batch acquisition of 1 triggers
+ 2016-05-10 21:15:30.533  DEBUG (SimpleJobFactory.java:51) - Producing instance of Job 'group_1.job6', class=quartaDemos.demo11.SimpleJob
+ 2016-05-10 21:15:30.533  DEBUG (JobRunShell.java:201) - Calling execute on job group_1.job6
+ 2016-05-10 21:15:30.533  DEBUG (QuartzSchedulerThread.java:276) - batch acquisition of 1 triggers
+ 2016-05-10 21:15:30.534  INFO  (SimpleJob.java:46) - Executing job: group_1.job6 executing at Tue May 10 21:15:30 CST 2016
+ 2016-05-10 21:15:30.579  INFO  (SimpleJob.java:56) - Finished Executing job: group_1.job5 at Tue May 10 21:15:30 CST 2016
+ 2016-05-10 21:15:30.633  DEBUG (SimpleJobFactory.java:51) - Producing instance of Job 'group_1.job7', class=quartaDemos.demo11.SimpleJob
+ 2016-05-10 21:15:30.634  DEBUG (JobRunShell.java:201) - Calling execute on job group_1.job7
+ 2016-05-10 21:15:30.634  DEBUG (QuartzSchedulerThread.java:276) - batch acquisition of 1 triggers
+ 2016-05-10 21:15:30.635  INFO  (SimpleJob.java:46) - Executing job: group_1.job7 executing at Tue May 10 21:15:30 CST 2016
+ 2016-05-10 21:15:30.735  DEBUG (SimpleJobFactory.java:51) - Producing instance of Job 'group_1.job8', class=quartaDemos.demo11.SimpleJob
+ 2016-05-10 21:15:30.735  DEBUG (JobRunShell.java:201) - Calling execute on job group_1.job8
+ 2016-05-10 21:15:30.735  DEBUG (QuartzSchedulerThread.java:276) - batch acquisition of 1 triggers
+ 2016-05-10 21:15:30.736  INFO  (SimpleJob.java:46) - Executing job: group_1.job8 executing at Tue May 10 21:15:30 CST 2016
+ 2016-05-10 21:15:30.835  DEBUG (SimpleJobFactory.java:51) - Producing instance of Job 'group_1.job9', class=quartaDemos.demo11.SimpleJob
+ 2016-05-10 21:15:30.835  DEBUG (JobRunShell.java:201) - Calling execute on job group_1.job9
+ 2016-05-10 21:15:30.835  DEBUG (QuartzSchedulerThread.java:276) - batch acquisition of 1 triggers
+ 2016-05-10 21:15:30.836  INFO  (SimpleJob.java:46) - Executing job: group_1.job9 executing at Tue May 10 21:15:30 CST 2016
+ 2016-05-10 21:15:30.935  DEBUG (SimpleJobFactory.java:51) - Producing instance of Job 'group_1.job10', class=quartaDemos.demo11.SimpleJob
+ 2016-05-10 21:15:30.936  DEBUG (JobRunShell.java:201) - Calling execute on job group_1.job10
+ 2016-05-10 21:15:30.936  DEBUG (QuartzSchedulerThread.java:276) - batch acquisition of 1 triggers
+ 2016-05-10 21:15:30.936  INFO  (SimpleJob.java:46) - Executing job: group_1.job10 executing at Tue May 10 21:15:30 CST 2016
+ 2016-05-10 21:15:30.991  INFO  (SimpleJob.java:56) - Finished Executing job: group_1.job4 at Tue May 10 21:15:30 CST 2016
+ 2016-05-10 21:15:31.034  DEBUG (SimpleJobFactory.java:51) - Producing instance of Job 'group_1.job11', class=quartaDemos.demo11.SimpleJob
+ 2016-05-10 21:15:31.034  DEBUG (JobRunShell.java:201) - Calling execute on job group_1.job11
+ 2016-05-10 21:15:31.034  DEBUG (QuartzSchedulerThread.java:276) - batch acquisition of 1 triggers
+ 2016-05-10 21:15:31.035  INFO  (SimpleJob.java:46) - Executing job: group_1.job11 executing at Tue May 10 21:15:31 CST 2016
+ 2016-05-10 21:15:31.134  DEBUG (SimpleJobFactory.java:51) - Producing instance of Job 'group_1.job12', class=quartaDemos.demo11.SimpleJob
+ 2016-05-10 21:15:31.134  DEBUG (JobRunShell.java:201) - Calling execute on job group_1.job12
+ 2016-05-10 21:15:31.135  INFO  (SimpleJob.java:46) - Executing job: group_1.job12 executing at Tue May 10 21:15:31 CST 2016
+ 2016-05-10 21:15:31.285  INFO  (SimpleJob.java:56) - Finished Executing job: group_1.job2 at Tue May 10 21:15:31 CST 2016
+ 2016-05-10 21:15:31.290  DEBUG (QuartzSchedulerThread.java:276) - batch acquisition of 1 triggers
+ 2016-05-10 21:15:31.291  DEBUG (SimpleJobFactory.java:51) - Producing instance of Job 'group_1.job13', class=quartaDemos.demo11.SimpleJob
+ 2016-05-10 21:15:31.292  DEBUG (JobRunShell.java:201) - Calling execute on job group_1.job13
+ 2016-05-10 21:15:31.293  INFO  (SimpleJob.java:46) - Executing job: group_1.job13 executing at Tue May 10 21:15:31 CST 2016
+ 2016-05-10 21:15:31.997  INFO  (SimpleJob.java:56) - Finished Executing job: group_1.job6 at Tue May 10 21:15:31 CST 2016
+ 2016-05-10 21:15:32.000  DEBUG (QuartzSchedulerThread.java:276) - batch acquisition of 1 triggers
+ 2016-05-10 21:15:32.001  DEBUG (SimpleJobFactory.java:51) - Producing instance of Job 'group_1.job14', class=quartaDemos.demo11.SimpleJob
+ 2016-05-10 21:15:32.002  DEBUG (JobRunShell.java:201) - Calling execute on job group_1.job14
+ 2016-05-10 21:15:32.003  INFO  (SimpleJob.java:46) - Executing job: group_1.job14 executing at Tue May 10 21:15:32 CST 2016
+ 2016-05-10 21:15:32.343  INFO  (SimpleJob.java:56) - Finished Executing job: group_1.job1 at Tue May 10 21:15:32 CST 2016
+ 2016-05-10 21:15:32.344  DEBUG (QuartzSchedulerThread.java:276) - batch acquisition of 1 triggers
+ 2016-05-10 21:15:32.344  DEBUG (SimpleJobFactory.java:51) - Producing instance of Job 'group_1.job15', class=quartaDemos.demo11.SimpleJob
+ 2016-05-10 21:15:32.345  DEBUG (JobRunShell.java:201) - Calling execute on job group_1.job15
+ 2016-05-10 21:15:32.345  INFO  (SimpleJob.java:46) - Executing job: group_1.job15 executing at Tue May 10 21:15:32 CST 2016
+ 2016-05-10 21:15:32.557  INFO  (SimpleJob.java:56) - Finished Executing job: group_1.job13 at Tue May 10 21:15:32 CST 2016
+ 2016-05-10 21:15:32.559  DEBUG (QuartzSchedulerThread.java:276) - batch acquisition of 1 triggers
+ 2016-05-10 21:15:32.559  DEBUG (SimpleJobFactory.java:51) - Producing instance of Job 'group_1.job16', class=quartaDemos.demo11.SimpleJob
+ 2016-05-10 21:15:32.561  DEBUG (JobRunShell.java:201) - Calling execute on job group_1.job16
+ 2016-05-10 21:15:32.561  INFO  (SimpleJob.java:46) - Executing job: group_1.job16 executing at Tue May 10 21:15:32 CST 2016
+ 2016-05-10 21:15:32.649  INFO  (SimpleJob.java:56) - Finished Executing job: group_1.job11 at Tue May 10 21:15:32 CST 2016
+ 2016-05-10 21:15:32.650  DEBUG (QuartzSchedulerThread.java:276) - batch acquisition of 1 triggers
+ 2016-05-10 21:15:32.650  DEBUG (SimpleJobFactory.java:51) - Producing instance of Job 'group_1.job17', class=quartaDemos.demo11.SimpleJob
+ 2016-05-10 21:15:32.651  DEBUG (JobRunShell.java:201) - Calling execute on job group_1.job17
+ 2016-05-10 21:15:32.652  INFO  (SimpleJob.java:46) - Executing job: group_1.job17 executing at Tue May 10 21:15:32 CST 2016
+ 2016-05-10 21:15:32.662  INFO  (SimpleJob.java:56) - Finished Executing job: group_1.job17 at Tue May 10 21:15:32 CST 2016
+ 2016-05-10 21:15:32.665  DEBUG (QuartzSchedulerThread.java:276) - batch acquisition of 1 triggers
+ 2016-05-10 21:15:32.665  DEBUG (SimpleJobFactory.java:51) - Producing instance of Job 'group_1.job18', class=quartaDemos.demo11.SimpleJob
+ 2016-05-10 21:15:32.666  DEBUG (JobRunShell.java:201) - Calling execute on job group_1.job18
+ 2016-05-10 21:15:32.666  INFO  (SimpleJob.java:46) - Executing job: group_1.job18 executing at Tue May 10 21:15:32 CST 2016
+ 2016-05-10 21:15:32.675  INFO  (SimpleJob.java:56) - Finished Executing job: group_1.job3 at Tue May 10 21:15:32 CST 2016
+ 2016-05-10 21:15:32.677  DEBUG (QuartzSchedulerThread.java:276) - batch acquisition of 1 triggers
+ 2016-05-10 21:15:32.678  DEBUG (SimpleJobFactory.java:51) - Producing instance of Job 'group_1.job19', class=quartaDemos.demo11.SimpleJob
+ 2016-05-10 21:15:32.679  DEBUG (JobRunShell.java:201) - Calling execute on job group_1.job19
+ 2016-05-10 21:15:32.679  INFO  (SimpleJob.java:46) - Executing job: group_1.job19 executing at Tue May 10 21:15:32 CST 2016
+ 2016-05-10 21:15:32.956  INFO  (SimpleJob.java:56) - Finished Executing job: group_1.job10 at Tue May 10 21:15:32 CST 2016
+ 2016-05-10 21:15:32.958  DEBUG (QuartzSchedulerThread.java:276) - batch acquisition of 1 triggers
+ 2016-05-10 21:15:32.958  DEBUG (SimpleJobFactory.java:51) - Producing instance of Job 'group_1.job20', class=quartaDemos.demo11.SimpleJob
+ 2016-05-10 21:15:32.959  DEBUG (JobRunShell.java:201) - Calling execute on job group_1.job20
+ 2016-05-10 21:15:32.959  INFO  (SimpleJob.java:46) - Executing job: group_1.job20 executing at Tue May 10 21:15:32 CST 2016
+ 2016-05-10 21:15:32.997  INFO  (SimpleJob.java:56) - Finished Executing job: group_1.job8 at Tue May 10 21:15:32 CST 2016
+ 2016-05-10 21:15:32.998  DEBUG (QuartzSchedulerThread.java:276) - batch acquisition of 1 triggers
+ 2016-05-10 21:15:32.998  DEBUG (SimpleJobFactory.java:51) - Producing instance of Job 'group_1.job21', class=quartaDemos.demo11.SimpleJob
+ 2016-05-10 21:15:32.999  DEBUG (JobRunShell.java:201) - Calling execute on job group_1.job21
+ 2016-05-10 21:15:32.999  INFO  (SimpleJob.java:46) - Executing job: group_1.job21 executing at Tue May 10 21:15:32 CST 2016
+ 2016-05-10 21:15:33.014  INFO  (SimpleJob.java:56) - Finished Executing job: group_1.job9 at Tue May 10 21:15:33 CST 2016
+ 2016-05-10 21:15:33.014  DEBUG (QuartzSchedulerThread.java:276) - batch acquisition of 1 triggers
+ 2016-05-10 21:15:33.015  DEBUG (SimpleJobFactory.java:51) - Producing instance of Job 'group_1.job22', class=quartaDemos.demo11.SimpleJob
+ 2016-05-10 21:15:33.015  DEBUG (JobRunShell.java:201) - Calling execute on job group_1.job22
+ 2016-05-10 21:15:33.015  INFO  (SimpleJob.java:46) - Executing job: group_1.job22 executing at Tue May 10 21:15:33 CST 2016
+ 2016-05-10 21:15:33.101  INFO  (SimpleJob.java:56) - Finished Executing job: group_1.job7 at Tue May 10 21:15:33 CST 2016
+ 2016-05-10 21:15:33.101  DEBUG (QuartzSchedulerThread.java:276) - batch acquisition of 1 triggers
+ 2016-05-10 21:15:33.102  DEBUG (SimpleJobFactory.java:51) - Producing instance of Job 'group_1.job23', class=quartaDemos.demo11.SimpleJob
+ 2016-05-10 21:15:33.102  DEBUG (JobRunShell.java:201) - Calling execute on job group_1.job23
+ 2016-05-10 21:15:33.103  INFO  (SimpleJob.java:46) - Executing job: group_1.job23 executing at Tue May 10 21:15:33 CST 2016
+ 2016-05-10 21:15:33.286  INFO  (SimpleJob.java:56) - Finished Executing job: group_1.job14 at Tue May 10 21:15:33 CST 2016
+ 2016-05-10 21:15:33.286  DEBUG (QuartzSchedulerThread.java:276) - batch acquisition of 1 triggers
+ 2016-05-10 21:15:33.287  DEBUG (SimpleJobFactory.java:51) - Producing instance of Job 'group_1.job24', class=quartaDemos.demo11.SimpleJob
+ 2016-05-10 21:15:33.287  DEBUG (JobRunShell.java:201) - Calling execute on job group_1.job24
+ 2016-05-10 21:15:33.287  INFO  (SimpleJob.java:46) - Executing job: group_1.job24 executing at Tue May 10 21:15:33 CST 2016
+ 2016-05-10 21:15:33.394  INFO  (SimpleJob.java:56) - Finished Executing job: group_1.job15 at Tue May 10 21:15:33 CST 2016
+ 2016-05-10 21:15:33.395  DEBUG (QuartzSchedulerThread.java:276) - batch acquisition of 1 triggers
+ 2016-05-10 21:15:33.396  DEBUG (SimpleJobFactory.java:51) - Producing instance of Job 'group_1.job25', class=quartaDemos.demo11.SimpleJob
+ 2016-05-10 21:15:33.397  DEBUG (JobRunShell.java:201) - Calling execute on job group_1.job25
+ 2016-05-10 21:15:33.398  INFO  (SimpleJob.java:46) - Executing job: group_1.job25 executing at Tue May 10 21:15:33 CST 2016
+ 2016-05-10 21:15:33.436  INFO  (SimpleJob.java:56) - Finished Executing job: group_1.job12 at Tue May 10 21:15:33 CST 2016
+ 2016-05-10 21:15:33.437  DEBUG (QuartzSchedulerThread.java:276) - batch acquisition of 1 triggers
+ 2016-05-10 21:15:33.438  DEBUG (SimpleJobFactory.java:51) - Producing instance of Job 'group_1.job26', class=quartaDemos.demo11.SimpleJob
+ 2016-05-10 21:15:33.439  DEBUG (JobRunShell.java:201) - Calling execute on job group_1.job26
+ 2016-05-10 21:15:33.440  INFO  (SimpleJob.java:46) - Executing job: group_1.job26 executing at Tue May 10 21:15:33 CST 2016
+ 2016-05-10 21:15:33.523  INFO  (SimpleJob.java:56) - Finished Executing job: group_1.job16 at Tue May 10 21:15:33 CST 2016
+ 2016-05-10 21:15:33.524  DEBUG (QuartzSchedulerThread.java:276) - batch acquisition of 1 triggers
+ 2016-05-10 21:15:33.524  DEBUG (SimpleJobFactory.java:51) - Producing instance of Job 'group_1.job27', class=quartaDemos.demo11.SimpleJob
+ 2016-05-10 21:15:33.525  DEBUG (JobRunShell.java:201) - Calling execute on job group_1.job27
+ 2016-05-10 21:15:33.525  INFO  (SimpleJob.java:46) - Executing job: group_1.job27 executing at Tue May 10 21:15:33 CST 2016
+ 2016-05-10 21:15:33.621  INFO  (SimpleJob.java:56) - Finished Executing job: group_1.job19 at Tue May 10 21:15:33 CST 2016
+ 2016-05-10 21:15:33.621  DEBUG (QuartzSchedulerThread.java:276) - batch acquisition of 1 triggers
+ 2016-05-10 21:15:33.621  DEBUG (SimpleJobFactory.java:51) - Producing instance of Job 'group_1.job28', class=quartaDemos.demo11.SimpleJob
+ 2016-05-10 21:15:33.622  DEBUG (JobRunShell.java:201) - Calling execute on job group_1.job28
+ 2016-05-10 21:15:33.622  INFO  (SimpleJob.java:46) - Executing job: group_1.job28 executing at Tue May 10 21:15:33 CST 2016
+ 2016-05-10 21:15:33.780  INFO  (SimpleJob.java:56) - Finished Executing job: group_1.job22 at Tue May 10 21:15:33 CST 2016
+ 2016-05-10 21:15:33.780  DEBUG (QuartzSchedulerThread.java:276) - batch acquisition of 1 triggers
+ 2016-05-10 21:15:33.781  DEBUG (SimpleJobFactory.java:51) - Producing instance of Job 'group_1.job29', class=quartaDemos.demo11.SimpleJob
+ 2016-05-10 21:15:33.781  DEBUG (JobRunShell.java:201) - Calling execute on job group_1.job29
+ 2016-05-10 21:15:33.781  INFO  (SimpleJob.java:46) - Executing job: group_1.job29 executing at Tue May 10 21:15:33 CST 2016
+ 2016-05-10 21:15:34.024  INFO  (SimpleJob.java:56) - Finished Executing job: group_1.job18 at Tue May 10 21:15:34 CST 2016
+ 2016-05-10 21:15:34.025  DEBUG (QuartzSchedulerThread.java:276) - batch acquisition of 1 triggers
+ 2016-05-10 21:15:34.026  DEBUG (SimpleJobFactory.java:51) - Producing instance of Job 'group_1.job30', class=quartaDemos.demo11.SimpleJob
+ 2016-05-10 21:15:34.027  DEBUG (JobRunShell.java:201) - Calling execute on job group_1.job30
+ 2016-05-10 21:15:34.028  INFO  (SimpleJob.java:46) - Executing job: group_1.job30 executing at Tue May 10 21:15:34 CST 2016
+ 2016-05-10 21:15:34.248  INFO  (SimpleJob.java:56) - Finished Executing job: group_1.job25 at Tue May 10 21:15:34 CST 2016
+ 2016-05-10 21:15:34.248  DEBUG (QuartzSchedulerThread.java:276) - batch acquisition of 1 triggers
+ 2016-05-10 21:15:34.249  DEBUG (SimpleJobFactory.java:51) - Producing instance of Job 'group_1.job31', class=quartaDemos.demo11.SimpleJob
+ 2016-05-10 21:15:34.249  DEBUG (JobRunShell.java:201) - Calling execute on job group_1.job31
+ 2016-05-10 21:15:34.249  INFO  (SimpleJob.java:46) - Executing job: group_1.job31 executing at Tue May 10 21:15:34 CST 2016
+ 2016-05-10 21:15:34.259  INFO  (SimpleJob.java:56) - Finished Executing job: group_1.job31 at Tue May 10 21:15:34 CST 2016
+ 2016-05-10 21:15:34.260  DEBUG (QuartzSchedulerThread.java:276) - batch acquisition of 1 triggers
+ 2016-05-10 21:15:34.260  DEBUG (SimpleJobFactory.java:51) - Producing instance of Job 'group_1.job32', class=quartaDemos.demo11.SimpleJob
+ 2016-05-10 21:15:34.260  DEBUG (JobRunShell.java:201) - Calling execute on job group_1.job32
+ 2016-05-10 21:15:34.260  INFO  (SimpleJob.java:46) - Executing job: group_1.job32 executing at Tue May 10 21:15:34 CST 2016
+ 2016-05-10 21:15:34.565  INFO  (SimpleJob.java:56) - Finished Executing job: group_1.job21 at Tue May 10 21:15:34 CST 2016
+ 2016-05-10 21:15:34.566  DEBUG (QuartzSchedulerThread.java:276) - batch acquisition of 1 triggers
+ 2016-05-10 21:15:34.567  DEBUG (SimpleJobFactory.java:51) - Producing instance of Job 'group_1.job33', class=quartaDemos.demo11.SimpleJob
+ 2016-05-10 21:15:34.567  DEBUG (JobRunShell.java:201) - Calling execute on job group_1.job33
+ 2016-05-10 21:15:34.568  INFO  (SimpleJob.java:46) - Executing job: group_1.job33 executing at Tue May 10 21:15:34 CST 2016
+ 2016-05-10 21:15:34.607  INFO  (SimpleJob.java:56) - Finished Executing job: group_1.job24 at Tue May 10 21:15:34 CST 2016
+ 2016-05-10 21:15:34.608  DEBUG (QuartzSchedulerThread.java:276) - batch acquisition of 1 triggers
+ 2016-05-10 21:15:34.608  DEBUG (SimpleJobFactory.java:51) - Producing instance of Job 'group_1.job34', class=quartaDemos.demo11.SimpleJob
+ 2016-05-10 21:15:34.609  DEBUG (JobRunShell.java:201) - Calling execute on job group_1.job34
+ 2016-05-10 21:15:34.609  INFO  (SimpleJob.java:46) - Executing job: group_1.job34 executing at Tue May 10 21:15:34 CST 2016
+ 2016-05-10 21:15:34.962  INFO  (SimpleJob.java:56) - Finished Executing job: group_1.job32 at Tue May 10 21:15:34 CST 2016
+ 2016-05-10 21:15:34.963  DEBUG (QuartzSchedulerThread.java:276) - batch acquisition of 1 triggers
+ 2016-05-10 21:15:34.964  DEBUG (SimpleJobFactory.java:51) - Producing instance of Job 'group_1.job35', class=quartaDemos.demo11.SimpleJob
+ 2016-05-10 21:15:34.964  DEBUG (JobRunShell.java:201) - Calling execute on job group_1.job35
+ 2016-05-10 21:15:34.964  INFO  (SimpleJob.java:46) - Executing job: group_1.job35 executing at Tue May 10 21:15:34 CST 2016
+ 2016-05-10 21:15:35.327  INFO  (SimpleJob.java:56) - Finished Executing job: group_1.job20 at Tue May 10 21:15:35 CST 2016
+ 2016-05-10 21:15:35.327  DEBUG (QuartzSchedulerThread.java:276) - batch acquisition of 1 triggers
+ 2016-05-10 21:15:35.328  DEBUG (SimpleJobFactory.java:51) - Producing instance of Job 'group_1.job36', class=quartaDemos.demo11.SimpleJob
+ 2016-05-10 21:15:35.328  DEBUG (JobRunShell.java:201) - Calling execute on job group_1.job36
+ 2016-05-10 21:15:35.328  INFO  (SimpleJob.java:46) - Executing job: group_1.job36 executing at Tue May 10 21:15:35 CST 2016
+ 2016-05-10 21:15:35.338  INFO  (SimpleJob.java:56) - Finished Executing job: group_1.job26 at Tue May 10 21:15:35 CST 2016
+ 2016-05-10 21:15:35.339  DEBUG (QuartzSchedulerThread.java:276) - batch acquisition of 1 triggers
+ 2016-05-10 21:15:35.339  DEBUG (SimpleJobFactory.java:51) - Producing instance of Job 'group_1.job37', class=quartaDemos.demo11.SimpleJob
+ 2016-05-10 21:15:35.339  DEBUG (JobRunShell.java:201) - Calling execute on job group_1.job37
+ 2016-05-10 21:15:35.340  INFO  (SimpleJob.java:46) - Executing job: group_1.job37 executing at Tue May 10 21:15:35 CST 2016
+ 2016-05-10 21:15:35.400  INFO  (SimpleJob.java:56) - Finished Executing job: group_1.job37 at Tue May 10 21:15:35 CST 2016
+ 2016-05-10 21:15:35.400  DEBUG (QuartzSchedulerThread.java:276) - batch acquisition of 1 triggers
+ 2016-05-10 21:15:35.401  DEBUG (SimpleJobFactory.java:51) - Producing instance of Job 'group_1.job38', class=quartaDemos.demo11.SimpleJob
+ 2016-05-10 21:15:35.401  DEBUG (JobRunShell.java:201) - Calling execute on job group_1.job38
+ 2016-05-10 21:15:35.401  INFO  (SimpleJob.java:46) - Executing job: group_1.job38 executing at Tue May 10 21:15:35 CST 2016
+ 2016-05-10 21:15:35.474  INFO  (SimpleJob.java:56) - Finished Executing job: group_1.job27 at Tue May 10 21:15:35 CST 2016
+ 2016-05-10 21:15:35.474  DEBUG (QuartzSchedulerThread.java:276) - batch acquisition of 1 triggers
+ 2016-05-10 21:15:35.475  DEBUG (SimpleJobFactory.java:51) - Producing instance of Job 'group_1.job39', class=quartaDemos.demo11.SimpleJob
+ 2016-05-10 21:15:35.475  DEBUG (JobRunShell.java:201) - Calling execute on job group_1.job39
+ 2016-05-10 21:15:35.475  INFO  (SimpleJob.java:46) - Executing job: group_1.job39 executing at Tue May 10 21:15:35 CST 2016
+ 2016-05-10 21:15:35.528  INFO  (SimpleJob.java:56) - Finished Executing job: group_1.job23 at Tue May 10 21:15:35 CST 2016
+ 2016-05-10 21:15:35.528  DEBUG (QuartzSchedulerThread.java:276) - batch acquisition of 1 triggers
+ 2016-05-10 21:15:35.528  DEBUG (SimpleJobFactory.java:51) - Producing instance of Job 'group_1.job40', class=quartaDemos.demo11.SimpleJob
+ 2016-05-10 21:15:35.529  DEBUG (JobRunShell.java:201) - Calling execute on job group_1.job40
+ 2016-05-10 21:15:35.529  INFO  (SimpleJob.java:46) - Executing job: group_1.job40 executing at Tue May 10 21:15:35 CST 2016
+ 2016-05-10 21:15:35.657  INFO  (SimpleJob.java:56) - Finished Executing job: group_1.job29 at Tue May 10 21:15:35 CST 2016
+ 2016-05-10 21:15:35.657  DEBUG (QuartzSchedulerThread.java:276) - batch acquisition of 1 triggers
+ 2016-05-10 21:15:35.658  DEBUG (SimpleJobFactory.java:51) - Producing instance of Job 'group_1.job41', class=quartaDemos.demo11.SimpleJob
+ 2016-05-10 21:15:35.659  DEBUG (JobRunShell.java:201) - Calling execute on job group_1.job41
+ 2016-05-10 21:15:35.659  INFO  (SimpleJob.java:46) - Executing job: group_1.job41 executing at Tue May 10 21:15:35 CST 2016
+ 2016-05-10 21:15:35.689  INFO  (SimpleJob.java:56) - Finished Executing job: group_1.job30 at Tue May 10 21:15:35 CST 2016
+ 2016-05-10 21:15:35.689  DEBUG (QuartzSchedulerThread.java:276) - batch acquisition of 1 triggers
+ 2016-05-10 21:15:35.690  DEBUG (SimpleJobFactory.java:51) - Producing instance of Job 'group_1.job42', class=quartaDemos.demo11.SimpleJob
+ 2016-05-10 21:15:35.690  DEBUG (JobRunShell.java:201) - Calling execute on job group_1.job42
+ 2016-05-10 21:15:35.690  INFO  (SimpleJob.java:46) - Executing job: group_1.job42 executing at Tue May 10 21:15:35 CST 2016
+ 2016-05-10 21:15:35.691  INFO  (SimpleJob.java:56) - Finished Executing job: group_1.job35 at Tue May 10 21:15:35 CST 2016
+ 2016-05-10 21:15:35.691  DEBUG (QuartzSchedulerThread.java:276) - batch acquisition of 1 triggers
+ 2016-05-10 21:15:35.691  DEBUG (SimpleJobFactory.java:51) - Producing instance of Job 'group_1.job43', class=quartaDemos.demo11.SimpleJob
+ 2016-05-10 21:15:35.692  DEBUG (JobRunShell.java:201) - Calling execute on job group_1.job43
+ 2016-05-10 21:15:35.692  INFO  (SimpleJob.java:46) - Executing job: group_1.job43 executing at Tue May 10 21:15:35 CST 2016
+ 2016-05-10 21:15:35.713  INFO  (SimpleJob.java:56) - Finished Executing job: group_1.job33 at Tue May 10 21:15:35 CST 2016
+ 2016-05-10 21:15:35.714  DEBUG (QuartzSchedulerThread.java:276) - batch acquisition of 1 triggers
+ 2016-05-10 21:15:35.714  DEBUG (SimpleJobFactory.java:51) - Producing instance of Job 'group_1.job44', class=quartaDemos.demo11.SimpleJob
+ 2016-05-10 21:15:35.715  DEBUG (JobRunShell.java:201) - Calling execute on job group_1.job44
+ 2016-05-10 21:15:35.715  INFO  (SimpleJob.java:46) - Executing job: group_1.job44 executing at Tue May 10 21:15:35 CST 2016
+ 2016-05-10 21:15:36.115  INFO  (SimpleJob.java:56) - Finished Executing job: group_1.job28 at Tue May 10 21:15:36 CST 2016
+ 2016-05-10 21:15:36.116  INFO  (SimpleJob.java:56) - Finished Executing job: group_1.job39 at Tue May 10 21:15:36 CST 2016
+ 2016-05-10 21:15:36.116  DEBUG (QuartzSchedulerThread.java:276) - batch acquisition of 1 triggers
+ 2016-05-10 21:15:36.117  DEBUG (SimpleJobFactory.java:51) - Producing instance of Job 'group_1.job45', class=quartaDemos.demo11.SimpleJob
+ 2016-05-10 21:15:36.119  DEBUG (JobRunShell.java:201) - Calling execute on job group_1.job45
+ 2016-05-10 21:15:36.120  DEBUG (QuartzSchedulerThread.java:276) - batch acquisition of 1 triggers
+ 2016-05-10 21:15:36.121  INFO  (SimpleJob.java:46) - Executing job: group_1.job45 executing at Tue May 10 21:15:36 CST 2016
+ 2016-05-10 21:15:36.122  DEBUG (SimpleJobFactory.java:51) - Producing instance of Job 'group_1.job46', class=quartaDemos.demo11.SimpleJob
+ 2016-05-10 21:15:36.123  DEBUG (JobRunShell.java:201) - Calling execute on job group_1.job46
+ 2016-05-10 21:15:36.124  INFO  (SimpleJob.java:46) - Executing job: group_1.job46 executing at Tue May 10 21:15:36 CST 2016
+ 2016-05-10 21:15:36.260  INFO  (SimpleJob.java:56) - Finished Executing job: group_1.job38 at Tue May 10 21:15:36 CST 2016
+ 2016-05-10 21:15:36.262  DEBUG (QuartzSchedulerThread.java:276) - batch acquisition of 1 triggers
+ 2016-05-10 21:15:36.263  DEBUG (SimpleJobFactory.java:51) - Producing instance of Job 'group_1.job47', class=quartaDemos.demo11.SimpleJob
+ 2016-05-10 21:15:36.263  DEBUG (JobRunShell.java:201) - Calling execute on job group_1.job47
+ 2016-05-10 21:15:36.264  INFO  (SimpleJob.java:46) - Executing job: group_1.job47 executing at Tue May 10 21:15:36 CST 2016
+ 2016-05-10 21:15:36.450  INFO  (SimpleJob.java:56) - Finished Executing job: group_1.job41 at Tue May 10 21:15:36 CST 2016
+ 2016-05-10 21:15:36.451  DEBUG (QuartzSchedulerThread.java:276) - batch acquisition of 1 triggers
+ 2016-05-10 21:15:36.451  DEBUG (SimpleJobFactory.java:51) - Producing instance of Job 'group_1.job48', class=quartaDemos.demo11.SimpleJob
+ 2016-05-10 21:15:36.451  DEBUG (JobRunShell.java:201) - Calling execute on job group_1.job48
+ 2016-05-10 21:15:36.452  INFO  (SimpleJob.java:46) - Executing job: group_1.job48 executing at Tue May 10 21:15:36 CST 2016
+ 2016-05-10 21:15:36.735  INFO  (SimpleJob.java:56) - Finished Executing job: group_1.job34 at Tue May 10 21:15:36 CST 2016
+ 2016-05-10 21:15:36.735  DEBUG (QuartzSchedulerThread.java:276) - batch acquisition of 1 triggers
+ 2016-05-10 21:15:36.736  DEBUG (SimpleJobFactory.java:51) - Producing instance of Job 'group_1.job49', class=quartaDemos.demo11.SimpleJob
+ 2016-05-10 21:15:36.736  DEBUG (JobRunShell.java:201) - Calling execute on job group_1.job49
+ 2016-05-10 21:15:36.737  INFO  (SimpleJob.java:46) - Executing job: group_1.job49 executing at Tue May 10 21:15:36 CST 2016
+ 2016-05-10 21:15:37.178  INFO  (SimpleJob.java:56) - Finished Executing job: group_1.job47 at Tue May 10 21:15:37 CST 2016
+ 2016-05-10 21:15:37.178  DEBUG (QuartzSchedulerThread.java:276) - batch acquisition of 1 triggers
+ 2016-05-10 21:15:37.179  DEBUG (SimpleJobFactory.java:51) - Producing instance of Job 'group_1.job50', class=quartaDemos.demo11.SimpleJob
+ 2016-05-10 21:15:37.179  DEBUG (JobRunShell.java:201) - Calling execute on job group_1.job50
+ 2016-05-10 21:15:37.179  INFO  (SimpleJob.java:46) - Executing job: group_1.job50 executing at Tue May 10 21:15:37 CST 2016
+ 2016-05-10 21:15:37.253  INFO  (SimpleJob.java:56) - Finished Executing job: group_1.job49 at Tue May 10 21:15:37 CST 2016
+ 2016-05-10 21:15:37.254  DEBUG (QuartzSchedulerThread.java:276) - batch acquisition of 1 triggers
+ 2016-05-10 21:15:37.255  DEBUG (SimpleJobFactory.java:51) - Producing instance of Job 'group_1.job51', class=quartaDemos.demo11.SimpleJob
+ 2016-05-10 21:15:37.256  DEBUG (JobRunShell.java:201) - Calling execute on job group_1.job51
+ 2016-05-10 21:15:37.257  INFO  (SimpleJob.java:46) - Executing job: group_1.job51 executing at Tue May 10 21:15:37 CST 2016
+ 2016-05-10 21:15:37.422  INFO  (SimpleJob.java:56) - Finished Executing job: group_1.job40 at Tue May 10 21:15:37 CST 2016
+ 2016-05-10 21:15:37.423  DEBUG (QuartzSchedulerThread.java:276) - batch acquisition of 1 triggers
+ 2016-05-10 21:15:37.423  DEBUG (SimpleJobFactory.java:51) - Producing instance of Job 'group_1.job52', class=quartaDemos.demo11.SimpleJob
+ 2016-05-10 21:15:37.423  DEBUG (JobRunShell.java:201) - Calling execute on job group_1.job52
+ 2016-05-10 21:15:37.424  INFO  (SimpleJob.java:46) - Executing job: group_1.job52 executing at Tue May 10 21:15:37 CST 2016
+ 2016-05-10 21:15:37.544  INFO  (SimpleJob.java:56) - Finished Executing job: group_1.job43 at Tue May 10 21:15:37 CST 2016
+ 2016-05-10 21:15:37.544  DEBUG (QuartzSchedulerThread.java:276) - batch acquisition of 1 triggers
+ 2016-05-10 21:15:37.545  DEBUG (SimpleJobFactory.java:51) - Producing instance of Job 'group_1.job53', class=quartaDemos.demo11.SimpleJob
+ 2016-05-10 21:15:37.545  DEBUG (JobRunShell.java:201) - Calling execute on job group_1.job53
+ 2016-05-10 21:15:37.545  INFO  (SimpleJob.java:46) - Executing job: group_1.job53 executing at Tue May 10 21:15:37 CST 2016
+ 2016-05-10 21:15:37.579  INFO  (SimpleJob.java:56) - Finished Executing job: group_1.job36 at Tue May 10 21:15:37 CST 2016
+ 2016-05-10 21:15:37.580  DEBUG (QuartzSchedulerThread.java:276) - batch acquisition of 1 triggers
+ 2016-05-10 21:15:37.580  DEBUG (SimpleJobFactory.java:51) - Producing instance of Job 'group_1.job54', class=quartaDemos.demo11.SimpleJob
+ 2016-05-10 21:15:37.580  DEBUG (JobRunShell.java:201) - Calling execute on job group_1.job54
+ 2016-05-10 21:15:37.581  INFO  (SimpleJob.java:46) - Executing job: group_1.job54 executing at Tue May 10 21:15:37 CST 2016
+ 2016-05-10 21:15:37.872  INFO  (SimpleJob.java:56) - Finished Executing job: group_1.job44 at Tue May 10 21:15:37 CST 2016
+ 2016-05-10 21:15:37.874  DEBUG (QuartzSchedulerThread.java:276) - batch acquisition of 1 triggers
+ 2016-05-10 21:15:37.880  DEBUG (SimpleJobFactory.java:51) - Producing instance of Job 'group_1.job55', class=quartaDemos.demo11.SimpleJob
+ 2016-05-10 21:15:37.882  DEBUG (JobRunShell.java:201) - Calling execute on job group_1.job55
+ 2016-05-10 21:15:37.883  INFO  (SimpleJob.java:46) - Executing job: group_1.job55 executing at Tue May 10 21:15:37 CST 2016
+ 2016-05-10 21:15:37.906  INFO  (SimpleJob.java:56) - Finished Executing job: group_1.job42 at Tue May 10 21:15:37 CST 2016
+ 2016-05-10 21:15:37.907  DEBUG (QuartzSchedulerThread.java:276) - batch acquisition of 1 triggers
+ 2016-05-10 21:15:37.908  DEBUG (SimpleJobFactory.java:51) - Producing instance of Job 'group_1.job56', class=quartaDemos.demo11.SimpleJob
+ 2016-05-10 21:15:37.909  DEBUG (JobRunShell.java:201) - Calling execute on job group_1.job56
+ 2016-05-10 21:15:37.909  INFO  (SimpleJob.java:46) - Executing job: group_1.job56 executing at Tue May 10 21:15:37 CST 2016
+ 2016-05-10 21:15:38.051  INFO  (SimpleJob.java:56) - Finished Executing job: group_1.job46 at Tue May 10 21:15:38 CST 2016
+ 2016-05-10 21:15:38.051  DEBUG (QuartzSchedulerThread.java:276) - batch acquisition of 1 triggers
+ 2016-05-10 21:15:38.052  DEBUG (SimpleJobFactory.java:51) - Producing instance of Job 'group_1.job57', class=quartaDemos.demo11.SimpleJob
+ 2016-05-10 21:15:38.052  DEBUG (JobRunShell.java:201) - Calling execute on job group_1.job57
+ 2016-05-10 21:15:38.052  INFO  (SimpleJob.java:46) - Executing job: group_1.job57 executing at Tue May 10 21:15:38 CST 2016
+ 2016-05-10 21:15:38.069  INFO  (SimpleJob.java:56) - Finished Executing job: group_1.job57 at Tue May 10 21:15:38 CST 2016
+ 2016-05-10 21:15:38.069  DEBUG (QuartzSchedulerThread.java:276) - batch acquisition of 1 triggers
+ 2016-05-10 21:15:38.070  DEBUG (SimpleJobFactory.java:51) - Producing instance of Job 'group_1.job58', class=quartaDemos.demo11.SimpleJob
+ 2016-05-10 21:15:38.070  DEBUG (JobRunShell.java:201) - Calling execute on job group_1.job58
+ 2016-05-10 21:15:38.070  INFO  (SimpleJob.java:46) - Executing job: group_1.job58 executing at Tue May 10 21:15:38 CST 2016
+ 2016-05-10 21:15:38.409  INFO  (SimpleJob.java:56) - Finished Executing job: group_1.job51 at Tue May 10 21:15:38 CST 2016
+ 2016-05-10 21:15:38.409  DEBUG (QuartzSchedulerThread.java:276) - batch acquisition of 1 triggers
+ 2016-05-10 21:15:38.410  DEBUG (SimpleJobFactory.java:51) - Producing instance of Job 'group_1.job59', class=quartaDemos.demo11.SimpleJob
+ 2016-05-10 21:15:38.410  DEBUG (JobRunShell.java:201) - Calling execute on job group_1.job59
+ 2016-05-10 21:15:38.410  INFO  (SimpleJob.java:46) - Executing job: group_1.job59 executing at Tue May 10 21:15:38 CST 2016
+ 2016-05-10 21:15:38.450  INFO  (SimpleJob.java:56) - Finished Executing job: group_1.job48 at Tue May 10 21:15:38 CST 2016
+ 2016-05-10 21:15:38.450  DEBUG (QuartzSchedulerThread.java:276) - batch acquisition of 1 triggers
+ 2016-05-10 21:15:38.451  DEBUG (SimpleJobFactory.java:51) - Producing instance of Job 'group_1.job60', class=quartaDemos.demo11.SimpleJob
+ 2016-05-10 21:15:38.451  DEBUG (JobRunShell.java:201) - Calling execute on job group_1.job60
+ 2016-05-10 21:15:38.451  INFO  (SimpleJob.java:46) - Executing job: group_1.job60 executing at Tue May 10 21:15:38 CST 2016
+ 2016-05-10 21:15:38.581  INFO  (SimpleJob.java:56) - Finished Executing job: group_1.job45 at Tue May 10 21:15:38 CST 2016
+ 2016-05-10 21:15:38.581  DEBUG (QuartzSchedulerThread.java:276) - batch acquisition of 1 triggers
+ 2016-05-10 21:15:38.582  DEBUG (SimpleJobFactory.java:51) - Producing instance of Job 'group_1.job61', class=quartaDemos.demo11.SimpleJob
+ 2016-05-10 21:15:38.582  DEBUG (JobRunShell.java:201) - Calling execute on job group_1.job61
+ 2016-05-10 21:15:38.582  INFO  (SimpleJob.java:46) - Executing job: group_1.job61 executing at Tue May 10 21:15:38 CST 2016
+ 2016-05-10 21:15:39.053  INFO  (SimpleJob.java:56) - Finished Executing job: group_1.job61 at Tue May 10 21:15:39 CST 2016
+ 2016-05-10 21:15:39.053  DEBUG (QuartzSchedulerThread.java:276) - batch acquisition of 1 triggers
+ 2016-05-10 21:15:39.054  DEBUG (SimpleJobFactory.java:51) - Producing instance of Job 'group_1.job62', class=quartaDemos.demo11.SimpleJob
+ 2016-05-10 21:15:39.054  DEBUG (JobRunShell.java:201) - Calling execute on job group_1.job62
+ 2016-05-10 21:15:39.054  INFO  (SimpleJob.java:46) - Executing job: group_1.job62 executing at Tue May 10 21:15:39 CST 2016
+ 2016-05-10 21:15:39.258  INFO  (SimpleJob.java:56) - Finished Executing job: group_1.job53 at Tue May 10 21:15:39 CST 2016
+ 2016-05-10 21:15:39.259  DEBUG (QuartzSchedulerThread.java:276) - batch acquisition of 1 triggers
+ 2016-05-10 21:15:39.259  DEBUG (SimpleJobFactory.java:51) - Producing instance of Job 'group_1.job63', class=quartaDemos.demo11.SimpleJob
+ 2016-05-10 21:15:39.260  DEBUG (JobRunShell.java:201) - Calling execute on job group_1.job63
+ 2016-05-10 21:15:39.260  INFO  (SimpleJob.java:46) - Executing job: group_1.job63 executing at Tue May 10 21:15:39 CST 2016
+ 2016-05-10 21:15:39.502  INFO  (SimpleJob.java:56) - Finished Executing job: group_1.job50 at Tue May 10 21:15:39 CST 2016
+ 2016-05-10 21:15:39.502  DEBUG (QuartzSchedulerThread.java:276) - batch acquisition of 1 triggers
+ 2016-05-10 21:15:39.503  DEBUG (SimpleJobFactory.java:51) - Producing instance of Job 'group_1.job64', class=quartaDemos.demo11.SimpleJob
+ 2016-05-10 21:15:39.503  DEBUG (JobRunShell.java:201) - Calling execute on job group_1.job64
+ 2016-05-10 21:15:39.503  INFO  (SimpleJob.java:46) - Executing job: group_1.job64 executing at Tue May 10 21:15:39 CST 2016
+ 2016-05-10 21:15:39.580  INFO  (SimpleJob.java:56) - Finished Executing job: group_1.job60 at Tue May 10 21:15:39 CST 2016
+ 2016-05-10 21:15:39.581  DEBUG (QuartzSchedulerThread.java:276) - batch acquisition of 1 triggers
+ 2016-05-10 21:15:39.582  DEBUG (SimpleJobFactory.java:51) - Producing instance of Job 'group_1.job65', class=quartaDemos.demo11.SimpleJob
+ 2016-05-10 21:15:39.583  DEBUG (JobRunShell.java:201) - Calling execute on job group_1.job65
+ 2016-05-10 21:15:39.584  INFO  (SimpleJob.java:46) - Executing job: group_1.job65 executing at Tue May 10 21:15:39 CST 2016
+ 

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE classRoom SYSTEM "classRoom.dtd">
+<classRoom id="cls1">
+    <claDesc>java中级班</claDesc>
+    <claName>三年二班</claName>
+    <students>
+        <student>
+           <stuId>1</stuId>
+           <stuName>jack</stuName>
+           <grade>90</grade>
+        </student>
+        <student>
+           <stuId>2</stuId>
+           <stuName>tom</stuName>
+           <grade>95</grade>
+        </student>
+    </students>
+</classRoom>

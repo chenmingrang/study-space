@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE validators PUBLIC
+  		"-//Apache Struts//XWork Validator 1.0.3//EN"
+  		"http://struts.apache.org/dtds/xwork-validator-1.0.3.dtd">
+<validators>
+	<!-- 
+		field：指定action中要校验的属性
+			* name：指定将被验证的表单字段的名字
+	 -->
+	<field name="username">
+		<!-- 
+			field-validator：指定验证规则
+				* type：指定验证规则的名称
+		 -->
+		<field-validator type="requiredstring">
+			<!-- 
+				param：向验证器传递的参数
+					* requiredstring验证器的参数是"trim"，设置为"true"的作用是去空格
+			 -->
+			<param name="trim">true</param>
+			<!-- 
+				message：验证失败时，提示的错误信息
+					* <![CDATA[]]>：保证按原文输出
+					* 里面的文本：错误提示信息
+			 -->
+			<message><![CDATA[用户名不能为空！]]></message>
+		</field-validator>
+	</field>
+	<field name="psw">
+		<field-validator type="requiredstring">
+			<param name="trim">true</param>
+			<message><![CDATA[密码不能为空！]]></message>
+		</field-validator>
+		<!-- 使用正则表达式验证规则来做"regex" -->
+		<field-validator type="regex">
+			<param name="trim">true</param>
+			<param name="expression"><![CDATA[^[0-9a-zA-Z]{6,12}$]]></param>
+			<message><![CDATA[密码的长度必须在6至12之间！]]></message>
+		</field-validator>
+	</field>
+</validators>

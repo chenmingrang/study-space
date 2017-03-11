@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+	<package name="converter" namespace="/converter" extends="struts-default">
+		<action name="userAction_save" class="converter.UserAction" method="save">
+			<result name="success">/converter/success.jsp</result>
+			<!-- 
+				* 错误提示：No result defined for action converter.UserAction and result input 
+				* 配置如果出错的时候，自动转向到错误页面
+			-->
+			<result name="input">/converter/error.jsp</result>
+		</action>
+	</package>
+</struts>

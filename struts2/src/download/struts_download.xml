@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+	<package name="download" namespace="/download" extends="json-default">
+		<action name="downloadFile" class="download.DownloadAction" method="downloadFile">
+			<result name="success" type="stream">
+				<param name="contentType">application/vnd.ms-excel</param>
+				<param name="contentDisposition">
+					attachment;filename=${fileName}
+				</param>
+				<param name="bufferSize">1024</param>
+				<param name="contentCharSet ">utf-8</param>
+			</result>
+			<result name="error" type="json">
+			   <param name="includeProperties">msg</param>
+			</result>
+		</action>
+	</package>
+</struts>

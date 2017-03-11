@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<user xmlns="http://www.example.org/Test01"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <userID>1</userID>
+      <userName>zhangsan</userName>
+      <dateBorn>1990-10-01</dateBorn>
+</user>

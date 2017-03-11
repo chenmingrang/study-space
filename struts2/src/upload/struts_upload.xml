@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+	<package name="upload" namespace="/upload" extends="struts-default">
+		<action name="uploadAction_saveFile" class="upload.UploadAction" method="saveFile">
+			<result name="success">/upload/success.jsp</result>
+			<result name="input">/upload/upload.jsp</result>
+			
+			<!-- 配置拦截器的参数，这里是文件上传拦截器 -->
+			<!-- <interceptor-ref name="defaultStack">
+              	
+              		配置文件上传拦截器的参数
+              			* 与定义参数的顺序无关
+              			* 允许的类型(allowedTypes)和允许的扩展名(allowedExtensions)必须保持一致
+              	
+              	
+              		* 配置上传文件的大小
+              			* struts.xml文件中配置的是上传文件的总大小
+              			* 这里配置的是上传文件的单个大小
+              	
+              	<param name="fileUpload.maximumSize">20971520</param>
+              	配置上传文件允许的类型，如果配置多个值的话，用","隔开
+              	<param name="fileUpload.allowedTypes">text/plain,application/msword</param>
+              	配置上传文件的扩展名，如果配置多个值的话，用","隔开
+              	<param name="fileUpload.allowedExtensions">.txt</param>
+            </interceptor-ref> -->
+			
+		</action>
+		<action name="uploadsAction_saveFiles" class="upload.UploadsAction" method="saveFiles">
+			<result name="success">/upload/success.jsp</result>
+			<result name="input">/upload/error.jsp</result>
+		</action>
+	</package>
+</struts>

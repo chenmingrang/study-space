@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+	<package name="i18n" namespace="/i18n" extends="struts-default">
+		<action name="i18nAction_login" class="i18n.I18nAction" method="login">
+			<result name="success">/i18n/success.jsp</result>
+		</action>
+	</package>
+</struts>

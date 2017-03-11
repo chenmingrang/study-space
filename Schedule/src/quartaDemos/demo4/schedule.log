@@ -1,0 +1,205 @@
+2016-04-29 08:22:20.312  INFO  (JobStateExample.java:45) - ------- Initializing -------------------
+ 2016-04-29 08:22:20.354  INFO  (StdSchedulerFactory.java:1172) - Using default implementation for ThreadExecutor
+ 2016-04-29 08:22:20.358  INFO  (SimpleThreadPool.java:268) - Job execution threads will use class loader of thread: main
+ 2016-04-29 08:22:20.378  INFO  (SchedulerSignalerImpl.java:61) - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+ 2016-04-29 08:22:20.380  INFO  (QuartzScheduler.java:240) - Quartz Scheduler v.2.2.2 created.
+ 2016-04-29 08:22:20.381  INFO  (RAMJobStore.java:155) - RAMJobStore initialized.
+ 2016-04-29 08:22:20.382  INFO  (QuartzScheduler.java:305) - Scheduler meta-data: Quartz Scheduler (v2.2.2) 'DefaultQuartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+ 2016-04-29 08:22:20.383  INFO  (StdSchedulerFactory.java:1327) - Quartz scheduler 'DefaultQuartzScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+ 2016-04-29 08:22:20.384  INFO  (StdSchedulerFactory.java:1331) - Quartz scheduler version: 2.2.2
+ 2016-04-29 08:22:20.384  INFO  (JobStateExample.java:49) - ------- Initialization Complete --------
+ 2016-04-29 08:22:20.384  INFO  (JobStateExample.java:50) - ------- Scheduling Jobs ----------------
+ 2016-04-29 08:22:20.394  INFO  (JobStateExample.java:63) - group1.job1 will run at: Fri Apr 29 08:22:30 CST 2016 and repeat: 4 times, every 10 seconds
+ 2016-04-29 08:22:20.394  INFO  (JobStateExample.java:76) - group1.job2 will run at: Fri Apr 29 08:22:30 CST 2016 and repeat: 4 times, every 10 seconds
+ 2016-04-29 08:22:20.395  INFO  (JobStateExample.java:79) - ------- Starting Scheduler ----------------
+ 2016-04-29 08:22:20.395  INFO  (QuartzScheduler.java:575) - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+ 2016-04-29 08:22:20.395  INFO  (JobStateExample.java:84) - ------- Started Scheduler -----------------
+ 2016-04-29 08:22:20.397  INFO  (JobStateExample.java:85) - ------- Waiting 60 seconds... -------------
+ 2016-04-29 08:22:20.396  DEBUG (QuartzSchedulerThread.java:276) - batch acquisition of 1 triggers
+ 2016-04-29 08:22:30.008  DEBUG (SimpleJobFactory.java:51) - Producing instance of Job 'group1.job1', class=quartaDemos.demo4.ColorJob
+ 2016-04-29 08:22:30.019  DEBUG (QuartzSchedulerThread.java:276) - batch acquisition of 1 triggers
+ 2016-04-29 08:22:30.020  DEBUG (JobRunShell.java:201) - Calling execute on job group1.job1
+ 2016-04-29 08:22:30.020  DEBUG (SimpleJobFactory.java:51) - Producing instance of Job 'group1.job2', class=quartaDemos.demo4.ColorJob
+ 2016-04-29 08:22:30.021  INFO  (ColorJob.java:42) - ColorJob:group1.job1 executing at Fri Apr 29 08:22:30 CST 2016
+favorite color is Green
+executing count (from job map) is 1
+execution count (from job member variable) is 1
+ 2016-04-29 08:22:30.022  DEBUG (JobRunShell.java:201) - Calling execute on job group1.job2
+ 2016-04-29 08:22:30.022  DEBUG (QuartzSchedulerThread.java:276) - batch acquisition of 1 triggers
+ 2016-04-29 08:22:30.085  INFO  (ColorJob.java:42) - ColorJob:group1.job2 executing at Fri Apr 29 08:22:30 CST 2016
+favorite color is Red
+executing count (from job map) is 1
+execution count (from job member variable) is 1
+ 2016-04-29 08:22:40.001  DEBUG (SimpleJobFactory.java:51) - Producing instance of Job 'group1.job1', class=quartaDemos.demo4.ColorJob
+ 2016-04-29 08:22:40.003  DEBUG (QuartzSchedulerThread.java:276) - batch acquisition of 1 triggers
+ 2016-04-29 08:22:40.003  DEBUG (JobRunShell.java:201) - Calling execute on job group1.job1
+ 2016-04-29 08:22:40.004  DEBUG (SimpleJobFactory.java:51) - Producing instance of Job 'group1.job2', class=quartaDemos.demo4.ColorJob
+ 2016-04-29 08:22:40.006  INFO  (ColorJob.java:42) - ColorJob:group1.job1 executing at Fri Apr 29 08:22:40 CST 2016
+favorite color is Green
+executing count (from job map) is 1
+execution count (from job member variable) is 1
+ 2016-04-29 08:22:40.008  DEBUG (QuartzSchedulerThread.java:276) - batch acquisition of 1 triggers
+ 2016-04-29 08:22:40.008  DEBUG (JobRunShell.java:201) - Calling execute on job group1.job2
+ 2016-04-29 08:22:40.010  INFO  (ColorJob.java:42) - ColorJob:group1.job2 executing at Fri Apr 29 08:22:40 CST 2016
+favorite color is Red
+executing count (from job map) is 1
+execution count (from job member variable) is 1
+ 2016-04-29 08:22:50.001  DEBUG (SimpleJobFactory.java:51) - Producing instance of Job 'group1.job1', class=quartaDemos.demo4.ColorJob
+ 2016-04-29 08:22:50.002  DEBUG (QuartzSchedulerThread.java:276) - batch acquisition of 1 triggers
+ 2016-04-29 08:22:50.002  DEBUG (JobRunShell.java:201) - Calling execute on job group1.job1
+ 2016-04-29 08:22:50.003  DEBUG (SimpleJobFactory.java:51) - Producing instance of Job 'group1.job2', class=quartaDemos.demo4.ColorJob
+ 2016-04-29 08:22:50.004  INFO  (ColorJob.java:42) - ColorJob:group1.job1 executing at Fri Apr 29 08:22:50 CST 2016
+favorite color is Green
+executing count (from job map) is 1
+execution count (from job member variable) is 1
+ 2016-04-29 08:22:50.005  DEBUG (JobRunShell.java:201) - Calling execute on job group1.job2
+ 2016-04-29 08:22:50.005  DEBUG (QuartzSchedulerThread.java:276) - batch acquisition of 1 triggers
+ 2016-04-29 08:22:50.006  INFO  (ColorJob.java:42) - ColorJob:group1.job2 executing at Fri Apr 29 08:22:50 CST 2016
+favorite color is Red
+executing count (from job map) is 1
+execution count (from job member variable) is 1
+ 2016-04-29 08:23:00.001  DEBUG (SimpleJobFactory.java:51) - Producing instance of Job 'group1.job1', class=quartaDemos.demo4.ColorJob
+ 2016-04-29 08:23:00.002  DEBUG (QuartzSchedulerThread.java:276) - batch acquisition of 1 triggers
+ 2016-04-29 08:23:00.002  DEBUG (JobRunShell.java:201) - Calling execute on job group1.job1
+ 2016-04-29 08:23:00.003  DEBUG (SimpleJobFactory.java:51) - Producing instance of Job 'group1.job2', class=quartaDemos.demo4.ColorJob
+ 2016-04-29 08:23:00.004  INFO  (ColorJob.java:42) - ColorJob:group1.job1 executing at Fri Apr 29 08:23:00 CST 2016
+favorite color is Green
+executing count (from job map) is 1
+execution count (from job member variable) is 1
+ 2016-04-29 08:23:00.005  DEBUG (QuartzSchedulerThread.java:276) - batch acquisition of 1 triggers
+ 2016-04-29 08:23:00.005  DEBUG (JobRunShell.java:201) - Calling execute on job group1.job2
+ 2016-04-29 08:23:00.007  INFO  (ColorJob.java:42) - ColorJob:group1.job2 executing at Fri Apr 29 08:23:00 CST 2016
+favorite color is Red
+executing count (from job map) is 1
+execution count (from job member variable) is 1
+ 2016-04-29 08:23:25.680  INFO  (JobStateExample.java:45) - ------- Initializing -------------------
+ 2016-04-29 08:23:25.707  INFO  (StdSchedulerFactory.java:1172) - Using default implementation for ThreadExecutor
+ 2016-04-29 08:23:25.710  INFO  (SimpleThreadPool.java:268) - Job execution threads will use class loader of thread: main
+ 2016-04-29 08:23:25.722  INFO  (SchedulerSignalerImpl.java:61) - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+ 2016-04-29 08:23:25.724  INFO  (QuartzScheduler.java:240) - Quartz Scheduler v.2.2.2 created.
+ 2016-04-29 08:23:25.725  INFO  (RAMJobStore.java:155) - RAMJobStore initialized.
+ 2016-04-29 08:23:25.726  INFO  (QuartzScheduler.java:305) - Scheduler meta-data: Quartz Scheduler (v2.2.2) 'DefaultQuartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+ 2016-04-29 08:23:25.726  INFO  (StdSchedulerFactory.java:1327) - Quartz scheduler 'DefaultQuartzScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+ 2016-04-29 08:23:25.726  INFO  (StdSchedulerFactory.java:1331) - Quartz scheduler version: 2.2.2
+ 2016-04-29 08:23:25.726  INFO  (JobStateExample.java:49) - ------- Initialization Complete --------
+ 2016-04-29 08:23:25.726  INFO  (JobStateExample.java:50) - ------- Scheduling Jobs ----------------
+ 2016-04-29 08:23:25.735  INFO  (JobStateExample.java:63) - group1.job1 will run at: Fri Apr 29 08:23:30 CST 2016 and repeat: 4 times, every 10 seconds
+ 2016-04-29 08:23:25.735  INFO  (JobStateExample.java:76) - group1.job2 will run at: Fri Apr 29 08:23:30 CST 2016 and repeat: 4 times, every 10 seconds
+ 2016-04-29 08:23:25.735  INFO  (JobStateExample.java:79) - ------- Starting Scheduler ----------------
+ 2016-04-29 08:23:25.736  INFO  (QuartzScheduler.java:575) - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+ 2016-04-29 08:23:25.736  INFO  (JobStateExample.java:84) - ------- Started Scheduler -----------------
+ 2016-04-29 08:23:25.737  INFO  (JobStateExample.java:85) - ------- Waiting 60 seconds... -------------
+ 2016-04-29 08:23:25.748  DEBUG (QuartzSchedulerThread.java:276) - batch acquisition of 1 triggers
+ 2016-04-29 08:23:30.007  DEBUG (SimpleJobFactory.java:51) - Producing instance of Job 'group1.job1', class=quartaDemos.demo4.ColorJob
+ 2016-04-29 08:23:30.018  DEBUG (QuartzSchedulerThread.java:276) - batch acquisition of 1 triggers
+ 2016-04-29 08:23:30.019  DEBUG (JobRunShell.java:201) - Calling execute on job group1.job1
+ 2016-04-29 08:23:30.019  DEBUG (SimpleJobFactory.java:51) - Producing instance of Job 'group1.job2', class=quartaDemos.demo4.ColorJob
+ 2016-04-29 08:23:30.020  INFO  (ColorJob.java:42) - ColorJob:group1.job1 executing at Fri Apr 29 08:23:30 CST 2016
+favorite color is Green
+executing count (from job map) is 1
+execution count (from job member variable) is 1
+ 2016-04-29 08:23:30.021  DEBUG (JobRunShell.java:201) - Calling execute on job group1.job2
+ 2016-04-29 08:23:30.021  DEBUG (QuartzSchedulerThread.java:276) - batch acquisition of 0 triggers
+ 2016-04-29 08:23:30.023  INFO  (ColorJob.java:42) - ColorJob:group1.job2 executing at Fri Apr 29 08:23:30 CST 2016
+favorite color is Red
+executing count (from job map) is 1
+execution count (from job member variable) is 1
+ 2016-04-29 08:23:30.024  DEBUG (QuartzSchedulerThread.java:276) - batch acquisition of 1 triggers
+ 2016-04-29 08:23:30.025  DEBUG (QuartzSchedulerThread.java:276) - batch acquisition of 1 triggers
+ 2016-04-29 08:23:40.001  DEBUG (SimpleJobFactory.java:51) - Producing instance of Job 'group1.job1', class=quartaDemos.demo4.ColorJob
+ 2016-04-29 08:23:40.002  DEBUG (QuartzSchedulerThread.java:276) - batch acquisition of 1 triggers
+ 2016-04-29 08:23:40.002  DEBUG (JobRunShell.java:201) - Calling execute on job group1.job1
+ 2016-04-29 08:23:40.003  DEBUG (SimpleJobFactory.java:51) - Producing instance of Job 'group1.job2', class=quartaDemos.demo4.ColorJob
+ 2016-04-29 08:23:40.003  INFO  (ColorJob.java:42) - ColorJob:group1.job1 executing at Fri Apr 29 08:23:40 CST 2016
+favorite color is Green
+executing count (from job map) is 2
+execution count (from job member variable) is 1
+ 2016-04-29 08:23:40.005  DEBUG (JobRunShell.java:201) - Calling execute on job group1.job2
+ 2016-04-29 08:23:40.005  DEBUG (QuartzSchedulerThread.java:276) - batch acquisition of 0 triggers
+ 2016-04-29 08:23:40.006  INFO  (ColorJob.java:42) - ColorJob:group1.job2 executing at Fri Apr 29 08:23:40 CST 2016
+favorite color is Red
+executing count (from job map) is 2
+execution count (from job member variable) is 1
+ 2016-04-29 08:23:40.006  DEBUG (QuartzSchedulerThread.java:276) - batch acquisition of 1 triggers
+ 2016-04-29 08:23:40.007  DEBUG (QuartzSchedulerThread.java:276) - batch acquisition of 1 triggers
+ 2016-04-29 08:23:50.000  DEBUG (SimpleJobFactory.java:51) - Producing instance of Job 'group1.job1', class=quartaDemos.demo4.ColorJob
+ 2016-04-29 08:23:50.002  DEBUG (QuartzSchedulerThread.java:276) - batch acquisition of 1 triggers
+ 2016-04-29 08:23:50.002  DEBUG (JobRunShell.java:201) - Calling execute on job group1.job1
+ 2016-04-29 08:23:50.002  DEBUG (SimpleJobFactory.java:51) - Producing instance of Job 'group1.job2', class=quartaDemos.demo4.ColorJob
+ 2016-04-29 08:23:50.003  INFO  (ColorJob.java:42) - ColorJob:group1.job1 executing at Fri Apr 29 08:23:50 CST 2016
+favorite color is Green
+executing count (from job map) is 3
+execution count (from job member variable) is 1
+ 2016-04-29 08:23:50.004  DEBUG (JobRunShell.java:201) - Calling execute on job group1.job2
+ 2016-04-29 08:23:50.004  DEBUG (QuartzSchedulerThread.java:276) - batch acquisition of 0 triggers
+ 2016-04-29 08:23:50.005  INFO  (ColorJob.java:42) - ColorJob:group1.job2 executing at Fri Apr 29 08:23:50 CST 2016
+favorite color is Red
+executing count (from job map) is 3
+execution count (from job member variable) is 1
+ 2016-04-29 08:23:50.005  DEBUG (QuartzSchedulerThread.java:276) - batch acquisition of 1 triggers
+ 2016-04-29 08:23:50.007  DEBUG (QuartzSchedulerThread.java:276) - batch acquisition of 1 triggers
+ 2016-04-29 08:24:00.001  DEBUG (SimpleJobFactory.java:51) - Producing instance of Job 'group1.job1', class=quartaDemos.demo4.ColorJob
+ 2016-04-29 08:24:00.002  DEBUG (JobRunShell.java:201) - Calling execute on job group1.job1
+ 2016-04-29 08:24:00.003  INFO  (ColorJob.java:42) - ColorJob:group1.job1 executing at Fri Apr 29 08:24:00 CST 2016
+favorite color is Green
+executing count (from job map) is 4
+execution count (from job member variable) is 1
+ 2016-04-29 08:24:00.002  DEBUG (QuartzSchedulerThread.java:276) - batch acquisition of 1 triggers
+ 2016-04-29 08:24:00.004  DEBUG (SimpleJobFactory.java:51) - Producing instance of Job 'group1.job2', class=quartaDemos.demo4.ColorJob
+ 2016-04-29 08:24:00.005  DEBUG (JobRunShell.java:201) - Calling execute on job group1.job2
+ 2016-04-29 08:24:00.005  DEBUG (QuartzSchedulerThread.java:276) - batch acquisition of 1 triggers
+ 2016-04-29 08:24:00.006  INFO  (ColorJob.java:42) - ColorJob:group1.job2 executing at Fri Apr 29 08:24:00 CST 2016
+favorite color is Red
+executing count (from job map) is 4
+execution count (from job member variable) is 1
+ 2016-04-29 08:24:00.009  DEBUG (QuartzSchedulerThread.java:276) - batch acquisition of 1 triggers
+ 2016-04-29 08:24:10.000  DEBUG (SimpleJobFactory.java:51) - Producing instance of Job 'group1.job1', class=quartaDemos.demo4.ColorJob
+ 2016-04-29 08:24:10.001  DEBUG (QuartzSchedulerThread.java:276) - batch acquisition of 1 triggers
+ 2016-04-29 08:24:10.001  DEBUG (JobRunShell.java:201) - Calling execute on job group1.job1
+ 2016-04-29 08:24:10.002  DEBUG (SimpleJobFactory.java:51) - Producing instance of Job 'group1.job2', class=quartaDemos.demo4.ColorJob
+ 2016-04-29 08:24:10.002  INFO  (ColorJob.java:42) - ColorJob:group1.job1 executing at Fri Apr 29 08:24:10 CST 2016
+favorite color is Green
+executing count (from job map) is 5
+execution count (from job member variable) is 1
+ 2016-04-29 08:24:10.004  DEBUG (JobRunShell.java:201) - Calling execute on job group1.job2
+ 2016-04-29 08:24:10.004  DEBUG (QuartzSchedulerThread.java:276) - batch acquisition of 0 triggers
+ 2016-04-29 08:24:10.005  INFO  (ColorJob.java:42) - ColorJob:group1.job2 executing at Fri Apr 29 08:24:10 CST 2016
+favorite color is Red
+executing count (from job map) is 5
+execution count (from job member variable) is 1
+ 2016-04-29 08:24:10.006  DEBUG (QuartzSchedulerThread.java:276) - batch acquisition of 0 triggers
+ 2016-04-29 08:24:10.007  DEBUG (QuartzSchedulerThread.java:276) - batch acquisition of 0 triggers
+ 2016-04-29 08:24:25.737  INFO  (JobStateExample.java:94) - ------- Shutting Down ---------------------
+ 2016-04-29 08:24:25.737  INFO  (QuartzScheduler.java:694) - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED shutting down.
+ 2016-04-29 08:24:25.737  INFO  (QuartzScheduler.java:613) - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED paused.
+ 2016-04-29 08:24:25.737  DEBUG (SimpleThreadPool.java:328) - Shutting down threadpool...
+ 2016-04-29 08:24:26.019  DEBUG (SimpleThreadPool.java:612) - WorkerThread is shut down.
+ 2016-04-29 08:24:26.023  DEBUG (SimpleThreadPool.java:612) - WorkerThread is shut down.
+ 2016-04-29 08:24:26.034  DEBUG (SimpleThreadPool.java:612) - WorkerThread is shut down.
+ 2016-04-29 08:24:26.034  DEBUG (SimpleThreadPool.java:612) - WorkerThread is shut down.
+ 2016-04-29 08:24:26.038  DEBUG (SimpleThreadPool.java:612) - WorkerThread is shut down.
+ 2016-04-29 08:24:26.043  DEBUG (SimpleThreadPool.java:612) - WorkerThread is shut down.
+ 2016-04-29 08:24:26.051  DEBUG (SimpleThreadPool.java:612) - WorkerThread is shut down.
+ 2016-04-29 08:24:26.051  DEBUG (SimpleThreadPool.java:612) - WorkerThread is shut down.
+ 2016-04-29 08:24:26.076  DEBUG (SimpleThreadPool.java:612) - WorkerThread is shut down.
+ 2016-04-29 08:24:26.077  DEBUG (SimpleThreadPool.java:612) - WorkerThread is shut down.
+ 2016-04-29 08:24:26.078  DEBUG (SimpleThreadPool.java:393) - No executing jobs remaining, all threads stopped.
+ 2016-04-29 08:24:26.078  DEBUG (SimpleThreadPool.java:395) - Shutdown of threadpool complete.
+ 2016-04-29 08:24:26.079  INFO  (QuartzScheduler.java:771) - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED shutdown complete.
+ 2016-04-29 08:24:26.079  INFO  (JobStateExample.java:96) - ------- Shutdown Complete -----------------
+ 2016-04-29 08:24:26.080  INFO  (JobStateExample.java:98) - Executed 10 jobs.
+ 

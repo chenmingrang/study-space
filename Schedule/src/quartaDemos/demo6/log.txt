@@ -1,0 +1,103 @@
+[ INFO] [16:01:00.902] [quartaDemos.demo6.JobExceptionExample] (JobExceptionExample.java:45).run - ------- Initializing ----------------------
+[ INFO] [16:01:00.960] [org.quartz.impl.StdSchedulerFactory] (StdSchedulerFactory.java:1172).instantiate - Using default implementation for ThreadExecutor
+[ INFO] [16:01:00.965] [org.quartz.simpl.SimpleThreadPool] (SimpleThreadPool.java:268).initialize - Job execution threads will use class loader of thread: main
+[ INFO] [16:01:00.980] [org.quartz.core.SchedulerSignalerImpl] (SchedulerSignalerImpl.java:61).<init> - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+[ INFO] [16:01:00.981] [org.quartz.core.QuartzScheduler] (QuartzScheduler.java:240).<init> - Quartz Scheduler v.2.2.2 created.
+[ INFO] [16:01:00.983] [org.quartz.simpl.RAMJobStore] (RAMJobStore.java:155).initialize - RAMJobStore initialized.
+[ INFO] [16:01:00.984] [org.quartz.core.QuartzScheduler] (QuartzScheduler.java:305).initialize - Scheduler meta-data: Quartz Scheduler (v2.2.2) 'DefaultQuartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+[ INFO] [16:01:00.984] [org.quartz.impl.StdSchedulerFactory] (StdSchedulerFactory.java:1327).instantiate - Quartz scheduler 'DefaultQuartzScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+[ INFO] [16:01:00.984] [org.quartz.impl.StdSchedulerFactory] (StdSchedulerFactory.java:1331).instantiate - Quartz scheduler version: 2.2.2
+[ INFO] [16:01:00.985] [quartaDemos.demo6.JobExceptionExample] (JobExceptionExample.java:49).run - ------- Initialization Complete ------------
+[ INFO] [16:01:00.985] [quartaDemos.demo6.JobExceptionExample] (JobExceptionExample.java:50).run - ------- Scheduling Jobs -------------------
+[ INFO] [16:01:00.994] [quartaDemos.demo6.JobExceptionExample] (JobExceptionExample.java:63).run - group1.badJob1 will run at: Sat Apr 30 16:01:15 CST 2016 and repeat: -1 times, every 10 seconds
+[ INFO] [16:01:00.995] [quartaDemos.demo6.JobExceptionExample] (JobExceptionExample.java:73).run - group1.badJob2 will run at: Sat Apr 30 16:01:15 CST 2016 and repeat: -1 times, every 5 seconds
+[ INFO] [16:01:00.995] [quartaDemos.demo6.JobExceptionExample] (JobExceptionExample.java:75).run - ------- Starting Scheduler ----------------
+[ INFO] [16:01:00.995] [org.quartz.core.QuartzScheduler] (QuartzScheduler.java:575).start - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+[ INFO] [16:01:00.996] [quartaDemos.demo6.JobExceptionExample] (JobExceptionExample.java:79).run - ------- Started Scheduler -----------------
+[DEBUG] [16:01:01.007] [org.quartz.core.QuartzSchedulerThread] (QuartzSchedulerThread.java:276).run - batch acquisition of 1 triggers
+[DEBUG] [16:01:15.007] [org.quartz.simpl.PropertySettingJobFactory] (SimpleJobFactory.java:51).newJob - Producing instance of Job 'group1.badJob1', class=quartaDemos.demo6.BadJob1
+[DEBUG] [16:01:15.021] [org.quartz.core.JobRunShell] (JobRunShell.java:201).run - Calling execute on job group1.badJob1
+[DEBUG] [16:01:15.021] [org.quartz.core.QuartzSchedulerThread] (QuartzSchedulerThread.java:276).run - batch acquisition of 1 triggers
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>[ INFO] [16:01:15.022] [quartaDemos.demo6.BadJob1] (BadJob1.java:66).execute - ---group1.badJob1 executing at Sat Apr 30 16:01:15 CST 2016 with denominator 0
+
+[DEBUG] [16:01:15.023] [org.quartz.simpl.PropertySettingJobFactory] (SimpleJobFactory.java:51).newJob - Producing instance of Job 'group1.badJob2', class=quartaDemos.demo6.BadJob2
+
+[ INFO] [16:01:15.024] [quartaDemos.demo6.BadJob1] (BadJob1.java:74).execute - --- Error in job!
+
+[ INFO] [16:01:15.028] [org.quartz.core.JobRunShell] (JobRunShell.java:207).run - Job group1.badJob1 threw a JobExecutionException: 
+org.quartz.JobExecutionException: java.lang.ArithmeticException: / by zero [See nested exception: java.lang.ArithmeticException: / by zero]
+	at quartaDemos.demo6.BadJob1.execute(BadJob1.java:75)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
+Caused by: java.lang.ArithmeticException: / by zero
+	at quartaDemos.demo6.BadJob1.execute(BadJob1.java:72)
+	... 2 more
+[DEBUG] [16:01:15.029] [org.quartz.core.JobRunShell] (JobRunShell.java:201).run - Calling execute on job group1.badJob2
+
+[ INFO] [16:01:15.035] [quartaDemos.demo6.BadJob2] (BadJob2.java:64).execute - ---group1.badJob2 executing at Sat Apr 30 16:01:15 CST 2016
+
+[DEBUG] [16:01:15.029] [org.quartz.core.QuartzSchedulerThread] (QuartzSchedulerThread.java:276).run - batch acquisition of 0 triggers
+
+[ INFO] [16:01:15.036] [quartaDemos.demo6.BadJob2] (BadJob2.java:73).execute - --- Error in job!
+
+[DEBUG] [16:01:15.035] [org.quartz.core.JobRunShell] (JobRunShell.java:201).run - Calling execute on job group1.badJob1
+
+[ INFO] [16:01:15.038] [org.quartz.core.JobRunShell] (JobRunShell.java:207).run - Job group1.badJob2 threw a JobExecutionException: 
+
+org.quartz.JobExecutionException: java.lang.ArithmeticException: / by zero [See nested exception: java.lang.ArithmeticException: / by zero]
+	at quartaDemos.demo6.BadJob2.execute(BadJob2.java:75)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
+Caused by: java.lang.ArithmeticException: / by zero
+	at quartaDemos.demo6.BadJob2.execute(BadJob2.java:71)
+	... 2 more
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>[ INFO] [16:01:15.039] [quartaDemos.demo6.BadJob1] (BadJob1.java:66).execute - ---group1.badJob1 executing at Sat Apr 30 16:01:15 CST 2016 with denominator 1
+
+[DEBUG] [16:01:15.044] [org.quartz.core.QuartzSchedulerThread] (QuartzSchedulerThread.java:276).run - batch acquisition of 0 triggers
+
+[ INFO] [16:01:15.044] [quartaDemos.demo6.BadJob1] (BadJob1.java:86).execute - ---group1.badJob1 completed at Sat Apr 30 16:01:15 CST 2016
+[DEBUG] [16:01:15.046] [org.quartz.core.QuartzSchedulerThread] (QuartzSchedulerThread.java:276).run - batch acquisition of 1 triggers
+[DEBUG] [16:01:25.000] [org.quartz.simpl.PropertySettingJobFactory] (SimpleJobFactory.java:51).newJob - Producing instance of Job 'group1.badJob1', class=quartaDemos.demo6.BadJob1
+[DEBUG] [16:01:25.001] [org.quartz.core.QuartzSchedulerThread] (QuartzSchedulerThread.java:276).run - batch acquisition of 0 triggers
+[DEBUG] [16:01:25.001] [org.quartz.core.JobRunShell] (JobRunShell.java:201).run - Calling execute on job group1.badJob1
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>[ INFO] [16:01:25.002] [quartaDemos.demo6.BadJob1] (BadJob1.java:66).execute - ---group1.badJob1 executing at Sat Apr 30 16:01:25 CST 2016 with denominator 1
+[ INFO] [16:01:25.003] [quartaDemos.demo6.BadJob1] (BadJob1.java:86).execute - ---group1.badJob1 completed at Sat Apr 30 16:01:25 CST 2016
+[DEBUG] [16:01:25.004] [org.quartz.core.QuartzSchedulerThread] (QuartzSchedulerThread.java:276).run - batch acquisition of 1 triggers
+[DEBUG] [16:01:35.001] [org.quartz.simpl.PropertySettingJobFactory] (SimpleJobFactory.java:51).newJob - Producing instance of Job 'group1.badJob1', class=quartaDemos.demo6.BadJob1
+[DEBUG] [16:01:35.002] [org.quartz.core.QuartzSchedulerThread] (QuartzSchedulerThread.java:276).run - batch acquisition of 0 triggers
+[DEBUG] [16:01:35.002] [org.quartz.core.JobRunShell] (JobRunShell.java:201).run - Calling execute on job group1.badJob1
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>[ INFO] [16:01:35.003] [quartaDemos.demo6.BadJob1] (BadJob1.java:66).execute - ---group1.badJob1 executing at Sat Apr 30 16:01:35 CST 2016 with denominator 1
+[ INFO] [16:01:35.004] [quartaDemos.demo6.BadJob1] (BadJob1.java:86).execute - ---group1.badJob1 completed at Sat Apr 30 16:01:35 CST 2016
+[DEBUG] [16:01:35.005] [org.quartz.core.QuartzSchedulerThread] (QuartzSchedulerThread.java:276).run - batch acquisition of 1 triggers
+[DEBUG] [16:01:45.001] [org.quartz.simpl.PropertySettingJobFactory] (SimpleJobFactory.java:51).newJob - Producing instance of Job 'group1.badJob1', class=quartaDemos.demo6.BadJob1
+[DEBUG] [16:01:45.002] [org.quartz.core.QuartzSchedulerThread] (QuartzSchedulerThread.java:276).run - batch acquisition of 0 triggers
+[DEBUG] [16:01:45.002] [org.quartz.core.JobRunShell] (JobRunShell.java:201).run - Calling execute on job group1.badJob1
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>[ INFO] [16:01:45.003] [quartaDemos.demo6.BadJob1] (BadJob1.java:66).execute - ---group1.badJob1 executing at Sat Apr 30 16:01:45 CST 2016 with denominator 1
+[ INFO] [16:01:45.004] [quartaDemos.demo6.BadJob1] (BadJob1.java:86).execute - ---group1.badJob1 completed at Sat Apr 30 16:01:45 CST 2016
+[DEBUG] [16:01:45.005] [org.quartz.core.QuartzSchedulerThread] (QuartzSchedulerThread.java:276).run - batch acquisition of 1 triggers
+[ INFO] [16:01:50.999] [quartaDemos.demo6.JobExceptionExample] (JobExceptionExample.java:86).run - ------- Shutting Down ---------------------
+[ INFO] [16:01:51.000] [org.quartz.core.QuartzScheduler] (QuartzScheduler.java:694).shutdown - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED shutting down.
+[ INFO] [16:01:51.001] [org.quartz.core.QuartzScheduler] (QuartzScheduler.java:613).standby - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED paused.
+[DEBUG] [16:01:51.002] [org.quartz.simpl.SimpleThreadPool] (SimpleThreadPool.java:328).shutdown - Shutting down threadpool...
+[DEBUG] [16:01:51.003] [org.quartz.simpl.SimpleThreadPool] (SimpleThreadPool.java:395).shutdown - Shutdown of threadpool complete.
+[ INFO] [16:01:51.003] [org.quartz.core.QuartzScheduler] (QuartzScheduler.java:771).shutdown - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED shutdown complete.
+[ INFO] [16:01:51.004] [quartaDemos.demo6.JobExceptionExample] (JobExceptionExample.java:90).run - ------- Shutdown Complete -----------------
+[ INFO] [16:01:51.005] [quartaDemos.demo6.JobExceptionExample] (JobExceptionExample.java:93).run - Executed 6 jobs.
+[DEBUG] [16:01:51.007] [org.quartz.simpl.SimpleThreadPool] (SimpleThreadPool.java:612).run - WorkerThread is shut down.
+[DEBUG] [16:01:51.007] [org.quartz.simpl.SimpleThreadPool] (SimpleThreadPool.java:612).run - WorkerThread is shut down.
+[DEBUG] [16:01:51.007] [org.quartz.simpl.SimpleThreadPool] (SimpleThreadPool.java:612).run - WorkerThread is shut down.
+[DEBUG] [16:01:51.007] [org.quartz.simpl.SimpleThreadPool] (SimpleThreadPool.java:612).run - WorkerThread is shut down.
+[DEBUG] [16:01:51.009] [org.quartz.simpl.SimpleThreadPool] (SimpleThreadPool.java:612).run - WorkerThread is shut down.
+[DEBUG] [16:01:51.012] [org.quartz.simpl.SimpleThreadPool] (SimpleThreadPool.java:612).run - WorkerThread is shut down.
+[DEBUG] [16:01:51.018] [org.quartz.simpl.SimpleThreadPool] (SimpleThreadPool.java:612).run - WorkerThread is shut down.
+[DEBUG] [16:01:51.025] [org.quartz.simpl.SimpleThreadPool] (SimpleThreadPool.java:612).run - WorkerThread is shut down.
+[DEBUG] [16:01:51.073] [org.quartz.simpl.SimpleThreadPool] (SimpleThreadPool.java:612).run - WorkerThread is shut down.
+[DEBUG] [16:01:51.075] [org.quartz.simpl.SimpleThreadPool] (SimpleThreadPool.java:612).run - WorkerThread is shut down.

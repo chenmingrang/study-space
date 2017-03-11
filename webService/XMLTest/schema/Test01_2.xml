@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<user xmlns="http://www.example.org/Test01"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:noNamespaceSchemaLocation="Test01.xsd">
+      <userID>10</userID>
+      <userName>lisi</userName>
+      <dateBorn>1990-08-19</dateBorn>
+</user>

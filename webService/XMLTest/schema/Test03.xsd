@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
+        targetNamespace="http://www.example.org/Test03" 
+        xmlns:tns="http://www.example.org/Test03" 
+        elementFormDefault="qualified">
+        
+       <xsd:element name="book" type="tns:bookType"></xsd:element>
+       <xsd:element name="title" type="xsd:string"></xsd:element>
+       <xsd:element name="content" type="xsd:string"></xsd:element>
+       
+       <xsd:attribute name="id" type="xsd:int"></xsd:attribute>
+       
+       <xsd:complexType name="bookType">
+           <xsd:sequence>
+              <xsd:element ref="tns:title"></xsd:element>
+              <xsd:element ref="tns:content"></xsd:element>
+           </xsd:sequence>
+           <xsd:attribute ref="tns:id"></xsd:attribute>
+       </xsd:complexType>
+</xsd:schema>

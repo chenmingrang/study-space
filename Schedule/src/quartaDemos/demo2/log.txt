@@ -1,0 +1,205 @@
+[ INFO] [09:57:51.687] [quartaDemos.demo2.SimpleTriggerExample] (SimpleTriggerExample.java:49).run - ------- Initializing -------------------
+[ INFO] [09:57:51.714] [org.quartz.impl.StdSchedulerFactory] (StdSchedulerFactory.java:1172).instantiate - Using default implementation for ThreadExecutor
+[ INFO] [09:57:51.716] [org.quartz.simpl.SimpleThreadPool] (SimpleThreadPool.java:268).initialize - Job execution threads will use class loader of thread: main
+[ INFO] [09:57:51.728] [org.quartz.core.SchedulerSignalerImpl] (SchedulerSignalerImpl.java:61).<init> - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+[ INFO] [09:57:51.729] [org.quartz.core.QuartzScheduler] (QuartzScheduler.java:240).<init> - Quartz Scheduler v.2.2.2 created.
+[ INFO] [09:57:51.730] [org.quartz.simpl.RAMJobStore] (RAMJobStore.java:155).initialize - RAMJobStore initialized.
+[ INFO] [09:57:51.731] [org.quartz.core.QuartzScheduler] (QuartzScheduler.java:305).initialize - Scheduler meta-data: Quartz Scheduler (v2.2.2) 'DefaultQuartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+[ INFO] [09:57:51.732] [org.quartz.impl.StdSchedulerFactory] (StdSchedulerFactory.java:1327).instantiate - Quartz scheduler 'DefaultQuartzScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+[ INFO] [09:57:51.732] [org.quartz.impl.StdSchedulerFactory] (StdSchedulerFactory.java:1331).instantiate - Quartz scheduler version: 2.2.2
+[ INFO] [09:57:51.732] [quartaDemos.demo2.SimpleTriggerExample] (SimpleTriggerExample.java:55).run - ------- Initialization Complete --------
+[ INFO] [09:57:51.733] [quartaDemos.demo2.SimpleTriggerExample] (SimpleTriggerExample.java:57).run - ------- Scheduling Jobs ----------------
+[ INFO] [09:57:51.740] [quartaDemos.demo2.SimpleTriggerExample] (SimpleTriggerExample.java:71).run - group1.job1 will run at: Wed Apr 27 09:58:00 CST 2016 and repeat: 0 times, every 0 seconds
+[ INFO] [09:57:51.741] [quartaDemos.demo2.SimpleTriggerExample] (SimpleTriggerExample.java:80).run - group1.job2 will run at: Wed Apr 27 09:58:00 CST 2016 and repeat: 0 times, every 0 seconds
+[ INFO] [09:57:51.741] [quartaDemos.demo2.SimpleTriggerExample] (SimpleTriggerExample.java:91).run - group1.job3 will run at: Wed Apr 27 09:58:00 CST 2016 and repeat: 10 times, every 10 seconds
+[ INFO] [09:57:51.741] [quartaDemos.demo2.SimpleTriggerExample] (SimpleTriggerExample.java:101).run - group1.job3 will [also] run at: Wed Apr 27 09:58:00 CST 2016 and repeat: 2 times, every 10 seconds
+[ INFO] [09:57:51.742] [quartaDemos.demo2.SimpleTriggerExample] (SimpleTriggerExample.java:112).run - group1.job4 will run at: Wed Apr 27 09:58:00 CST 2016 and repeat: 5 times, every 10 seconds
+[ INFO] [09:57:51.744] [quartaDemos.demo2.SimpleTriggerExample] (SimpleTriggerExample.java:122).run - group1.job5 will run at: Wed Apr 27 10:02:51 CST 2016 and repeat: 0 times, every 0 seconds
+[ INFO] [09:57:51.744] [quartaDemos.demo2.SimpleTriggerExample] (SimpleTriggerExample.java:132).run - group1.job6 will run at: Wed Apr 27 09:58:00 CST 2016 and repeat: -1 times, every 40 seconds
+[ INFO] [09:57:51.744] [quartaDemos.demo2.SimpleTriggerExample] (SimpleTriggerExample.java:135).run - ------- Starting Scheduler ----------------
+[ INFO] [09:57:51.745] [org.quartz.core.QuartzScheduler] (QuartzScheduler.java:575).start - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+[ INFO] [09:57:51.745] [quartaDemos.demo2.SimpleTriggerExample] (SimpleTriggerExample.java:141).run - ------- Started Scheduler -----------------
+[DEBUG] [09:57:51.746] [org.quartz.core.QuartzSchedulerThread] (QuartzSchedulerThread.java:276).run - batch acquisition of 1 triggers
+[ INFO] [09:57:51.746] [quartaDemos.demo2.SimpleTriggerExample] (SimpleTriggerExample.java:151).run - group1.job7 will run at: Wed Apr 27 09:58:00 CST 2016 and repeat: 20 times, every 300 seconds
+[ INFO] [09:57:51.746] [quartaDemos.demo2.SimpleTriggerExample] (SimpleTriggerExample.java:159).run - 'Manually' triggering job8...
+[DEBUG] [09:57:51.747] [org.quartz.core.QuartzSchedulerThread] (QuartzSchedulerThread.java:276).run - batch acquisition of 1 triggers
+[ INFO] [09:57:51.747] [quartaDemos.demo2.SimpleTriggerExample] (SimpleTriggerExample.java:162).run - ------- Waiting 30 seconds... --------------
+[DEBUG] [09:57:51.747] [org.quartz.core.QuartzSchedulerThread] (QuartzSchedulerThread.java:276).run - batch acquisition of 1 triggers
+[DEBUG] [09:57:51.750] [org.quartz.simpl.PropertySettingJobFactory] (SimpleJobFactory.java:51).newJob - Producing instance of Job 'group1.job8', class=quartaDemos.demo2.SimpleJob
+[DEBUG] [09:57:51.752] [org.quartz.core.QuartzSchedulerThread] (QuartzSchedulerThread.java:276).run - batch acquisition of 1 triggers
+[DEBUG] [09:57:51.752] [org.quartz.core.JobRunShell] (JobRunShell.java:201).run - Calling execute on job group1.job8
+[ INFO] [09:57:51.753] [quartaDemos.demo2.SimpleJob] (SimpleJob.java:20).execute - SimpleJob says: group1.job8 executing at Wed Apr 27 09:57:51 CST 2016
+[DEBUG] [09:58:00.000] [org.quartz.simpl.PropertySettingJobFactory] (SimpleJobFactory.java:51).newJob - Producing instance of Job 'group1.job1', class=quartaDemos.demo2.SimpleJob
+[DEBUG] [09:58:00.002] [org.quartz.core.JobRunShell] (JobRunShell.java:201).run - Calling execute on job group1.job1
+[DEBUG] [09:58:00.002] [org.quartz.core.QuartzSchedulerThread] (QuartzSchedulerThread.java:276).run - batch acquisition of 1 triggers
+[ INFO] [09:58:00.003] [quartaDemos.demo2.SimpleJob] (SimpleJob.java:20).execute - SimpleJob says: group1.job1 executing at Wed Apr 27 09:58:00 CST 2016
+[DEBUG] [09:58:00.003] [org.quartz.simpl.PropertySettingJobFactory] (SimpleJobFactory.java:51).newJob - Producing instance of Job 'group1.job2', class=quartaDemos.demo2.SimpleJob
+[DEBUG] [09:58:00.005] [org.quartz.core.JobRunShell] (JobRunShell.java:201).run - Calling execute on job group1.job2
+[DEBUG] [09:58:00.005] [org.quartz.core.QuartzSchedulerThread] (QuartzSchedulerThread.java:276).run - batch acquisition of 1 triggers
+[ INFO] [09:58:00.006] [quartaDemos.demo2.SimpleJob] (SimpleJob.java:20).execute - SimpleJob says: group1.job2 executing at Wed Apr 27 09:58:00 CST 2016
+[DEBUG] [09:58:00.007] [org.quartz.simpl.PropertySettingJobFactory] (SimpleJobFactory.java:51).newJob - Producing instance of Job 'group1.job3', class=quartaDemos.demo2.SimpleJob
+[DEBUG] [09:58:00.009] [org.quartz.core.JobRunShell] (JobRunShell.java:201).run - Calling execute on job group1.job3
+[DEBUG] [09:58:00.009] [org.quartz.core.QuartzSchedulerThread] (QuartzSchedulerThread.java:276).run - batch acquisition of 1 triggers
+[DEBUG] [09:58:00.010] [org.quartz.simpl.PropertySettingJobFactory] (SimpleJobFactory.java:51).newJob - Producing instance of Job 'group1.job4', class=quartaDemos.demo2.SimpleJob
+[ INFO] [09:58:00.009] [quartaDemos.demo2.SimpleJob] (SimpleJob.java:20).execute - SimpleJob says: group1.job3 executing at Wed Apr 27 09:58:00 CST 2016
+[DEBUG] [09:58:00.011] [org.quartz.core.QuartzSchedulerThread] (QuartzSchedulerThread.java:276).run - batch acquisition of 1 triggers
+[DEBUG] [09:58:00.011] [org.quartz.core.JobRunShell] (JobRunShell.java:201).run - Calling execute on job group1.job4
+[DEBUG] [09:58:00.012] [org.quartz.simpl.PropertySettingJobFactory] (SimpleJobFactory.java:51).newJob - Producing instance of Job 'group1.job6', class=quartaDemos.demo2.SimpleJob
+[DEBUG] [09:58:00.013] [org.quartz.core.QuartzSchedulerThread] (QuartzSchedulerThread.java:276).run - batch acquisition of 1 triggers
+[ INFO] [09:58:00.013] [quartaDemos.demo2.SimpleJob] (SimpleJob.java:20).execute - SimpleJob says: group1.job4 executing at Wed Apr 27 09:58:00 CST 2016
+[DEBUG] [09:58:00.014] [org.quartz.simpl.PropertySettingJobFactory] (SimpleJobFactory.java:51).newJob - Producing instance of Job 'group1.job7', class=quartaDemos.demo2.SimpleJob
+[DEBUG] [09:58:00.013] [org.quartz.core.JobRunShell] (JobRunShell.java:201).run - Calling execute on job group1.job6
+[DEBUG] [09:58:00.017] [org.quartz.core.QuartzSchedulerThread] (QuartzSchedulerThread.java:276).run - batch acquisition of 1 triggers
+[DEBUG] [09:58:00.018] [org.quartz.simpl.PropertySettingJobFactory] (SimpleJobFactory.java:51).newJob - Producing instance of Job 'group1.job3', class=quartaDemos.demo2.SimpleJob
+[DEBUG] [09:58:00.017] [org.quartz.core.JobRunShell] (JobRunShell.java:201).run - Calling execute on job group1.job7
+[DEBUG] [09:58:00.019] [org.quartz.core.JobRunShell] (JobRunShell.java:201).run - Calling execute on job group1.job3
+[DEBUG] [09:58:00.019] [org.quartz.core.QuartzSchedulerThread] (QuartzSchedulerThread.java:276).run - batch acquisition of 1 triggers
+[ INFO] [09:58:00.017] [quartaDemos.demo2.SimpleJob] (SimpleJob.java:20).execute - SimpleJob says: group1.job6 executing at Wed Apr 27 09:58:00 CST 2016
+[ INFO] [09:58:00.020] [quartaDemos.demo2.SimpleJob] (SimpleJob.java:20).execute - SimpleJob says: group1.job3 executing at Wed Apr 27 09:58:00 CST 2016
+[ INFO] [09:58:00.020] [quartaDemos.demo2.SimpleJob] (SimpleJob.java:20).execute - SimpleJob says: group1.job7 executing at Wed Apr 27 09:58:00 CST 2016
+[DEBUG] [09:58:10.000] [org.quartz.simpl.PropertySettingJobFactory] (SimpleJobFactory.java:51).newJob - Producing instance of Job 'group1.job3', class=quartaDemos.demo2.SimpleJob
+[DEBUG] [09:58:10.000] [org.quartz.core.JobRunShell] (JobRunShell.java:201).run - Calling execute on job group1.job3
+[DEBUG] [09:58:10.000] [org.quartz.core.QuartzSchedulerThread] (QuartzSchedulerThread.java:276).run - batch acquisition of 1 triggers
+[ INFO] [09:58:10.000] [quartaDemos.demo2.SimpleJob] (SimpleJob.java:20).execute - SimpleJob says: group1.job3 executing at Wed Apr 27 09:58:10 CST 2016
+[DEBUG] [09:58:10.001] [org.quartz.simpl.PropertySettingJobFactory] (SimpleJobFactory.java:51).newJob - Producing instance of Job 'group1.job4', class=quartaDemos.demo2.SimpleJob
+[DEBUG] [09:58:10.003] [org.quartz.core.QuartzSchedulerThread] (QuartzSchedulerThread.java:276).run - batch acquisition of 1 triggers
+[DEBUG] [09:58:10.003] [org.quartz.core.JobRunShell] (JobRunShell.java:201).run - Calling execute on job group1.job4
+[DEBUG] [09:58:10.003] [org.quartz.simpl.PropertySettingJobFactory] (SimpleJobFactory.java:51).newJob - Producing instance of Job 'group1.job3', class=quartaDemos.demo2.SimpleJob
+[ INFO] [09:58:10.004] [quartaDemos.demo2.SimpleJob] (SimpleJob.java:20).execute - SimpleJob says: group1.job4 executing at Wed Apr 27 09:58:10 CST 2016
+[DEBUG] [09:58:10.004] [org.quartz.core.JobRunShell] (JobRunShell.java:201).run - Calling execute on job group1.job3
+[DEBUG] [09:58:10.004] [org.quartz.core.QuartzSchedulerThread] (QuartzSchedulerThread.java:276).run - batch acquisition of 1 triggers
+[ INFO] [09:58:10.004] [quartaDemos.demo2.SimpleJob] (SimpleJob.java:20).execute - SimpleJob says: group1.job3 executing at Wed Apr 27 09:58:10 CST 2016
+[DEBUG] [09:58:20.000] [org.quartz.simpl.PropertySettingJobFactory] (SimpleJobFactory.java:51).newJob - Producing instance of Job 'group1.job3', class=quartaDemos.demo2.SimpleJob
+[DEBUG] [09:58:20.001] [org.quartz.core.JobRunShell] (JobRunShell.java:201).run - Calling execute on job group1.job3
+[DEBUG] [09:58:20.001] [org.quartz.core.QuartzSchedulerThread] (QuartzSchedulerThread.java:276).run - batch acquisition of 1 triggers
+[ INFO] [09:58:20.001] [quartaDemos.demo2.SimpleJob] (SimpleJob.java:20).execute - SimpleJob says: group1.job3 executing at Wed Apr 27 09:58:20 CST 2016
+[DEBUG] [09:58:20.002] [org.quartz.simpl.PropertySettingJobFactory] (SimpleJobFactory.java:51).newJob - Producing instance of Job 'group1.job4', class=quartaDemos.demo2.SimpleJob
+[DEBUG] [09:58:20.003] [org.quartz.core.QuartzSchedulerThread] (QuartzSchedulerThread.java:276).run - batch acquisition of 1 triggers
+[DEBUG] [09:58:20.003] [org.quartz.core.JobRunShell] (JobRunShell.java:201).run - Calling execute on job group1.job4
+[DEBUG] [09:58:20.004] [org.quartz.simpl.PropertySettingJobFactory] (SimpleJobFactory.java:51).newJob - Producing instance of Job 'group1.job3', class=quartaDemos.demo2.SimpleJob
+[ INFO] [09:58:20.004] [quartaDemos.demo2.SimpleJob] (SimpleJob.java:20).execute - SimpleJob says: group1.job4 executing at Wed Apr 27 09:58:20 CST 2016
+[DEBUG] [09:58:20.005] [org.quartz.core.QuartzSchedulerThread] (QuartzSchedulerThread.java:276).run - batch acquisition of 1 triggers
+[DEBUG] [09:58:20.005] [org.quartz.core.JobRunShell] (JobRunShell.java:201).run - Calling execute on job group1.job3
+[ INFO] [09:58:20.006] [quartaDemos.demo2.SimpleJob] (SimpleJob.java:20).execute - SimpleJob says: group1.job3 executing at Wed Apr 27 09:58:20 CST 2016
+[ INFO] [09:58:21.748] [quartaDemos.demo2.SimpleTriggerExample] (SimpleTriggerExample.java:174).run - ------- Rescheduling... --------------------
+[ INFO] [09:58:21.749] [quartaDemos.demo2.SimpleTriggerExample] (SimpleTriggerExample.java:179).run - job7 rescheduled to run at: Wed Apr 27 09:58:00 CST 2016
+[DEBUG] [09:58:21.749] [org.quartz.core.QuartzSchedulerThread] (QuartzSchedulerThread.java:276).run - batch acquisition of 1 triggers
+[ INFO] [09:58:21.749] [quartaDemos.demo2.SimpleTriggerExample] (SimpleTriggerExample.java:181).run - ------- Waiting five minutes... ------------
+[DEBUG] [09:58:21.750] [org.quartz.simpl.PropertySettingJobFactory] (SimpleJobFactory.java:51).newJob - Producing instance of Job 'group1.job7', class=quartaDemos.demo2.SimpleJob
+[DEBUG] [09:58:21.751] [org.quartz.core.QuartzSchedulerThread] (QuartzSchedulerThread.java:276).run - batch acquisition of 1 triggers
+[DEBUG] [09:58:21.751] [org.quartz.core.JobRunShell] (JobRunShell.java:201).run - Calling execute on job group1.job7
+[ INFO] [09:58:21.753] [quartaDemos.demo2.SimpleJob] (SimpleJob.java:20).execute - SimpleJob says: group1.job7 executing at Wed Apr 27 09:58:21 CST 2016
+[DEBUG] [09:58:30.000] [org.quartz.simpl.PropertySettingJobFactory] (SimpleJobFactory.java:51).newJob - Producing instance of Job 'group1.job3', class=quartaDemos.demo2.SimpleJob
+[DEBUG] [09:58:30.002] [org.quartz.core.QuartzSchedulerThread] (QuartzSchedulerThread.java:276).run - batch acquisition of 1 triggers
+[DEBUG] [09:58:30.003] [org.quartz.core.JobRunShell] (JobRunShell.java:201).run - Calling execute on job group1.job3
+[DEBUG] [09:58:30.003] [org.quartz.simpl.PropertySettingJobFactory] (SimpleJobFactory.java:51).newJob - Producing instance of Job 'group1.job4', class=quartaDemos.demo2.SimpleJob
+[ INFO] [09:58:30.004] [quartaDemos.demo2.SimpleJob] (SimpleJob.java:20).execute - SimpleJob says: group1.job3 executing at Wed Apr 27 09:58:30 CST 2016
+[DEBUG] [09:58:30.004] [org.quartz.core.JobRunShell] (JobRunShell.java:201).run - Calling execute on job group1.job4
+[DEBUG] [09:58:30.004] [org.quartz.core.QuartzSchedulerThread] (QuartzSchedulerThread.java:276).run - batch acquisition of 1 triggers
+[ INFO] [09:58:30.005] [quartaDemos.demo2.SimpleJob] (SimpleJob.java:20).execute - SimpleJob says: group1.job4 executing at Wed Apr 27 09:58:30 CST 2016
+[DEBUG] [09:58:40.001] [org.quartz.simpl.PropertySettingJobFactory] (SimpleJobFactory.java:51).newJob - Producing instance of Job 'group1.job3', class=quartaDemos.demo2.SimpleJob
+[DEBUG] [09:58:40.002] [org.quartz.core.JobRunShell] (JobRunShell.java:201).run - Calling execute on job group1.job3
+[DEBUG] [09:58:40.002] [org.quartz.core.QuartzSchedulerThread] (QuartzSchedulerThread.java:276).run - batch acquisition of 1 triggers
+[ INFO] [09:58:40.002] [quartaDemos.demo2.SimpleJob] (SimpleJob.java:20).execute - SimpleJob says: group1.job3 executing at Wed Apr 27 09:58:40 CST 2016
+[DEBUG] [09:58:40.003] [org.quartz.simpl.PropertySettingJobFactory] (SimpleJobFactory.java:51).newJob - Producing instance of Job 'group1.job4', class=quartaDemos.demo2.SimpleJob
+[DEBUG] [09:58:40.004] [org.quartz.core.QuartzSchedulerThread] (QuartzSchedulerThread.java:276).run - batch acquisition of 1 triggers
+[DEBUG] [09:58:40.004] [org.quartz.core.JobRunShell] (JobRunShell.java:201).run - Calling execute on job group1.job4
+[DEBUG] [09:58:40.005] [org.quartz.simpl.PropertySettingJobFactory] (SimpleJobFactory.java:51).newJob - Producing instance of Job 'group1.job6', class=quartaDemos.demo2.SimpleJob
+[ INFO] [09:58:40.005] [quartaDemos.demo2.SimpleJob] (SimpleJob.java:20).execute - SimpleJob says: group1.job4 executing at Wed Apr 27 09:58:40 CST 2016
+[DEBUG] [09:58:40.006] [org.quartz.core.JobRunShell] (JobRunShell.java:201).run - Calling execute on job group1.job6
+[DEBUG] [09:58:40.006] [org.quartz.core.QuartzSchedulerThread] (QuartzSchedulerThread.java:276).run - batch acquisition of 1 triggers
+[ INFO] [09:58:40.007] [quartaDemos.demo2.SimpleJob] (SimpleJob.java:20).execute - SimpleJob says: group1.job6 executing at Wed Apr 27 09:58:40 CST 2016
+[DEBUG] [09:58:50.000] [org.quartz.simpl.PropertySettingJobFactory] (SimpleJobFactory.java:51).newJob - Producing instance of Job 'group1.job3', class=quartaDemos.demo2.SimpleJob
+[DEBUG] [09:58:50.001] [org.quartz.core.JobRunShell] (JobRunShell.java:201).run - Calling execute on job group1.job3
+[DEBUG] [09:58:50.001] [org.quartz.core.QuartzSchedulerThread] (QuartzSchedulerThread.java:276).run - batch acquisition of 1 triggers
+[ INFO] [09:58:50.002] [quartaDemos.demo2.SimpleJob] (SimpleJob.java:20).execute - SimpleJob says: group1.job3 executing at Wed Apr 27 09:58:50 CST 2016
+[DEBUG] [09:58:50.002] [org.quartz.simpl.PropertySettingJobFactory] (SimpleJobFactory.java:51).newJob - Producing instance of Job 'group1.job4', class=quartaDemos.demo2.SimpleJob
+[DEBUG] [09:58:50.003] [org.quartz.core.QuartzSchedulerThread] (QuartzSchedulerThread.java:276).run - batch acquisition of 1 triggers
+[DEBUG] [09:58:50.003] [org.quartz.core.JobRunShell] (JobRunShell.java:201).run - Calling execute on job group1.job4
+[ INFO] [09:58:50.004] [quartaDemos.demo2.SimpleJob] (SimpleJob.java:20).execute - SimpleJob says: group1.job4 executing at Wed Apr 27 09:58:50 CST 2016
+[DEBUG] [09:59:00.000] [org.quartz.simpl.PropertySettingJobFactory] (SimpleJobFactory.java:51).newJob - Producing instance of Job 'group1.job3', class=quartaDemos.demo2.SimpleJob
+[DEBUG] [09:59:00.000] [org.quartz.core.JobRunShell] (JobRunShell.java:201).run - Calling execute on job group1.job3
+[DEBUG] [09:59:00.000] [org.quartz.core.QuartzSchedulerThread] (QuartzSchedulerThread.java:276).run - batch acquisition of 1 triggers
+[ INFO] [09:59:00.001] [quartaDemos.demo2.SimpleJob] (SimpleJob.java:20).execute - SimpleJob says: group1.job3 executing at Wed Apr 27 09:59:00 CST 2016
+[DEBUG] [09:59:10.001] [org.quartz.simpl.PropertySettingJobFactory] (SimpleJobFactory.java:51).newJob - Producing instance of Job 'group1.job3', class=quartaDemos.demo2.SimpleJob
+[DEBUG] [09:59:10.001] [org.quartz.core.JobRunShell] (JobRunShell.java:201).run - Calling execute on job group1.job3
+[DEBUG] [09:59:10.001] [org.quartz.core.QuartzSchedulerThread] (QuartzSchedulerThread.java:276).run - batch acquisition of 1 triggers
+[ INFO] [09:59:10.002] [quartaDemos.demo2.SimpleJob] (SimpleJob.java:20).execute - SimpleJob says: group1.job3 executing at Wed Apr 27 09:59:10 CST 2016
+[DEBUG] [09:59:20.000] [org.quartz.simpl.PropertySettingJobFactory] (SimpleJobFactory.java:51).newJob - Producing instance of Job 'group1.job3', class=quartaDemos.demo2.SimpleJob
+[DEBUG] [09:59:20.000] [org.quartz.core.JobRunShell] (JobRunShell.java:201).run - Calling execute on job group1.job3
+[DEBUG] [09:59:20.000] [org.quartz.core.QuartzSchedulerThread] (QuartzSchedulerThread.java:276).run - batch acquisition of 1 triggers
+[ INFO] [09:59:20.001] [quartaDemos.demo2.SimpleJob] (SimpleJob.java:20).execute - SimpleJob says: group1.job3 executing at Wed Apr 27 09:59:20 CST 2016
+[DEBUG] [09:59:20.001] [org.quartz.simpl.PropertySettingJobFactory] (SimpleJobFactory.java:51).newJob - Producing instance of Job 'group1.job6', class=quartaDemos.demo2.SimpleJob
+[DEBUG] [09:59:20.002] [org.quartz.core.QuartzSchedulerThread] (QuartzSchedulerThread.java:276).run - batch acquisition of 1 triggers
+[DEBUG] [09:59:20.002] [org.quartz.core.JobRunShell] (JobRunShell.java:201).run - Calling execute on job group1.job6
+[ INFO] [09:59:20.003] [quartaDemos.demo2.SimpleJob] (SimpleJob.java:20).execute - SimpleJob says: group1.job6 executing at Wed Apr 27 09:59:20 CST 2016
+[DEBUG] [09:59:30.001] [org.quartz.simpl.PropertySettingJobFactory] (SimpleJobFactory.java:51).newJob - Producing instance of Job 'group1.job3', class=quartaDemos.demo2.SimpleJob
+[DEBUG] [09:59:30.001] [org.quartz.core.JobRunShell] (JobRunShell.java:201).run - Calling execute on job group1.job3
+[DEBUG] [09:59:30.001] [org.quartz.core.QuartzSchedulerThread] (QuartzSchedulerThread.java:276).run - batch acquisition of 1 triggers
+[ INFO] [09:59:30.001] [quartaDemos.demo2.SimpleJob] (SimpleJob.java:20).execute - SimpleJob says: group1.job3 executing at Wed Apr 27 09:59:30 CST 2016
+[DEBUG] [09:59:40.000] [org.quartz.simpl.PropertySettingJobFactory] (SimpleJobFactory.java:51).newJob - Producing instance of Job 'group1.job3', class=quartaDemos.demo2.SimpleJob
+[DEBUG] [09:59:40.000] [org.quartz.core.JobRunShell] (JobRunShell.java:201).run - Calling execute on job group1.job3
+[DEBUG] [09:59:40.000] [org.quartz.core.QuartzSchedulerThread] (QuartzSchedulerThread.java:276).run - batch acquisition of 1 triggers
+[ INFO] [09:59:40.001] [quartaDemos.demo2.SimpleJob] (SimpleJob.java:20).execute - SimpleJob says: group1.job3 executing at Wed Apr 27 09:59:40 CST 2016
+[DEBUG] [10:00:00.001] [org.quartz.simpl.PropertySettingJobFactory] (SimpleJobFactory.java:51).newJob - Producing instance of Job 'group1.job6', class=quartaDemos.demo2.SimpleJob
+[DEBUG] [10:00:00.007] [org.quartz.core.QuartzSchedulerThread] (QuartzSchedulerThread.java:276).run - batch acquisition of 0 triggers
+[DEBUG] [10:00:00.007] [org.quartz.core.JobRunShell] (JobRunShell.java:201).run - Calling execute on job group1.job6
+[ INFO] [10:00:00.008] [quartaDemos.demo2.SimpleJob] (SimpleJob.java:20).execute - SimpleJob says: group1.job6 executing at Wed Apr 27 10:00:00 CST 2016
+[DEBUG] [10:00:25.642] [org.quartz.core.QuartzSchedulerThread] (QuartzSchedulerThread.java:276).run - batch acquisition of 1 triggers
+[DEBUG] [10:00:40.000] [org.quartz.simpl.PropertySettingJobFactory] (SimpleJobFactory.java:51).newJob - Producing instance of Job 'group1.job6', class=quartaDemos.demo2.SimpleJob
+[DEBUG] [10:00:40.001] [org.quartz.core.QuartzSchedulerThread] (QuartzSchedulerThread.java:276).run - batch acquisition of 0 triggers
+[DEBUG] [10:00:40.001] [org.quartz.core.JobRunShell] (JobRunShell.java:201).run - Calling execute on job group1.job6
+[ INFO] [10:00:40.003] [quartaDemos.demo2.SimpleJob] (SimpleJob.java:20).execute - SimpleJob says: group1.job6 executing at Wed Apr 27 10:00:40 CST 2016
+[DEBUG] [10:01:08.671] [org.quartz.core.QuartzSchedulerThread] (QuartzSchedulerThread.java:276).run - batch acquisition of 1 triggers
+[DEBUG] [10:01:20.000] [org.quartz.simpl.PropertySettingJobFactory] (SimpleJobFactory.java:51).newJob - Producing instance of Job 'group1.job6', class=quartaDemos.demo2.SimpleJob
+[DEBUG] [10:01:20.001] [org.quartz.core.QuartzSchedulerThread] (QuartzSchedulerThread.java:276).run - batch acquisition of 0 triggers
+[DEBUG] [10:01:20.001] [org.quartz.core.JobRunShell] (JobRunShell.java:201).run - Calling execute on job group1.job6
+[ INFO] [10:01:20.003] [quartaDemos.demo2.SimpleJob] (SimpleJob.java:20).execute - SimpleJob says: group1.job6 executing at Wed Apr 27 10:01:20 CST 2016
+[DEBUG] [10:01:43.840] [org.quartz.core.QuartzSchedulerThread] (QuartzSchedulerThread.java:276).run - batch acquisition of 1 triggers
+[DEBUG] [10:02:00.002] [org.quartz.simpl.PropertySettingJobFactory] (SimpleJobFactory.java:51).newJob - Producing instance of Job 'group1.job6', class=quartaDemos.demo2.SimpleJob
+[DEBUG] [10:02:00.003] [org.quartz.core.QuartzSchedulerThread] (QuartzSchedulerThread.java:276).run - batch acquisition of 0 triggers
+[DEBUG] [10:02:00.003] [org.quartz.core.JobRunShell] (JobRunShell.java:201).run - Calling execute on job group1.job6
+[ INFO] [10:02:00.004] [quartaDemos.demo2.SimpleJob] (SimpleJob.java:20).execute - SimpleJob says: group1.job6 executing at Wed Apr 27 10:02:00 CST 2016
+[DEBUG] [10:02:27.903] [org.quartz.core.QuartzSchedulerThread] (QuartzSchedulerThread.java:276).run - batch acquisition of 1 triggers
+[DEBUG] [10:02:40.000] [org.quartz.simpl.PropertySettingJobFactory] (SimpleJobFactory.java:51).newJob - Producing instance of Job 'group1.job6', class=quartaDemos.demo2.SimpleJob
+[DEBUG] [10:02:40.000] [org.quartz.core.JobRunShell] (JobRunShell.java:201).run - Calling execute on job group1.job6
+[DEBUG] [10:02:40.000] [org.quartz.core.QuartzSchedulerThread] (QuartzSchedulerThread.java:276).run - batch acquisition of 1 triggers
+[ INFO] [10:02:40.000] [quartaDemos.demo2.SimpleJob] (SimpleJob.java:20).execute - SimpleJob says: group1.job6 executing at Wed Apr 27 10:02:40 CST 2016
+[DEBUG] [10:02:51.743] [org.quartz.simpl.PropertySettingJobFactory] (SimpleJobFactory.java:51).newJob - Producing instance of Job 'group1.job5', class=quartaDemos.demo2.SimpleJob
+[DEBUG] [10:02:51.744] [org.quartz.core.QuartzSchedulerThread] (QuartzSchedulerThread.java:276).run - batch acquisition of 1 triggers
+[DEBUG] [10:02:51.744] [org.quartz.core.JobRunShell] (JobRunShell.java:201).run - Calling execute on job group1.job5
+[ INFO] [10:02:51.745] [quartaDemos.demo2.SimpleJob] (SimpleJob.java:20).execute - SimpleJob says: group1.job5 executing at Wed Apr 27 10:02:51 CST 2016
+[DEBUG] [10:03:00.001] [org.quartz.simpl.PropertySettingJobFactory] (SimpleJobFactory.java:51).newJob - Producing instance of Job 'group1.job7', class=quartaDemos.demo2.SimpleJob
+[DEBUG] [10:03:00.002] [org.quartz.core.JobRunShell] (JobRunShell.java:201).run - Calling execute on job group1.job7
+[DEBUG] [10:03:00.002] [org.quartz.core.QuartzSchedulerThread] (QuartzSchedulerThread.java:276).run - batch acquisition of 1 triggers
+[ INFO] [10:03:00.003] [quartaDemos.demo2.SimpleJob] (SimpleJob.java:20).execute - SimpleJob says: group1.job7 executing at Wed Apr 27 10:03:00 CST 2016
+[DEBUG] [10:03:20.001] [org.quartz.simpl.PropertySettingJobFactory] (SimpleJobFactory.java:51).newJob - Producing instance of Job 'group1.job6', class=quartaDemos.demo2.SimpleJob
+[DEBUG] [10:03:20.002] [org.quartz.core.QuartzSchedulerThread] (QuartzSchedulerThread.java:276).run - batch acquisition of 0 triggers
+[DEBUG] [10:03:20.002] [org.quartz.core.JobRunShell] (JobRunShell.java:201).run - Calling execute on job group1.job6
+[ INFO] [10:03:20.003] [quartaDemos.demo2.SimpleJob] (SimpleJob.java:20).execute - SimpleJob says: group1.job6 executing at Wed Apr 27 10:03:20 CST 2016
+[ INFO] [10:03:21.751] [quartaDemos.demo2.SimpleTriggerExample] (SimpleTriggerExample.java:190).run - ------- Shutting Down ---------------------
+[ INFO] [10:03:21.752] [org.quartz.core.QuartzScheduler] (QuartzScheduler.java:694).shutdown - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED shutting down.
+[ INFO] [10:03:21.753] [org.quartz.core.QuartzScheduler] (QuartzScheduler.java:613).standby - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED paused.
+[DEBUG] [10:03:21.755] [org.quartz.simpl.SimpleThreadPool] (SimpleThreadPool.java:328).shutdown - Shutting down threadpool...
+[DEBUG] [10:03:21.775] [org.quartz.simpl.SimpleThreadPool] (SimpleThreadPool.java:612).run - WorkerThread is shut down.
+[DEBUG] [10:03:22.006] [org.quartz.simpl.SimpleThreadPool] (SimpleThreadPool.java:612).run - WorkerThread is shut down.
+[DEBUG] [10:03:22.026] [org.quartz.simpl.SimpleThreadPool] (SimpleThreadPool.java:612).run - WorkerThread is shut down.
+[DEBUG] [10:03:22.042] [org.quartz.simpl.SimpleThreadPool] (SimpleThreadPool.java:612).run - WorkerThread is shut down.
+[DEBUG] [10:03:22.083] [org.quartz.simpl.SimpleThreadPool] (SimpleThreadPool.java:612).run - WorkerThread is shut down.
+[DEBUG] [10:03:22.118] [org.quartz.simpl.SimpleThreadPool] (SimpleThreadPool.java:612).run - WorkerThread is shut down.
+[DEBUG] [10:03:22.155] [org.quartz.simpl.SimpleThreadPool] (SimpleThreadPool.java:612).run - WorkerThread is shut down.
+[DEBUG] [10:03:22.195] [org.quartz.simpl.SimpleThreadPool] (SimpleThreadPool.java:612).run - WorkerThread is shut down.
+[DEBUG] [10:03:22.218] [org.quartz.simpl.SimpleThreadPool] (SimpleThreadPool.java:612).run - WorkerThread is shut down.
+[DEBUG] [10:03:22.222] [org.quartz.simpl.SimpleThreadPool] (SimpleThreadPool.java:612).run - WorkerThread is shut down.
+[DEBUG] [10:03:22.222] [org.quartz.simpl.SimpleThreadPool] (SimpleThreadPool.java:393).shutdown - No executing jobs remaining, all threads stopped.
+[DEBUG] [10:03:22.223] [org.quartz.simpl.SimpleThreadPool] (SimpleThreadPool.java:395).shutdown - Shutdown of threadpool complete.
+[ INFO] [10:03:22.224] [org.quartz.core.QuartzScheduler] (QuartzScheduler.java:771).shutdown - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED shutdown complete.
+[ INFO] [10:03:22.224] [quartaDemos.demo2.SimpleTriggerExample] (SimpleTriggerExample.java:194).run - ------- Shutdown Complete -----------------
+[ INFO] [10:03:22.225] [quartaDemos.demo2.SimpleTriggerExample] (SimpleTriggerExample.java:198).run - Executed 36 jobs.

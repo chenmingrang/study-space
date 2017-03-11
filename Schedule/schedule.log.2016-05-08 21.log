@@ -1,0 +1,494 @@
+2016-05-08 21:56:57.802  INFO  (StdSchedulerFactory.java:1172) - Using default implementation for ThreadExecutor
+ 2016-05-08 21:56:57.822  INFO  (SchedulerSignalerImpl.java:61) - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+ 2016-05-08 21:56:57.822  INFO  (QuartzScheduler.java:240) - Quartz Scheduler v.2.2.2 created.
+ 2016-05-08 21:56:57.826  INFO  (XMLSchedulingDataProcessorPlugin.java:200) - Registering Quartz Job Initialization Plug-in.
+ 2016-05-08 21:56:57.827  INFO  (RAMJobStore.java:155) - RAMJobStore initialized.
+ 2016-05-08 21:56:57.828  INFO  (QuartzScheduler.java:305) - Scheduler meta-data: Quartz Scheduler (v2.2.2) 'TestScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 3 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+ 2016-05-08 21:56:57.828  INFO  (StdSchedulerFactory.java:1327) - Quartz scheduler 'TestScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+ 2016-05-08 21:56:57.828  INFO  (StdSchedulerFactory.java:1331) - Quartz scheduler version: 2.2.2
+ 2016-05-08 21:56:57.829  INFO  (LoadExample.java:37) - ------- Initialization Complete -----------
+ 2016-05-08 21:56:57.839  INFO  (LoadExample.java:62) - ...scheduled 25 jobs
+ 2016-05-08 21:56:57.842  INFO  (LoadExample.java:62) - ...scheduled 50 jobs
+ 2016-05-08 21:56:57.845  INFO  (LoadExample.java:62) - ...scheduled 75 jobs
+ 2016-05-08 21:56:57.848  INFO  (LoadExample.java:62) - ...scheduled 100 jobs
+ 2016-05-08 21:56:57.851  INFO  (LoadExample.java:62) - ...scheduled 125 jobs
+ 2016-05-08 21:56:57.854  INFO  (LoadExample.java:62) - ...scheduled 150 jobs
+ 2016-05-08 21:56:57.857  INFO  (LoadExample.java:62) - ...scheduled 175 jobs
+ 2016-05-08 21:56:57.862  INFO  (LoadExample.java:62) - ...scheduled 200 jobs
+ 2016-05-08 21:56:57.865  INFO  (LoadExample.java:62) - ...scheduled 225 jobs
+ 2016-05-08 21:56:57.869  INFO  (LoadExample.java:62) - ...scheduled 250 jobs
+ 2016-05-08 21:56:57.873  INFO  (LoadExample.java:62) - ...scheduled 275 jobs
+ 2016-05-08 21:56:57.876  INFO  (LoadExample.java:62) - ...scheduled 300 jobs
+ 2016-05-08 21:56:57.879  INFO  (LoadExample.java:62) - ...scheduled 325 jobs
+ 2016-05-08 21:56:57.882  INFO  (LoadExample.java:62) - ...scheduled 350 jobs
+ 2016-05-08 21:56:57.885  INFO  (LoadExample.java:62) - ...scheduled 375 jobs
+ 2016-05-08 21:56:57.889  INFO  (LoadExample.java:62) - ...scheduled 400 jobs
+ 2016-05-08 21:56:57.892  INFO  (LoadExample.java:62) - ...scheduled 425 jobs
+ 2016-05-08 21:56:57.895  INFO  (LoadExample.java:62) - ...scheduled 450 jobs
+ 2016-05-08 21:56:57.897  INFO  (LoadExample.java:62) - ...scheduled 475 jobs
+ 2016-05-08 21:56:57.900  INFO  (LoadExample.java:62) - ...scheduled 500 jobs
+ 2016-05-08 21:56:57.900  INFO  (LoadExample.java:66) - ------- Starting Scheduler ----------------
+ 2016-05-08 21:56:57.903  DEBUG (XMLSchedulingDataProcessorPlugin.java:243) - Scheduled file scan job for data file: quartz_data.xml, at interval: 120000
+ 2016-05-08 21:56:57.917  DEBUG (XMLSchedulingDataProcessor.java:227) - Utilizing schema packaged in local quartz distribution jar.
+ 2016-05-08 21:56:57.929  INFO  (XMLSchedulingDataProcessor.java:452) - Parsing XML file: quartz_data.xml with systemId: quartz_data.xml
+ 2016-05-08 21:56:58.120  DEBUG (XMLSchedulingDataProcessor.java:504) - Found 1 delete job group commands.
+ 2016-05-08 21:56:58.122  DEBUG (XMLSchedulingDataProcessor.java:518) - Found 1 delete trigger group commands.
+ 2016-05-08 21:56:58.123  DEBUG (XMLSchedulingDataProcessor.java:532) - Found 0 delete job commands.
+ 2016-05-08 21:56:58.125  DEBUG (XMLSchedulingDataProcessor.java:549) - Found 0 delete trigger commands.
+ 2016-05-08 21:56:58.126  DEBUG (XMLSchedulingDataProcessor.java:572) - Directive 'overwrite-existing-data' specified as: true
+ 2016-05-08 21:56:58.127  DEBUG (XMLSchedulingDataProcessor.java:582) - Directive 'ignore-duplicates' specified as: false
+ 2016-05-08 21:56:58.129  DEBUG (XMLSchedulingDataProcessor.java:593) - Found 1 job definitions.
+ 2016-05-08 21:56:58.150  DEBUG (XMLSchedulingDataProcessor.java:629) - Parsed job definition: JobDetail 'group1.job1':  jobClass: 'quartaDemos.demo10.SimpleJob concurrentExectionDisallowed: false persistJobDataAfterExecution: false isDurable: false requestsRecovers: false
+ 2016-05-08 21:56:58.151  DEBUG (XMLSchedulingDataProcessor.java:641) - Found 1 trigger definitions.
+ 2016-05-08 21:56:58.167  DEBUG (XMLSchedulingDataProcessor.java:772) - Parsed trigger definition: Trigger 'group1.trigger1':  triggerClass: 'org.quartz.impl.triggers.SimpleTriggerImpl calendar: 'null' misfireInstruction: 0 nextFireTime: null
+ 2016-05-08 21:56:58.167  INFO  (XMLSchedulingDataProcessor.java:906) - Deleting all jobs in ALL groups.
+ 2016-05-08 21:56:58.255  INFO  (XMLSchedulingDataProcessor.java:927) - Deleting all triggers in ALL groups.
+ 2016-05-08 21:56:58.255  INFO  (XMLSchedulingDataProcessor.java:977) - Adding 1 jobs, 1 triggers.
+ 2016-05-08 21:56:58.255  INFO  (XMLSchedulingDataProcessor.java:1015) - Adding job: group1.job1
+ 2016-05-08 21:56:58.256  DEBUG (XMLSchedulingDataProcessor.java:1075) - Scheduling job: group1.job1 with trigger: group1.trigger1
+ 2016-05-08 21:56:58.256  INFO  (QuartzScheduler.java:575) - Scheduler TestScheduler_$_NON_CLUSTERED started.
+ 2016-05-08 21:56:58.256  DEBUG (QuartzSchedulerThread.java:276) - batch acquisition of 1 triggers
+ 2016-05-08 21:56:58.257  INFO  (LoadExample.java:71) - ------- Started Scheduler -----------------
+ 2016-05-08 21:56:58.257  INFO  (LoadExample.java:73) - ------- Waiting five minutes... -----------
+ 2016-05-08 21:56:58.260  DEBUG (SimpleJobFactory.java:51) - Producing instance of Job 'group1.job1', class=quartaDemos.demo10.SimpleJob
+ 2016-05-08 21:56:58.264  DEBUG (QuartzSchedulerThread.java:276) - batch acquisition of 1 triggers
+ 2016-05-08 21:56:58.265  INFO  (LoggingJobHistoryPlugin.java:469) - Job group1.job1 fired (by trigger group1.trigger1) at:  21:56:58 05/08/2016
+ 2016-05-08 21:56:58.265  DEBUG (JobRunShell.java:201) - Calling execute on job group1.job1
+ 2016-05-08 21:56:58.267  INFO  (SimpleJob.java:48) - Executing job: group1.job1 executing at Sun May 08 21:56:58 CST 2016, fired by: group1.trigger1
+ 2016-05-08 21:56:58.268  INFO  (SimpleJob.java:54) -  - jobDataMap entry: name = someName
+ 2016-05-08 21:56:58.268  INFO  (LoggingJobHistoryPlugin.java:513) - Job group1.job1 execution complete at  21:56:58 05/08/2016 and reports: hello
+ 2016-05-08 21:57:01.163  DEBUG (SimpleJobFactory.java:51) - Producing instance of Job 'group1.job1', class=quartaDemos.demo10.SimpleJob
+ 2016-05-08 21:57:01.164  DEBUG (QuartzSchedulerThread.java:276) - batch acquisition of 1 triggers
+ 2016-05-08 21:57:01.165  INFO  (LoggingJobHistoryPlugin.java:469) - Job group1.job1 fired (by trigger group1.trigger1) at:  21:57:01 05/08/2016
+ 2016-05-08 21:57:01.166  DEBUG (JobRunShell.java:201) - Calling execute on job group1.job1
+ 2016-05-08 21:57:01.167  INFO  (SimpleJob.java:48) - Executing job: group1.job1 executing at Sun May 08 21:57:01 CST 2016, fired by: group1.trigger1
+ 2016-05-08 21:57:01.167  INFO  (SimpleJob.java:54) -  - jobDataMap entry: name = someName
+ 2016-05-08 21:57:01.168  INFO  (LoggingJobHistoryPlugin.java:513) - Job group1.job1 execution complete at  21:57:01 05/08/2016 and reports: hello
+ 2016-05-08 21:57:04.163  DEBUG (SimpleJobFactory.java:51) - Producing instance of Job 'group1.job1', class=quartaDemos.demo10.SimpleJob
+ 2016-05-08 21:57:04.164  DEBUG (QuartzSchedulerThread.java:276) - batch acquisition of 1 triggers
+ 2016-05-08 21:57:04.165  INFO  (LoggingJobHistoryPlugin.java:469) - Job group1.job1 fired (by trigger group1.trigger1) at:  21:57:04 05/08/2016
+ 2016-05-08 21:57:04.165  DEBUG (JobRunShell.java:201) - Calling execute on job group1.job1
+ 2016-05-08 21:57:04.166  INFO  (SimpleJob.java:48) - Executing job: group1.job1 executing at Sun May 08 21:57:04 CST 2016, fired by: group1.trigger1
+ 2016-05-08 21:57:04.166  INFO  (SimpleJob.java:54) -  - jobDataMap entry: name = someName
+ 2016-05-08 21:57:04.167  INFO  (LoggingJobHistoryPlugin.java:513) - Job group1.job1 execution complete at  21:57:04 05/08/2016 and reports: hello
+ 2016-05-08 21:57:07.164  DEBUG (SimpleJobFactory.java:51) - Producing instance of Job 'group1.job1', class=quartaDemos.demo10.SimpleJob
+ 2016-05-08 21:57:07.164  DEBUG (QuartzSchedulerThread.java:276) - batch acquisition of 1 triggers
+ 2016-05-08 21:57:07.165  INFO  (LoggingJobHistoryPlugin.java:469) - Job group1.job1 fired (by trigger group1.trigger1) at:  21:57:07 05/08/2016
+ 2016-05-08 21:57:07.165  DEBUG (JobRunShell.java:201) - Calling execute on job group1.job1
+ 2016-05-08 21:57:07.166  INFO  (SimpleJob.java:48) - Executing job: group1.job1 executing at Sun May 08 21:57:07 CST 2016, fired by: group1.trigger1
+ 2016-05-08 21:57:07.166  INFO  (SimpleJob.java:54) -  - jobDataMap entry: name = someName
+ 2016-05-08 21:57:07.168  INFO  (LoggingJobHistoryPlugin.java:513) - Job group1.job1 execution complete at  21:57:07 05/08/2016 and reports: hello
+ 2016-05-08 21:57:10.164  DEBUG (SimpleJobFactory.java:51) - Producing instance of Job 'group1.job1', class=quartaDemos.demo10.SimpleJob
+ 2016-05-08 21:57:10.165  DEBUG (QuartzSchedulerThread.java:276) - batch acquisition of 1 triggers
+ 2016-05-08 21:57:10.166  INFO  (LoggingJobHistoryPlugin.java:469) - Job group1.job1 fired (by trigger group1.trigger1) at:  21:57:10 05/08/2016
+ 2016-05-08 21:57:10.166  DEBUG (JobRunShell.java:201) - Calling execute on job group1.job1
+ 2016-05-08 21:57:10.167  INFO  (SimpleJob.java:48) - Executing job: group1.job1 executing at Sun May 08 21:57:10 CST 2016, fired by: group1.trigger1
+ 2016-05-08 21:57:10.167  INFO  (SimpleJob.java:54) -  - jobDataMap entry: name = someName
+ 2016-05-08 21:57:10.169  INFO  (LoggingJobHistoryPlugin.java:513) - Job group1.job1 execution complete at  21:57:10 05/08/2016 and reports: hello
+ 2016-05-08 21:57:13.163  DEBUG (SimpleJobFactory.java:51) - Producing instance of Job 'group1.job1', class=quartaDemos.demo10.SimpleJob
+ 2016-05-08 21:57:13.164  DEBUG (QuartzSchedulerThread.java:276) - batch acquisition of 1 triggers
+ 2016-05-08 21:57:13.165  INFO  (LoggingJobHistoryPlugin.java:469) - Job group1.job1 fired (by trigger group1.trigger1) at:  21:57:13 05/08/2016
+ 2016-05-08 21:57:13.165  DEBUG (JobRunShell.java:201) - Calling execute on job group1.job1
+ 2016-05-08 21:57:13.166  INFO  (SimpleJob.java:48) - Executing job: group1.job1 executing at Sun May 08 21:57:13 CST 2016, fired by: group1.trigger1
+ 2016-05-08 21:57:13.167  INFO  (SimpleJob.java:54) -  - jobDataMap entry: name = someName
+ 2016-05-08 21:57:13.168  INFO  (LoggingJobHistoryPlugin.java:513) - Job group1.job1 execution complete at  21:57:13 05/08/2016 and reports: hello
+ 2016-05-08 21:57:16.163  DEBUG (SimpleJobFactory.java:51) - Producing instance of Job 'group1.job1', class=quartaDemos.demo10.SimpleJob
+ 2016-05-08 21:57:16.164  DEBUG (QuartzSchedulerThread.java:276) - batch acquisition of 1 triggers
+ 2016-05-08 21:57:16.165  INFO  (LoggingJobHistoryPlugin.java:469) - Job group1.job1 fired (by trigger group1.trigger1) at:  21:57:16 05/08/2016
+ 2016-05-08 21:57:16.165  DEBUG (JobRunShell.java:201) - Calling execute on job group1.job1
+ 2016-05-08 21:57:16.166  INFO  (SimpleJob.java:48) - Executing job: group1.job1 executing at Sun May 08 21:57:16 CST 2016, fired by: group1.trigger1
+ 2016-05-08 21:57:16.166  INFO  (SimpleJob.java:54) -  - jobDataMap entry: name = someName
+ 2016-05-08 21:57:16.167  INFO  (LoggingJobHistoryPlugin.java:513) - Job group1.job1 execution complete at  21:57:16 05/08/2016 and reports: hello
+ 2016-05-08 21:57:19.163  DEBUG (SimpleJobFactory.java:51) - Producing instance of Job 'group1.job1', class=quartaDemos.demo10.SimpleJob
+ 2016-05-08 21:57:19.164  DEBUG (QuartzSchedulerThread.java:276) - batch acquisition of 1 triggers
+ 2016-05-08 21:57:19.165  INFO  (LoggingJobHistoryPlugin.java:469) - Job group1.job1 fired (by trigger group1.trigger1) at:  21:57:19 05/08/2016
+ 2016-05-08 21:57:19.166  DEBUG (JobRunShell.java:201) - Calling execute on job group1.job1
+ 2016-05-08 21:57:19.166  INFO  (SimpleJob.java:48) - Executing job: group1.job1 executing at Sun May 08 21:57:19 CST 2016, fired by: group1.trigger1
+ 2016-05-08 21:57:19.167  INFO  (SimpleJob.java:54) -  - jobDataMap entry: name = someName
+ 2016-05-08 21:57:19.168  INFO  (LoggingJobHistoryPlugin.java:513) - Job group1.job1 execution complete at  21:57:19 05/08/2016 and reports: hello
+ 2016-05-08 21:57:22.163  DEBUG (SimpleJobFactory.java:51) - Producing instance of Job 'group1.job1', class=quartaDemos.demo10.SimpleJob
+ 2016-05-08 21:57:22.164  DEBUG (QuartzSchedulerThread.java:276) - batch acquisition of 1 triggers
+ 2016-05-08 21:57:22.164  INFO  (LoggingJobHistoryPlugin.java:469) - Job group1.job1 fired (by trigger group1.trigger1) at:  21:57:22 05/08/2016
+ 2016-05-08 21:57:22.165  DEBUG (JobRunShell.java:201) - Calling execute on job group1.job1
+ 2016-05-08 21:57:22.165  INFO  (SimpleJob.java:48) - Executing job: group1.job1 executing at Sun May 08 21:57:22 CST 2016, fired by: group1.trigger1
+ 2016-05-08 21:57:22.166  INFO  (SimpleJob.java:54) -  - jobDataMap entry: name = someName
+ 2016-05-08 21:57:22.167  INFO  (LoggingJobHistoryPlugin.java:513) - Job group1.job1 execution complete at  21:57:22 05/08/2016 and reports: hello
+ 2016-05-08 21:57:25.163  DEBUG (SimpleJobFactory.java:51) - Producing instance of Job 'group1.job1', class=quartaDemos.demo10.SimpleJob
+ 2016-05-08 21:57:25.164  DEBUG (QuartzSchedulerThread.java:276) - batch acquisition of 1 triggers
+ 2016-05-08 21:57:25.165  INFO  (LoggingJobHistoryPlugin.java:469) - Job group1.job1 fired (by trigger group1.trigger1) at:  21:57:25 05/08/2016
+ 2016-05-08 21:57:25.165  DEBUG (JobRunShell.java:201) - Calling execute on job group1.job1
+ 2016-05-08 21:57:25.166  INFO  (SimpleJob.java:48) - Executing job: group1.job1 executing at Sun May 08 21:57:25 CST 2016, fired by: group1.trigger1
+ 2016-05-08 21:57:25.166  INFO  (SimpleJob.java:54) -  - jobDataMap entry: name = someName
+ 2016-05-08 21:57:25.167  INFO  (LoggingJobHistoryPlugin.java:513) - Job group1.job1 execution complete at  21:57:25 05/08/2016 and reports: hello
+ 2016-05-08 21:57:28.163  DEBUG (SimpleJobFactory.java:51) - Producing instance of Job 'group1.job1', class=quartaDemos.demo10.SimpleJob
+ 2016-05-08 21:57:28.164  DEBUG (QuartzSchedulerThread.java:276) - batch acquisition of 1 triggers
+ 2016-05-08 21:57:28.165  INFO  (LoggingJobHistoryPlugin.java:469) - Job group1.job1 fired (by trigger group1.trigger1) at:  21:57:28 05/08/2016
+ 2016-05-08 21:57:28.165  DEBUG (JobRunShell.java:201) - Calling execute on job group1.job1
+ 2016-05-08 21:57:28.166  INFO  (SimpleJob.java:48) - Executing job: group1.job1 executing at Sun May 08 21:57:28 CST 2016, fired by: group1.trigger1
+ 2016-05-08 21:57:28.166  INFO  (SimpleJob.java:54) -  - jobDataMap entry: name = someName
+ 2016-05-08 21:57:28.167  INFO  (LoggingJobHistoryPlugin.java:513) - Job group1.job1 execution complete at  21:57:28 05/08/2016 and reports: hello
+ 2016-05-08 21:57:31.164  DEBUG (SimpleJobFactory.java:51) - Producing instance of Job 'group1.job1', class=quartaDemos.demo10.SimpleJob
+ 2016-05-08 21:57:31.165  DEBUG (QuartzSchedulerThread.java:276) - batch acquisition of 1 triggers
+ 2016-05-08 21:57:31.166  INFO  (LoggingJobHistoryPlugin.java:469) - Job group1.job1 fired (by trigger group1.trigger1) at:  21:57:31 05/08/2016
+ 2016-05-08 21:57:31.166  DEBUG (JobRunShell.java:201) - Calling execute on job group1.job1
+ 2016-05-08 21:57:31.167  INFO  (SimpleJob.java:48) - Executing job: group1.job1 executing at Sun May 08 21:57:31 CST 2016, fired by: group1.trigger1
+ 2016-05-08 21:57:31.167  INFO  (SimpleJob.java:54) -  - jobDataMap entry: name = someName
+ 2016-05-08 21:57:31.168  INFO  (LoggingJobHistoryPlugin.java:513) - Job group1.job1 execution complete at  21:57:31 05/08/2016 and reports: hello
+ 2016-05-08 21:57:34.163  DEBUG (SimpleJobFactory.java:51) - Producing instance of Job 'group1.job1', class=quartaDemos.demo10.SimpleJob
+ 2016-05-08 21:57:34.164  DEBUG (QuartzSchedulerThread.java:276) - batch acquisition of 1 triggers
+ 2016-05-08 21:57:34.165  INFO  (LoggingJobHistoryPlugin.java:469) - Job group1.job1 fired (by trigger group1.trigger1) at:  21:57:34 05/08/2016
+ 2016-05-08 21:57:34.165  DEBUG (JobRunShell.java:201) - Calling execute on job group1.job1
+ 2016-05-08 21:57:34.166  INFO  (SimpleJob.java:48) - Executing job: group1.job1 executing at Sun May 08 21:57:34 CST 2016, fired by: group1.trigger1
+ 2016-05-08 21:57:34.167  INFO  (SimpleJob.java:54) -  - jobDataMap entry: name = someName
+ 2016-05-08 21:57:34.168  INFO  (LoggingJobHistoryPlugin.java:513) - Job group1.job1 execution complete at  21:57:34 05/08/2016 and reports: hello
+ 2016-05-08 21:57:37.163  DEBUG (SimpleJobFactory.java:51) - Producing instance of Job 'group1.job1', class=quartaDemos.demo10.SimpleJob
+ 2016-05-08 21:57:37.164  DEBUG (QuartzSchedulerThread.java:276) - batch acquisition of 1 triggers
+ 2016-05-08 21:57:37.165  INFO  (LoggingJobHistoryPlugin.java:469) - Job group1.job1 fired (by trigger group1.trigger1) at:  21:57:37 05/08/2016
+ 2016-05-08 21:57:37.165  DEBUG (JobRunShell.java:201) - Calling execute on job group1.job1
+ 2016-05-08 21:57:37.166  INFO  (SimpleJob.java:48) - Executing job: group1.job1 executing at Sun May 08 21:57:37 CST 2016, fired by: group1.trigger1
+ 2016-05-08 21:57:37.166  INFO  (SimpleJob.java:54) -  - jobDataMap entry: name = someName
+ 2016-05-08 21:57:37.168  INFO  (LoggingJobHistoryPlugin.java:513) - Job group1.job1 execution complete at  21:57:37 05/08/2016 and reports: hello
+ 2016-05-08 21:57:40.163  DEBUG (SimpleJobFactory.java:51) - Producing instance of Job 'group1.job1', class=quartaDemos.demo10.SimpleJob
+ 2016-05-08 21:57:40.164  DEBUG (QuartzSchedulerThread.java:276) - batch acquisition of 1 triggers
+ 2016-05-08 21:57:40.165  INFO  (LoggingJobHistoryPlugin.java:469) - Job group1.job1 fired (by trigger group1.trigger1) at:  21:57:40 05/08/2016
+ 2016-05-08 21:57:40.165  DEBUG (JobRunShell.java:201) - Calling execute on job group1.job1
+ 2016-05-08 21:57:40.166  INFO  (SimpleJob.java:48) - Executing job: group1.job1 executing at Sun May 08 21:57:40 CST 2016, fired by: group1.trigger1
+ 2016-05-08 21:57:40.166  INFO  (SimpleJob.java:54) -  - jobDataMap entry: name = someName
+ 2016-05-08 21:57:40.167  INFO  (LoggingJobHistoryPlugin.java:513) - Job group1.job1 execution complete at  21:57:40 05/08/2016 and reports: hello
+ 2016-05-08 21:57:43.163  DEBUG (SimpleJobFactory.java:51) - Producing instance of Job 'group1.job1', class=quartaDemos.demo10.SimpleJob
+ 2016-05-08 21:57:43.166  DEBUG (QuartzSchedulerThread.java:276) - batch acquisition of 1 triggers
+ 2016-05-08 21:57:43.166  INFO  (LoggingJobHistoryPlugin.java:469) - Job group1.job1 fired (by trigger group1.trigger1) at:  21:57:43 05/08/2016
+ 2016-05-08 21:57:43.167  DEBUG (JobRunShell.java:201) - Calling execute on job group1.job1
+ 2016-05-08 21:57:43.167  INFO  (SimpleJob.java:48) - Executing job: group1.job1 executing at Sun May 08 21:57:43 CST 2016, fired by: group1.trigger1
+ 2016-05-08 21:57:43.168  INFO  (SimpleJob.java:54) -  - jobDataMap entry: name = someName
+ 2016-05-08 21:57:43.169  INFO  (LoggingJobHistoryPlugin.java:513) - Job group1.job1 execution complete at  21:57:43 05/08/2016 and reports: hello
+ 2016-05-08 21:57:46.163  DEBUG (SimpleJobFactory.java:51) - Producing instance of Job 'group1.job1', class=quartaDemos.demo10.SimpleJob
+ 2016-05-08 21:57:46.163  DEBUG (QuartzSchedulerThread.java:276) - batch acquisition of 1 triggers
+ 2016-05-08 21:57:46.164  INFO  (LoggingJobHistoryPlugin.java:469) - Job group1.job1 fired (by trigger group1.trigger1) at:  21:57:46 05/08/2016
+ 2016-05-08 21:57:46.164  DEBUG (JobRunShell.java:201) - Calling execute on job group1.job1
+ 2016-05-08 21:57:46.164  INFO  (SimpleJob.java:48) - Executing job: group1.job1 executing at Sun May 08 21:57:46 CST 2016, fired by: group1.trigger1
+ 2016-05-08 21:57:46.165  INFO  (SimpleJob.java:54) -  - jobDataMap entry: name = someName
+ 2016-05-08 21:57:46.165  INFO  (LoggingJobHistoryPlugin.java:513) - Job group1.job1 execution complete at  21:57:46 05/08/2016 and reports: hello
+ 2016-05-08 21:57:49.163  DEBUG (SimpleJobFactory.java:51) - Producing instance of Job 'group1.job1', class=quartaDemos.demo10.SimpleJob
+ 2016-05-08 21:57:49.164  DEBUG (QuartzSchedulerThread.java:276) - batch acquisition of 1 triggers
+ 2016-05-08 21:57:49.165  INFO  (LoggingJobHistoryPlugin.java:469) - Job group1.job1 fired (by trigger group1.trigger1) at:  21:57:49 05/08/2016
+ 2016-05-08 21:57:49.166  DEBUG (JobRunShell.java:201) - Calling execute on job group1.job1
+ 2016-05-08 21:57:49.166  INFO  (SimpleJob.java:48) - Executing job: group1.job1 executing at Sun May 08 21:57:49 CST 2016, fired by: group1.trigger1
+ 2016-05-08 21:57:49.167  INFO  (SimpleJob.java:54) -  - jobDataMap entry: name = someName
+ 2016-05-08 21:57:49.168  INFO  (LoggingJobHistoryPlugin.java:513) - Job group1.job1 execution complete at  21:57:49 05/08/2016 and reports: hello
+ 2016-05-08 21:57:52.164  DEBUG (SimpleJobFactory.java:51) - Producing instance of Job 'group1.job1', class=quartaDemos.demo10.SimpleJob
+ 2016-05-08 21:57:52.164  DEBUG (QuartzSchedulerThread.java:276) - batch acquisition of 1 triggers
+ 2016-05-08 21:57:52.165  INFO  (LoggingJobHistoryPlugin.java:469) - Job group1.job1 fired (by trigger group1.trigger1) at:  21:57:52 05/08/2016
+ 2016-05-08 21:57:52.165  DEBUG (JobRunShell.java:201) - Calling execute on job group1.job1
+ 2016-05-08 21:57:52.165  INFO  (SimpleJob.java:48) - Executing job: group1.job1 executing at Sun May 08 21:57:52 CST 2016, fired by: group1.trigger1
+ 2016-05-08 21:57:52.166  INFO  (SimpleJob.java:54) -  - jobDataMap entry: name = someName
+ 2016-05-08 21:57:52.166  INFO  (LoggingJobHistoryPlugin.java:513) - Job group1.job1 execution complete at  21:57:52 05/08/2016 and reports: hello
+ 2016-05-08 21:57:55.163  DEBUG (SimpleJobFactory.java:51) - Producing instance of Job 'group1.job1', class=quartaDemos.demo10.SimpleJob
+ 2016-05-08 21:57:55.164  DEBUG (QuartzSchedulerThread.java:276) - batch acquisition of 1 triggers
+ 2016-05-08 21:57:55.165  INFO  (LoggingJobHistoryPlugin.java:469) - Job group1.job1 fired (by trigger group1.trigger1) at:  21:57:55 05/08/2016
+ 2016-05-08 21:57:55.165  DEBUG (JobRunShell.java:201) - Calling execute on job group1.job1
+ 2016-05-08 21:57:55.166  INFO  (SimpleJob.java:48) - Executing job: group1.job1 executing at Sun May 08 21:57:55 CST 2016, fired by: group1.trigger1
+ 2016-05-08 21:57:55.166  INFO  (SimpleJob.java:54) -  - jobDataMap entry: name = someName
+ 2016-05-08 21:57:55.167  INFO  (LoggingJobHistoryPlugin.java:513) - Job group1.job1 execution complete at  21:57:55 05/08/2016 and reports: hello
+ 2016-05-08 21:57:58.163  DEBUG (SimpleJobFactory.java:51) - Producing instance of Job 'group1.job1', class=quartaDemos.demo10.SimpleJob
+ 2016-05-08 21:57:58.164  DEBUG (QuartzSchedulerThread.java:276) - batch acquisition of 1 triggers
+ 2016-05-08 21:57:58.165  INFO  (LoggingJobHistoryPlugin.java:469) - Job group1.job1 fired (by trigger group1.trigger1) at:  21:57:58 05/08/2016
+ 2016-05-08 21:57:58.165  DEBUG (JobRunShell.java:201) - Calling execute on job group1.job1
+ 2016-05-08 21:57:58.166  INFO  (SimpleJob.java:48) - Executing job: group1.job1 executing at Sun May 08 21:57:58 CST 2016, fired by: group1.trigger1
+ 2016-05-08 21:57:58.166  INFO  (SimpleJob.java:54) -  - jobDataMap entry: name = someName
+ 2016-05-08 21:57:58.167  INFO  (LoggingJobHistoryPlugin.java:513) - Job group1.job1 execution complete at  21:57:58 05/08/2016 and reports: hello
+ 2016-05-08 21:58:01.163  DEBUG (SimpleJobFactory.java:51) - Producing instance of Job 'group1.job1', class=quartaDemos.demo10.SimpleJob
+ 2016-05-08 21:58:01.164  DEBUG (QuartzSchedulerThread.java:276) - batch acquisition of 1 triggers
+ 2016-05-08 21:58:01.165  INFO  (LoggingJobHistoryPlugin.java:469) - Job group1.job1 fired (by trigger group1.trigger1) at:  21:58:01 05/08/2016
+ 2016-05-08 21:58:01.166  DEBUG (JobRunShell.java:201) - Calling execute on job group1.job1
+ 2016-05-08 21:58:01.166  INFO  (SimpleJob.java:48) - Executing job: group1.job1 executing at Sun May 08 21:58:01 CST 2016, fired by: group1.trigger1
+ 2016-05-08 21:58:01.167  INFO  (SimpleJob.java:54) -  - jobDataMap entry: name = someName
+ 2016-05-08 21:58:01.168  INFO  (LoggingJobHistoryPlugin.java:513) - Job group1.job1 execution complete at  21:58:01 05/08/2016 and reports: hello
+ 2016-05-08 21:58:04.163  DEBUG (SimpleJobFactory.java:51) - Producing instance of Job 'group1.job1', class=quartaDemos.demo10.SimpleJob
+ 2016-05-08 21:58:04.164  DEBUG (QuartzSchedulerThread.java:276) - batch acquisition of 1 triggers
+ 2016-05-08 21:58:04.165  INFO  (LoggingJobHistoryPlugin.java:469) - Job group1.job1 fired (by trigger group1.trigger1) at:  21:58:04 05/08/2016
+ 2016-05-08 21:58:04.165  DEBUG (JobRunShell.java:201) - Calling execute on job group1.job1
+ 2016-05-08 21:58:04.166  INFO  (SimpleJob.java:48) - Executing job: group1.job1 executing at Sun May 08 21:58:04 CST 2016, fired by: group1.trigger1
+ 2016-05-08 21:58:04.167  INFO  (SimpleJob.java:54) -  - jobDataMap entry: name = someName
+ 2016-05-08 21:58:04.168  INFO  (LoggingJobHistoryPlugin.java:513) - Job group1.job1 execution complete at  21:58:04 05/08/2016 and reports: hello
+ 2016-05-08 21:58:07.163  DEBUG (SimpleJobFactory.java:51) - Producing instance of Job 'group1.job1', class=quartaDemos.demo10.SimpleJob
+ 2016-05-08 21:58:07.164  DEBUG (QuartzSchedulerThread.java:276) - batch acquisition of 1 triggers
+ 2016-05-08 21:58:07.165  INFO  (LoggingJobHistoryPlugin.java:469) - Job group1.job1 fired (by trigger group1.trigger1) at:  21:58:07 05/08/2016
+ 2016-05-08 21:58:07.166  DEBUG (JobRunShell.java:201) - Calling execute on job group1.job1
+ 2016-05-08 21:58:07.166  INFO  (SimpleJob.java:48) - Executing job: group1.job1 executing at Sun May 08 21:58:07 CST 2016, fired by: group1.trigger1
+ 2016-05-08 21:58:07.167  INFO  (SimpleJob.java:54) -  - jobDataMap entry: name = someName
+ 2016-05-08 21:58:07.168  INFO  (LoggingJobHistoryPlugin.java:513) - Job group1.job1 execution complete at  21:58:07 05/08/2016 and reports: hello
+ 2016-05-08 21:58:10.163  DEBUG (SimpleJobFactory.java:51) - Producing instance of Job 'group1.job1', class=quartaDemos.demo10.SimpleJob
+ 2016-05-08 21:58:10.164  DEBUG (QuartzSchedulerThread.java:276) - batch acquisition of 1 triggers
+ 2016-05-08 21:58:10.165  INFO  (LoggingJobHistoryPlugin.java:469) - Job group1.job1 fired (by trigger group1.trigger1) at:  21:58:10 05/08/2016
+ 2016-05-08 21:58:10.165  DEBUG (JobRunShell.java:201) - Calling execute on job group1.job1
+ 2016-05-08 21:58:10.166  INFO  (SimpleJob.java:48) - Executing job: group1.job1 executing at Sun May 08 21:58:10 CST 2016, fired by: group1.trigger1
+ 2016-05-08 21:58:10.166  INFO  (SimpleJob.java:54) -  - jobDataMap entry: name = someName
+ 2016-05-08 21:58:10.167  INFO  (LoggingJobHistoryPlugin.java:513) - Job group1.job1 execution complete at  21:58:10 05/08/2016 and reports: hello
+ 2016-05-08 21:58:13.164  DEBUG (SimpleJobFactory.java:51) - Producing instance of Job 'group1.job1', class=quartaDemos.demo10.SimpleJob
+ 2016-05-08 21:58:13.164  DEBUG (QuartzSchedulerThread.java:276) - batch acquisition of 1 triggers
+ 2016-05-08 21:58:13.165  INFO  (LoggingJobHistoryPlugin.java:469) - Job group1.job1 fired (by trigger group1.trigger1) at:  21:58:13 05/08/2016
+ 2016-05-08 21:58:13.165  DEBUG (JobRunShell.java:201) - Calling execute on job group1.job1
+ 2016-05-08 21:58:13.165  INFO  (SimpleJob.java:48) - Executing job: group1.job1 executing at Sun May 08 21:58:13 CST 2016, fired by: group1.trigger1
+ 2016-05-08 21:58:13.167  INFO  (SimpleJob.java:54) -  - jobDataMap entry: name = someName
+ 2016-05-08 21:58:13.167  INFO  (LoggingJobHistoryPlugin.java:513) - Job group1.job1 execution complete at  21:58:13 05/08/2016 and reports: hello
+ 2016-05-08 21:58:16.164  DEBUG (SimpleJobFactory.java:51) - Producing instance of Job 'group1.job1', class=quartaDemos.demo10.SimpleJob
+ 2016-05-08 21:58:16.165  DEBUG (QuartzSchedulerThread.java:276) - batch acquisition of 1 triggers
+ 2016-05-08 21:58:16.165  INFO  (LoggingJobHistoryPlugin.java:469) - Job group1.job1 fired (by trigger group1.trigger1) at:  21:58:16 05/08/2016
+ 2016-05-08 21:58:16.165  DEBUG (JobRunShell.java:201) - Calling execute on job group1.job1
+ 2016-05-08 21:58:16.166  INFO  (SimpleJob.java:48) - Executing job: group1.job1 executing at Sun May 08 21:58:16 CST 2016, fired by: group1.trigger1
+ 2016-05-08 21:58:16.166  INFO  (SimpleJob.java:54) -  - jobDataMap entry: name = someName
+ 2016-05-08 21:58:16.167  INFO  (LoggingJobHistoryPlugin.java:513) - Job group1.job1 execution complete at  21:58:16 05/08/2016 and reports: hello
+ 2016-05-08 21:58:19.163  DEBUG (SimpleJobFactory.java:51) - Producing instance of Job 'group1.job1', class=quartaDemos.demo10.SimpleJob
+ 2016-05-08 21:58:19.164  DEBUG (QuartzSchedulerThread.java:276) - batch acquisition of 1 triggers
+ 2016-05-08 21:58:19.165  INFO  (LoggingJobHistoryPlugin.java:469) - Job group1.job1 fired (by trigger group1.trigger1) at:  21:58:19 05/08/2016
+ 2016-05-08 21:58:19.165  DEBUG (JobRunShell.java:201) - Calling execute on job group1.job1
+ 2016-05-08 21:58:19.166  INFO  (SimpleJob.java:48) - Executing job: group1.job1 executing at Sun May 08 21:58:19 CST 2016, fired by: group1.trigger1
+ 2016-05-08 21:58:19.167  INFO  (SimpleJob.java:54) -  - jobDataMap entry: name = someName
+ 2016-05-08 21:58:19.168  INFO  (LoggingJobHistoryPlugin.java:513) - Job group1.job1 execution complete at  21:58:19 05/08/2016 and reports: hello
+ 2016-05-08 21:58:22.163  DEBUG (SimpleJobFactory.java:51) - Producing instance of Job 'group1.job1', class=quartaDemos.demo10.SimpleJob
+ 2016-05-08 21:58:22.164  DEBUG (QuartzSchedulerThread.java:276) - batch acquisition of 1 triggers
+ 2016-05-08 21:58:22.165  INFO  (LoggingJobHistoryPlugin.java:469) - Job group1.job1 fired (by trigger group1.trigger1) at:  21:58:22 05/08/2016
+ 2016-05-08 21:58:22.165  DEBUG (JobRunShell.java:201) - Calling execute on job group1.job1
+ 2016-05-08 21:58:22.165  INFO  (SimpleJob.java:48) - Executing job: group1.job1 executing at Sun May 08 21:58:22 CST 2016, fired by: group1.trigger1
+ 2016-05-08 21:58:22.166  INFO  (SimpleJob.java:54) -  - jobDataMap entry: name = someName
+ 2016-05-08 21:58:22.167  INFO  (LoggingJobHistoryPlugin.java:513) - Job group1.job1 execution complete at  21:58:22 05/08/2016 and reports: hello
+ 2016-05-08 21:58:25.163  DEBUG (SimpleJobFactory.java:51) - Producing instance of Job 'group1.job1', class=quartaDemos.demo10.SimpleJob
+ 2016-05-08 21:58:25.164  DEBUG (QuartzSchedulerThread.java:276) - batch acquisition of 1 triggers
+ 2016-05-08 21:58:25.165  INFO  (LoggingJobHistoryPlugin.java:469) - Job group1.job1 fired (by trigger group1.trigger1) at:  21:58:25 05/08/2016
+ 2016-05-08 21:58:25.165  DEBUG (JobRunShell.java:201) - Calling execute on job group1.job1
+ 2016-05-08 21:58:25.166  INFO  (SimpleJob.java:48) - Executing job: group1.job1 executing at Sun May 08 21:58:25 CST 2016, fired by: group1.trigger1
+ 2016-05-08 21:58:25.166  INFO  (SimpleJob.java:54) -  - jobDataMap entry: name = someName
+ 2016-05-08 21:58:25.167  INFO  (LoggingJobHistoryPlugin.java:513) - Job group1.job1 execution complete at  21:58:25 05/08/2016 and reports: hello
+ 2016-05-08 21:58:28.163  DEBUG (SimpleJobFactory.java:51) - Producing instance of Job 'group1.job1', class=quartaDemos.demo10.SimpleJob
+ 2016-05-08 21:58:28.164  DEBUG (QuartzSchedulerThread.java:276) - batch acquisition of 1 triggers
+ 2016-05-08 21:58:28.165  INFO  (LoggingJobHistoryPlugin.java:469) - Job group1.job1 fired (by trigger group1.trigger1) at:  21:58:28 05/08/2016
+ 2016-05-08 21:58:28.165  DEBUG (JobRunShell.java:201) - Calling execute on job group1.job1
+ 2016-05-08 21:58:28.166  INFO  (SimpleJob.java:48) - Executing job: group1.job1 executing at Sun May 08 21:58:28 CST 2016, fired by: group1.trigger1
+ 2016-05-08 21:58:28.166  INFO  (SimpleJob.java:54) -  - jobDataMap entry: name = someName
+ 2016-05-08 21:58:28.168  INFO  (LoggingJobHistoryPlugin.java:513) - Job group1.job1 execution complete at  21:58:28 05/08/2016 and reports: hello
+ 2016-05-08 21:58:31.163  DEBUG (SimpleJobFactory.java:51) - Producing instance of Job 'group1.job1', class=quartaDemos.demo10.SimpleJob
+ 2016-05-08 21:58:31.164  DEBUG (QuartzSchedulerThread.java:276) - batch acquisition of 1 triggers
+ 2016-05-08 21:58:31.165  INFO  (LoggingJobHistoryPlugin.java:469) - Job group1.job1 fired (by trigger group1.trigger1) at:  21:58:31 05/08/2016
+ 2016-05-08 21:58:31.165  DEBUG (JobRunShell.java:201) - Calling execute on job group1.job1
+ 2016-05-08 21:58:31.166  INFO  (SimpleJob.java:48) - Executing job: group1.job1 executing at Sun May 08 21:58:31 CST 2016, fired by: group1.trigger1
+ 2016-05-08 21:58:31.166  INFO  (SimpleJob.java:54) -  - jobDataMap entry: name = someName
+ 2016-05-08 21:58:31.168  INFO  (LoggingJobHistoryPlugin.java:513) - Job group1.job1 execution complete at  21:58:31 05/08/2016 and reports: hello
+ 2016-05-08 21:58:34.163  DEBUG (SimpleJobFactory.java:51) - Producing instance of Job 'group1.job1', class=quartaDemos.demo10.SimpleJob
+ 2016-05-08 21:58:34.164  DEBUG (QuartzSchedulerThread.java:276) - batch acquisition of 1 triggers
+ 2016-05-08 21:58:34.165  INFO  (LoggingJobHistoryPlugin.java:469) - Job group1.job1 fired (by trigger group1.trigger1) at:  21:58:34 05/08/2016
+ 2016-05-08 21:58:34.165  DEBUG (JobRunShell.java:201) - Calling execute on job group1.job1
+ 2016-05-08 21:58:34.166  INFO  (SimpleJob.java:48) - Executing job: group1.job1 executing at Sun May 08 21:58:34 CST 2016, fired by: group1.trigger1
+ 2016-05-08 21:58:34.167  INFO  (SimpleJob.java:54) -  - jobDataMap entry: name = someName
+ 2016-05-08 21:58:34.168  INFO  (LoggingJobHistoryPlugin.java:513) - Job group1.job1 execution complete at  21:58:34 05/08/2016 and reports: hello
+ 2016-05-08 21:58:37.164  DEBUG (SimpleJobFactory.java:51) - Producing instance of Job 'group1.job1', class=quartaDemos.demo10.SimpleJob
+ 2016-05-08 21:58:37.165  DEBUG (QuartzSchedulerThread.java:276) - batch acquisition of 1 triggers
+ 2016-05-08 21:58:37.166  INFO  (LoggingJobHistoryPlugin.java:469) - Job group1.job1 fired (by trigger group1.trigger1) at:  21:58:37 05/08/2016
+ 2016-05-08 21:58:37.166  DEBUG (JobRunShell.java:201) - Calling execute on job group1.job1
+ 2016-05-08 21:58:37.167  INFO  (SimpleJob.java:48) - Executing job: group1.job1 executing at Sun May 08 21:58:37 CST 2016, fired by: group1.trigger1
+ 2016-05-08 21:58:37.167  INFO  (SimpleJob.java:54) -  - jobDataMap entry: name = someName
+ 2016-05-08 21:58:37.169  INFO  (LoggingJobHistoryPlugin.java:513) - Job group1.job1 execution complete at  21:58:37 05/08/2016 and reports: hello
+ 2016-05-08 21:58:40.163  DEBUG (SimpleJobFactory.java:51) - Producing instance of Job 'group1.job1', class=quartaDemos.demo10.SimpleJob
+ 2016-05-08 21:58:40.164  DEBUG (QuartzSchedulerThread.java:276) - batch acquisition of 1 triggers
+ 2016-05-08 21:58:40.165  INFO  (LoggingJobHistoryPlugin.java:469) - Job group1.job1 fired (by trigger group1.trigger1) at:  21:58:40 05/08/2016
+ 2016-05-08 21:58:40.165  DEBUG (JobRunShell.java:201) - Calling execute on job group1.job1
+ 2016-05-08 21:58:40.166  INFO  (SimpleJob.java:48) - Executing job: group1.job1 executing at Sun May 08 21:58:40 CST 2016, fired by: group1.trigger1
+ 2016-05-08 21:58:40.166  INFO  (SimpleJob.java:54) -  - jobDataMap entry: name = someName
+ 2016-05-08 21:58:40.167  INFO  (LoggingJobHistoryPlugin.java:513) - Job group1.job1 execution complete at  21:58:40 05/08/2016 and reports: hello
+ 2016-05-08 21:58:43.163  DEBUG (SimpleJobFactory.java:51) - Producing instance of Job 'group1.job1', class=quartaDemos.demo10.SimpleJob
+ 2016-05-08 21:58:43.164  DEBUG (QuartzSchedulerThread.java:276) - batch acquisition of 1 triggers
+ 2016-05-08 21:58:43.165  INFO  (LoggingJobHistoryPlugin.java:469) - Job group1.job1 fired (by trigger group1.trigger1) at:  21:58:43 05/08/2016
+ 2016-05-08 21:58:43.166  DEBUG (JobRunShell.java:201) - Calling execute on job group1.job1
+ 2016-05-08 21:58:43.167  INFO  (SimpleJob.java:48) - Executing job: group1.job1 executing at Sun May 08 21:58:43 CST 2016, fired by: group1.trigger1
+ 2016-05-08 21:58:43.168  INFO  (SimpleJob.java:54) -  - jobDataMap entry: name = someName
+ 2016-05-08 21:58:43.170  INFO  (LoggingJobHistoryPlugin.java:513) - Job group1.job1 execution complete at  21:58:43 05/08/2016 and reports: hello
+ 2016-05-08 21:58:46.163  DEBUG (SimpleJobFactory.java:51) - Producing instance of Job 'group1.job1', class=quartaDemos.demo10.SimpleJob
+ 2016-05-08 21:58:46.164  DEBUG (QuartzSchedulerThread.java:276) - batch acquisition of 1 triggers
+ 2016-05-08 21:58:46.165  INFO  (LoggingJobHistoryPlugin.java:469) - Job group1.job1 fired (by trigger group1.trigger1) at:  21:58:46 05/08/2016
+ 2016-05-08 21:58:46.165  DEBUG (JobRunShell.java:201) - Calling execute on job group1.job1
+ 2016-05-08 21:58:46.166  INFO  (SimpleJob.java:48) - Executing job: group1.job1 executing at Sun May 08 21:58:46 CST 2016, fired by: group1.trigger1
+ 2016-05-08 21:58:46.166  INFO  (SimpleJob.java:54) -  - jobDataMap entry: name = someName
+ 2016-05-08 21:58:46.167  INFO  (LoggingJobHistoryPlugin.java:513) - Job group1.job1 execution complete at  21:58:46 05/08/2016 and reports: hello
+ 2016-05-08 21:58:49.163  DEBUG (SimpleJobFactory.java:51) - Producing instance of Job 'group1.job1', class=quartaDemos.demo10.SimpleJob
+ 2016-05-08 21:58:49.163  DEBUG (QuartzSchedulerThread.java:276) - batch acquisition of 1 triggers
+ 2016-05-08 21:58:49.164  INFO  (LoggingJobHistoryPlugin.java:469) - Job group1.job1 fired (by trigger group1.trigger1) at:  21:58:49 05/08/2016
+ 2016-05-08 21:58:49.164  DEBUG (JobRunShell.java:201) - Calling execute on job group1.job1
+ 2016-05-08 21:58:49.164  INFO  (SimpleJob.java:48) - Executing job: group1.job1 executing at Sun May 08 21:58:49 CST 2016, fired by: group1.trigger1
+ 2016-05-08 21:58:49.165  INFO  (SimpleJob.java:54) -  - jobDataMap entry: name = someName
+ 2016-05-08 21:58:49.165  INFO  (LoggingJobHistoryPlugin.java:513) - Job group1.job1 execution complete at  21:58:49 05/08/2016 and reports: hello
+ 2016-05-08 21:58:52.163  DEBUG (SimpleJobFactory.java:51) - Producing instance of Job 'group1.job1', class=quartaDemos.demo10.SimpleJob
+ 2016-05-08 21:58:52.164  DEBUG (QuartzSchedulerThread.java:276) - batch acquisition of 1 triggers
+ 2016-05-08 21:58:52.165  INFO  (LoggingJobHistoryPlugin.java:469) - Job group1.job1 fired (by trigger group1.trigger1) at:  21:58:52 05/08/2016
+ 2016-05-08 21:58:52.165  DEBUG (JobRunShell.java:201) - Calling execute on job group1.job1
+ 2016-05-08 21:58:52.166  INFO  (SimpleJob.java:48) - Executing job: group1.job1 executing at Sun May 08 21:58:52 CST 2016, fired by: group1.trigger1
+ 2016-05-08 21:58:52.167  INFO  (SimpleJob.java:54) -  - jobDataMap entry: name = someName
+ 2016-05-08 21:58:52.168  INFO  (LoggingJobHistoryPlugin.java:513) - Job group1.job1 execution complete at  21:58:52 05/08/2016 and reports: hello
+ 2016-05-08 21:58:55.163  DEBUG (SimpleJobFactory.java:51) - Producing instance of Job 'group1.job1', class=quartaDemos.demo10.SimpleJob
+ 2016-05-08 21:58:55.164  INFO  (LoggingJobHistoryPlugin.java:469) - Job group1.job1 fired (by trigger group1.trigger1) at:  21:58:55 05/08/2016
+ 2016-05-08 21:58:55.164  DEBUG (JobRunShell.java:201) - Calling execute on job group1.job1
+ 2016-05-08 21:58:55.164  INFO  (SimpleJob.java:48) - Executing job: group1.job1 executing at Sun May 08 21:58:55 CST 2016, fired by: group1.trigger1
+ 2016-05-08 21:58:55.164  INFO  (SimpleJob.java:54) -  - jobDataMap entry: name = someName
+ 2016-05-08 21:58:55.165  INFO  (LoggingJobHistoryPlugin.java:513) - Job group1.job1 execution complete at  21:58:55 05/08/2016 and reports: hello
+ 2016-05-08 21:58:55.174  DEBUG (QuartzSchedulerThread.java:276) - batch acquisition of 1 triggers
+ 2016-05-08 21:58:57.902  DEBUG (SimpleJobFactory.java:51) - Producing instance of Job 'JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_data_xml', class=org.quartz.jobs.FileScanJob
+ 2016-05-08 21:58:57.903  DEBUG (QuartzSchedulerThread.java:276) - batch acquisition of 1 triggers
+ 2016-05-08 21:58:57.903  INFO  (LoggingJobHistoryPlugin.java:469) - Job JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_data_xml fired (by trigger JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_data_xml) at:  21:58:57 05/08/2016
+ 2016-05-08 21:58:57.904  DEBUG (JobRunShell.java:201) - Calling execute on job JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_data_xml
+ 2016-05-08 21:58:57.904  DEBUG (FileScanJob.java:138) - File 'quartz_data.xml' unchanged.
+ 2016-05-08 21:58:57.904  INFO  (LoggingJobHistoryPlugin.java:513) - Job JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_data_xml execution complete at  21:58:57 05/08/2016 and reports: null
+ 2016-05-08 21:58:57.905  DEBUG (QuartzSchedulerThread.java:276) - batch acquisition of 1 triggers
+ 2016-05-08 21:58:58.164  DEBUG (SimpleJobFactory.java:51) - Producing instance of Job 'group1.job1', class=quartaDemos.demo10.SimpleJob
+ 2016-05-08 21:58:58.165  DEBUG (QuartzSchedulerThread.java:276) - batch acquisition of 1 triggers
+ 2016-05-08 21:58:58.166  INFO  (LoggingJobHistoryPlugin.java:469) - Job group1.job1 fired (by trigger group1.trigger1) at:  21:58:58 05/08/2016
+ 2016-05-08 21:58:58.166  DEBUG (JobRunShell.java:201) - Calling execute on job group1.job1
+ 2016-05-08 21:58:58.167  INFO  (SimpleJob.java:48) - Executing job: group1.job1 executing at Sun May 08 21:58:58 CST 2016, fired by: group1.trigger1
+ 2016-05-08 21:58:58.167  INFO  (SimpleJob.java:54) -  - jobDataMap entry: name = someName
+ 2016-05-08 21:58:58.168  INFO  (LoggingJobHistoryPlugin.java:513) - Job group1.job1 execution complete at  21:58:58 05/08/2016 and reports: hello
+ 2016-05-08 21:59:01.163  DEBUG (SimpleJobFactory.java:51) - Producing instance of Job 'group1.job1', class=quartaDemos.demo10.SimpleJob
+ 2016-05-08 21:59:01.163  DEBUG (QuartzSchedulerThread.java:276) - batch acquisition of 1 triggers
+ 2016-05-08 21:59:01.163  INFO  (LoggingJobHistoryPlugin.java:469) - Job group1.job1 fired (by trigger group1.trigger1) at:  21:59:01 05/08/2016
+ 2016-05-08 21:59:01.164  DEBUG (JobRunShell.java:201) - Calling execute on job group1.job1
+ 2016-05-08 21:59:01.164  INFO  (SimpleJob.java:48) - Executing job: group1.job1 executing at Sun May 08 21:59:01 CST 2016, fired by: group1.trigger1
+ 2016-05-08 21:59:01.164  INFO  (SimpleJob.java:54) -  - jobDataMap entry: name = someName
+ 2016-05-08 21:59:01.164  INFO  (LoggingJobHistoryPlugin.java:513) - Job group1.job1 execution complete at  21:59:01 05/08/2016 and reports: hello
+ 2016-05-08 21:59:04.163  DEBUG (SimpleJobFactory.java:51) - Producing instance of Job 'group1.job1', class=quartaDemos.demo10.SimpleJob
+ 2016-05-08 21:59:04.164  DEBUG (QuartzSchedulerThread.java:276) - batch acquisition of 1 triggers
+ 2016-05-08 21:59:04.165  INFO  (LoggingJobHistoryPlugin.java:469) - Job group1.job1 fired (by trigger group1.trigger1) at:  21:59:04 05/08/2016
+ 2016-05-08 21:59:04.165  DEBUG (JobRunShell.java:201) - Calling execute on job group1.job1
+ 2016-05-08 21:59:04.166  INFO  (SimpleJob.java:48) - Executing job: group1.job1 executing at Sun May 08 21:59:04 CST 2016, fired by: group1.trigger1
+ 2016-05-08 21:59:04.166  INFO  (SimpleJob.java:54) -  - jobDataMap entry: name = someName
+ 2016-05-08 21:59:04.167  INFO  (LoggingJobHistoryPlugin.java:513) - Job group1.job1 execution complete at  21:59:04 05/08/2016 and reports: hello
+ 2016-05-08 21:59:07.163  DEBUG (SimpleJobFactory.java:51) - Producing instance of Job 'group1.job1', class=quartaDemos.demo10.SimpleJob
+ 2016-05-08 21:59:07.163  DEBUG (QuartzSchedulerThread.java:276) - batch acquisition of 1 triggers
+ 2016-05-08 21:59:07.163  INFO  (LoggingJobHistoryPlugin.java:469) - Job group1.job1 fired (by trigger group1.trigger1) at:  21:59:07 05/08/2016
+ 2016-05-08 21:59:07.164  DEBUG (JobRunShell.java:201) - Calling execute on job group1.job1
+ 2016-05-08 21:59:07.164  INFO  (SimpleJob.java:48) - Executing job: group1.job1 executing at Sun May 08 21:59:07 CST 2016, fired by: group1.trigger1
+ 2016-05-08 21:59:07.164  INFO  (SimpleJob.java:54) -  - jobDataMap entry: name = someName
+ 2016-05-08 21:59:07.164  INFO  (LoggingJobHistoryPlugin.java:513) - Job group1.job1 execution complete at  21:59:07 05/08/2016 and reports: hello
+ 2016-05-08 21:59:10.163  DEBUG (SimpleJobFactory.java:51) - Producing instance of Job 'group1.job1', class=quartaDemos.demo10.SimpleJob
+ 2016-05-08 21:59:10.164  DEBUG (QuartzSchedulerThread.java:276) - batch acquisition of 1 triggers
+ 2016-05-08 21:59:10.165  INFO  (LoggingJobHistoryPlugin.java:469) - Job group1.job1 fired (by trigger group1.trigger1) at:  21:59:10 05/08/2016
+ 2016-05-08 21:59:10.166  DEBUG (JobRunShell.java:201) - Calling execute on job group1.job1
+ 2016-05-08 21:59:10.166  INFO  (SimpleJob.java:48) - Executing job: group1.job1 executing at Sun May 08 21:59:10 CST 2016, fired by: group1.trigger1
+ 2016-05-08 21:59:10.168  INFO  (SimpleJob.java:54) -  - jobDataMap entry: name = someName
+ 2016-05-08 21:59:10.170  INFO  (LoggingJobHistoryPlugin.java:513) - Job group1.job1 execution complete at  21:59:10 05/08/2016 and reports: hello
+ 2016-05-08 21:59:13.163  DEBUG (SimpleJobFactory.java:51) - Producing instance of Job 'group1.job1', class=quartaDemos.demo10.SimpleJob
+ 2016-05-08 21:59:13.164  DEBUG (QuartzSchedulerThread.java:276) - batch acquisition of 1 triggers
+ 2016-05-08 21:59:13.165  INFO  (LoggingJobHistoryPlugin.java:469) - Job group1.job1 fired (by trigger group1.trigger1) at:  21:59:13 05/08/2016
+ 2016-05-08 21:59:13.165  DEBUG (JobRunShell.java:201) - Calling execute on job group1.job1
+ 2016-05-08 21:59:13.166  INFO  (SimpleJob.java:48) - Executing job: group1.job1 executing at Sun May 08 21:59:13 CST 2016, fired by: group1.trigger1
+ 2016-05-08 21:59:13.166  INFO  (SimpleJob.java:54) -  - jobDataMap entry: name = someName
+ 2016-05-08 21:59:13.168  INFO  (LoggingJobHistoryPlugin.java:513) - Job group1.job1 execution complete at  21:59:13 05/08/2016 and reports: hello
+ 2016-05-08 21:59:16.163  DEBUG (SimpleJobFactory.java:51) - Producing instance of Job 'group1.job1', class=quartaDemos.demo10.SimpleJob
+ 2016-05-08 21:59:16.164  DEBUG (QuartzSchedulerThread.java:276) - batch acquisition of 1 triggers
+ 2016-05-08 21:59:16.164  INFO  (LoggingJobHistoryPlugin.java:469) - Job group1.job1 fired (by trigger group1.trigger1) at:  21:59:16 05/08/2016
+ 2016-05-08 21:59:16.164  DEBUG (JobRunShell.java:201) - Calling execute on job group1.job1
+ 2016-05-08 21:59:16.164  INFO  (SimpleJob.java:48) - Executing job: group1.job1 executing at Sun May 08 21:59:16 CST 2016, fired by: group1.trigger1
+ 2016-05-08 21:59:16.166  INFO  (SimpleJob.java:54) -  - jobDataMap entry: name = someName
+ 2016-05-08 21:59:16.166  INFO  (LoggingJobHistoryPlugin.java:513) - Job group1.job1 execution complete at  21:59:16 05/08/2016 and reports: hello
+ 2016-05-08 21:59:19.164  DEBUG (SimpleJobFactory.java:51) - Producing instance of Job 'group1.job1', class=quartaDemos.demo10.SimpleJob
+ 2016-05-08 21:59:19.165  DEBUG (QuartzSchedulerThread.java:276) - batch acquisition of 1 triggers
+ 2016-05-08 21:59:19.166  INFO  (LoggingJobHistoryPlugin.java:469) - Job group1.job1 fired (by trigger group1.trigger1) at:  21:59:19 05/08/2016
+ 2016-05-08 21:59:19.166  DEBUG (JobRunShell.java:201) - Calling execute on job group1.job1
+ 2016-05-08 21:59:19.167  INFO  (SimpleJob.java:48) - Executing job: group1.job1 executing at Sun May 08 21:59:19 CST 2016, fired by: group1.trigger1
+ 2016-05-08 21:59:19.168  INFO  (SimpleJob.java:54) -  - jobDataMap entry: name = someName
+ 2016-05-08 21:59:19.169  INFO  (LoggingJobHistoryPlugin.java:513) - Job group1.job1 execution complete at  21:59:19 05/08/2016 and reports: hello
+ 2016-05-08 21:59:22.163  DEBUG (SimpleJobFactory.java:51) - Producing instance of Job 'group1.job1', class=quartaDemos.demo10.SimpleJob
+ 2016-05-08 21:59:22.165  DEBUG (QuartzSchedulerThread.java:276) - batch acquisition of 1 triggers
+ 2016-05-08 21:59:22.165  INFO  (LoggingJobHistoryPlugin.java:469) - Job group1.job1 fired (by trigger group1.trigger1) at:  21:59:22 05/08/2016
+ 2016-05-08 21:59:22.167  DEBUG (JobRunShell.java:201) - Calling execute on job group1.job1
+ 2016-05-08 21:59:22.168  INFO  (SimpleJob.java:48) - Executing job: group1.job1 executing at Sun May 08 21:59:22 CST 2016, fired by: group1.trigger1
+ 2016-05-08 21:59:22.168  INFO  (SimpleJob.java:54) -  - jobDataMap entry: name = someName
+ 2016-05-08 21:59:22.170  INFO  (LoggingJobHistoryPlugin.java:513) - Job group1.job1 execution complete at  21:59:22 05/08/2016 and reports: hello
+ 2016-05-08 21:59:25.163  DEBUG (SimpleJobFactory.java:51) - Producing instance of Job 'group1.job1', class=quartaDemos.demo10.SimpleJob
+ 2016-05-08 21:59:25.164  DEBUG (QuartzSchedulerThread.java:276) - batch acquisition of 1 triggers
+ 2016-05-08 21:59:25.165  INFO  (LoggingJobHistoryPlugin.java:469) - Job group1.job1 fired (by trigger group1.trigger1) at:  21:59:25 05/08/2016
+ 2016-05-08 21:59:25.167  DEBUG (JobRunShell.java:201) - Calling execute on job group1.job1
+ 2016-05-08 21:59:25.168  INFO  (SimpleJob.java:48) - Executing job: group1.job1 executing at Sun May 08 21:59:25 CST 2016, fired by: group1.trigger1
+ 2016-05-08 21:59:25.168  INFO  (SimpleJob.java:54) -  - jobDataMap entry: name = someName
+ 2016-05-08 21:59:25.170  INFO  (LoggingJobHistoryPlugin.java:513) - Job group1.job1 execution complete at  21:59:25 05/08/2016 and reports: hello
+ 2016-05-08 21:59:28.163  DEBUG (SimpleJobFactory.java:51) - Producing instance of Job 'group1.job1', class=quartaDemos.demo10.SimpleJob
+ 2016-05-08 21:59:28.164  DEBUG (QuartzSchedulerThread.java:276) - batch acquisition of 1 triggers
+ 2016-05-08 21:59:28.165  INFO  (LoggingJobHistoryPlugin.java:469) - Job group1.job1 fired (by trigger group1.trigger1) at:  21:59:28 05/08/2016
+ 2016-05-08 21:59:28.165  DEBUG (JobRunShell.java:201) - Calling execute on job group1.job1
+ 2016-05-08 21:59:28.167  INFO  (SimpleJob.java:48) - Executing job: group1.job1 executing at Sun May 08 21:59:28 CST 2016, fired by: group1.trigger1
+ 2016-05-08 21:59:28.167  INFO  (SimpleJob.java:54) -  - jobDataMap entry: name = someName
+ 2016-05-08 21:59:28.169  INFO  (LoggingJobHistoryPlugin.java:513) - Job group1.job1 execution complete at  21:59:28 05/08/2016 and reports: hello
+ 2016-05-08 21:59:31.163  DEBUG (SimpleJobFactory.java:51) - Producing instance of Job 'group1.job1', class=quartaDemos.demo10.SimpleJob
+ 2016-05-08 21:59:31.176  DEBUG (QuartzSchedulerThread.java:276) - batch acquisition of 1 triggers
+ 2016-05-08 21:59:31.177  INFO  (LoggingJobHistoryPlugin.java:469) - Job group1.job1 fired (by trigger group1.trigger1) at:  21:59:31 05/08/2016
+ 2016-05-08 21:59:31.178  DEBUG (JobRunShell.java:201) - Calling execute on job group1.job1
+ 2016-05-08 21:59:31.179  INFO  (SimpleJob.java:48) - Executing job: group1.job1 executing at Sun May 08 21:59:31 CST 2016, fired by: group1.trigger1
+ 2016-05-08 21:59:31.179  INFO  (SimpleJob.java:54) -  - jobDataMap entry: name = someName
+ 2016-05-08 21:59:31.180  INFO  (LoggingJobHistoryPlugin.java:513) - Job group1.job1 execution complete at  21:59:31 05/08/2016 and reports: hello
+ 2016-05-08 21:59:34.163  DEBUG (SimpleJobFactory.java:51) - Producing instance of Job 'group1.job1', class=quartaDemos.demo10.SimpleJob
+ 2016-05-08 21:59:34.163  DEBUG (QuartzSchedulerThread.java:276) - batch acquisition of 1 triggers
+ 2016-05-08 21:59:34.163  INFO  (LoggingJobHistoryPlugin.java:469) - Job group1.job1 fired (by trigger group1.trigger1) at:  21:59:34 05/08/2016
+ 2016-05-08 21:59:34.164  DEBUG (JobRunShell.java:201) - Calling execute on job group1.job1
+ 2016-05-08 21:59:34.164  INFO  (SimpleJob.java:48) - Executing job: group1.job1 executing at Sun May 08 21:59:34 CST 2016, fired by: group1.trigger1
+ 2016-05-08 21:59:34.165  INFO  (SimpleJob.java:54) -  - jobDataMap entry: name = someName
+ 2016-05-08 21:59:34.165  INFO  (LoggingJobHistoryPlugin.java:513) - Job group1.job1 execution complete at  21:59:34 05/08/2016 and reports: hello
+ 2016-05-08 21:59:37.163  DEBUG (SimpleJobFactory.java:51) - Producing instance of Job 'group1.job1', class=quartaDemos.demo10.SimpleJob
+ 2016-05-08 21:59:37.163  DEBUG (QuartzSchedulerThread.java:276) - batch acquisition of 1 triggers
+ 2016-05-08 21:59:37.163  INFO  (LoggingJobHistoryPlugin.java:469) - Job group1.job1 fired (by trigger group1.trigger1) at:  21:59:37 05/08/2016
+ 2016-05-08 21:59:37.164  DEBUG (JobRunShell.java:201) - Calling execute on job group1.job1
+ 2016-05-08 21:59:37.164  INFO  (SimpleJob.java:48) - Executing job: group1.job1 executing at Sun May 08 21:59:37 CST 2016, fired by: group1.trigger1
+ 2016-05-08 21:59:37.164  INFO  (SimpleJob.java:54) -  - jobDataMap entry: name = someName
+ 2016-05-08 21:59:37.164  INFO  (LoggingJobHistoryPlugin.java:513) - Job group1.job1 execution complete at  21:59:37 05/08/2016 and reports: hello
+ 2016-05-08 21:59:40.163  DEBUG (SimpleJobFactory.java:51) - Producing instance of Job 'group1.job1', class=quartaDemos.demo10.SimpleJob
+ 2016-05-08 21:59:40.165  DEBUG (QuartzSchedulerThread.java:276) - batch acquisition of 1 triggers
+ 2016-05-08 21:59:40.166  INFO  (LoggingJobHistoryPlugin.java:469) - Job group1.job1 fired (by trigger group1.trigger1) at:  21:59:40 05/08/2016
+ 2016-05-08 21:59:40.167  DEBUG (JobRunShell.java:201) - Calling execute on job group1.job1
+ 2016-05-08 21:59:40.168  INFO  (SimpleJob.java:48) - Executing job: group1.job1 executing at Sun May 08 21:59:40 CST 2016, fired by: group1.trigger1
+ 2016-05-08 21:59:40.168  INFO  (SimpleJob.java:54) -  - jobDataMap entry: name = someName
+ 2016-05-08 21:59:40.169  INFO  (LoggingJobHistoryPlugin.java:513) - Job group1.job1 execution complete at  21:59:40 05/08/2016 and reports: hello
+ 2016-05-08 21:59:43.164  DEBUG (SimpleJobFactory.java:51) - Producing instance of Job 'group1.job1', class=quartaDemos.demo10.SimpleJob
+ 2016-05-08 21:59:43.165  DEBUG (QuartzSchedulerThread.java:276) - batch acquisition of 1 triggers
+ 2016-05-08 21:59:43.166  INFO  (LoggingJobHistoryPlugin.java:469) - Job group1.job1 fired (by trigger group1.trigger1) at:  21:59:43 05/08/2016
+ 2016-05-08 21:59:43.166  DEBUG (JobRunShell.java:201) - Calling execute on job group1.job1
+ 2016-05-08 21:59:43.167  INFO  (SimpleJob.java:48) - Executing job: group1.job1 executing at Sun May 08 21:59:43 CST 2016, fired by: group1.trigger1
+ 2016-05-08 21:59:43.167  INFO  (SimpleJob.java:54) -  - jobDataMap entry: name = someName
+ 2016-05-08 21:59:43.168  INFO  (LoggingJobHistoryPlugin.java:513) - Job group1.job1 execution complete at  21:59:43 05/08/2016 and reports: hello
+ 2016-05-08 21:59:46.163  DEBUG (SimpleJobFactory.java:51) - Producing instance of Job 'group1.job1', class=quartaDemos.demo10.SimpleJob
+ 2016-05-08 21:59:46.164  DEBUG (QuartzSchedulerThread.java:276) - batch acquisition of 1 triggers
+ 2016-05-08 21:59:46.164  INFO  (LoggingJobHistoryPlugin.java:469) - Job group1.job1 fired (by trigger group1.trigger1) at:  21:59:46 05/08/2016
+ 2016-05-08 21:59:46.165  DEBUG (JobRunShell.java:201) - Calling execute on job group1.job1
+ 2016-05-08 21:59:46.166  INFO  (SimpleJob.java:48) - Executing job: group1.job1 executing at Sun May 08 21:59:46 CST 2016, fired by: group1.trigger1
+ 2016-05-08 21:59:46.166  INFO  (SimpleJob.java:54) -  - jobDataMap entry: name = someName
+ 2016-05-08 21:59:46.168  INFO  (LoggingJobHistoryPlugin.java:513) - Job group1.job1 execution complete at  21:59:46 05/08/2016 and reports: hello
+ 2016-05-08 21:59:49.163  DEBUG (SimpleJobFactory.java:51) - Producing instance of Job 'group1.job1', class=quartaDemos.demo10.SimpleJob
+ 2016-05-08 21:59:49.164  DEBUG (QuartzSchedulerThread.java:276) - batch acquisition of 1 triggers
+ 2016-05-08 21:59:49.165  INFO  (LoggingJobHistoryPlugin.java:469) - Job group1.job1 fired (by trigger group1.trigger1) at:  21:59:49 05/08/2016
+ 2016-05-08 21:59:49.165  DEBUG (JobRunShell.java:201) - Calling execute on job group1.job1
+ 2016-05-08 21:59:49.166  INFO  (SimpleJob.java:48) - Executing job: group1.job1 executing at Sun May 08 21:59:49 CST 2016, fired by: group1.trigger1
+ 2016-05-08 21:59:49.167  INFO  (SimpleJob.java:54) -  - jobDataMap entry: name = someName
+ 2016-05-08 21:59:49.168  INFO  (LoggingJobHistoryPlugin.java:513) - Job group1.job1 execution complete at  21:59:49 05/08/2016 and reports: hello
+ 2016-05-08 21:59:52.163  DEBUG (SimpleJobFactory.java:51) - Producing instance of Job 'group1.job1', class=quartaDemos.demo10.SimpleJob
+ 2016-05-08 21:59:52.165  DEBUG (QuartzSchedulerThread.java:276) - batch acquisition of 1 triggers
+ 2016-05-08 21:59:52.165  INFO  (LoggingJobHistoryPlugin.java:469) - Job group1.job1 fired (by trigger group1.trigger1) at:  21:59:52 05/08/2016
+ 2016-05-08 21:59:52.166  DEBUG (JobRunShell.java:201) - Calling execute on job group1.job1
+ 2016-05-08 21:59:52.166  INFO  (SimpleJob.java:48) - Executing job: group1.job1 executing at Sun May 08 21:59:52 CST 2016, fired by: group1.trigger1
+ 2016-05-08 21:59:52.167  INFO  (SimpleJob.java:54) -  - jobDataMap entry: name = someName
+ 2016-05-08 21:59:52.169  INFO  (LoggingJobHistoryPlugin.java:513) - Job group1.job1 execution complete at  21:59:52 05/08/2016 and reports: hello
+ 2016-05-08 21:59:55.163  DEBUG (SimpleJobFactory.java:51) - Producing instance of Job 'group1.job1', class=quartaDemos.demo10.SimpleJob
+ 2016-05-08 21:59:55.164  DEBUG (QuartzSchedulerThread.java:276) - batch acquisition of 1 triggers
+ 2016-05-08 21:59:55.164  INFO  (LoggingJobHistoryPlugin.java:469) - Job group1.job1 fired (by trigger group1.trigger1) at:  21:59:55 05/08/2016
+ 2016-05-08 21:59:55.165  DEBUG (JobRunShell.java:201) - Calling execute on job group1.job1
+ 2016-05-08 21:59:55.166  INFO  (SimpleJob.java:48) - Executing job: group1.job1 executing at Sun May 08 21:59:55 CST 2016, fired by: group1.trigger1
+ 2016-05-08 21:59:55.166  INFO  (SimpleJob.java:54) -  - jobDataMap entry: name = someName
+ 2016-05-08 21:59:55.167  INFO  (LoggingJobHistoryPlugin.java:513) - Job group1.job1 execution complete at  21:59:55 05/08/2016 and reports: hello
+ 2016-05-08 21:59:58.163  DEBUG (SimpleJobFactory.java:51) - Producing instance of Job 'group1.job1', class=quartaDemos.demo10.SimpleJob
+ 2016-05-08 21:59:58.164  DEBUG (QuartzSchedulerThread.java:276) - batch acquisition of 1 triggers
+ 2016-05-08 21:59:58.165  INFO  (LoggingJobHistoryPlugin.java:469) - Job group1.job1 fired (by trigger group1.trigger1) at:  21:59:58 05/08/2016
+ 2016-05-08 21:59:58.165  DEBUG (JobRunShell.java:201) - Calling execute on job group1.job1
+ 2016-05-08 21:59:58.166  INFO  (SimpleJob.java:48) - Executing job: group1.job1 executing at Sun May 08 21:59:58 CST 2016, fired by: group1.trigger1
+ 2016-05-08 21:59:58.167  INFO  (SimpleJob.java:54) -  - jobDataMap entry: name = someName
+ 2016-05-08 21:59:58.168  INFO  (LoggingJobHistoryPlugin.java:513) - Job group1.job1 execution complete at  21:59:58 05/08/2016 and reports: hello
+ 

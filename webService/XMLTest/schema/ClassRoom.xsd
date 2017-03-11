@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema"
+        targetNamespace="http://www.example.org/ClassRoom" 
+        xmlns:tns="http://www.example.org/ClassRoom" 
+        elementFormDefault="qualified">
+        
+     <element name="classroom" type="tns:classroomType"/>
+     
+     <complexType name="classroomType">
+         <sequence>
+             <element name="grade" type="tns:gradeType"/>
+             <element name="name" type="string"/>
+             <element name="stus" type="tns:stusType">
+             </element>
+         </sequence>
+     </complexType>
+     
+     <complexType name="stusType">
+         <sequence minOccurs="1" maxOccurs="91">
+             <element name="student" type="tns:studentType"></element>
+         </sequence>
+     </complexType>
+     
+     <complexType name="studentType">
+         <sequence>
+             <element name="name" type="string"></element>
+             <element name="sex" type="tns:sexType"></element>
+         </sequence>
+     </complexType>
+     
+     <simpleType name="sexType">
+         <restriction base="string">
+             <enumeration value="F"></enumeration>
+             <enumeration value="M"></enumeration>
+         </restriction>
+     </simpleType>
+     
+     <simpleType name="gradeType">
+         <restriction base="int">
+             <minInclusive value="1"/>
+             <maxExclusive value="8"/>
+         </restriction>
+     </simpleType>
+</schema>

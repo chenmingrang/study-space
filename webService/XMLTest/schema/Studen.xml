@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<student   xmlns="http://www.example.org/Student"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <sex>M</sex>
+    <stuName>周杰伦</stuName>
+</student>

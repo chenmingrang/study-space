@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" 
+        targetNamespace="http://www.example.org/Testo4" 
+        xmlns:tns="http://www.example.org/Testo4" 
+        elementFormDefault="qualified">
+    <element name="persons" type="tns:personsType"></element>
+    
+    <complexType name="personsType">
+        <sequence minOccurs="1" maxOccurs="unbounded">
+           <element name="person" type="tns:personType"></element>
+        </sequence>
+    </complexType>
+    
+    <complexType name="personType">
+        <sequence>
+          <element name="name" type="string"/>
+          <element name="age" type="tns:ageType"/>
+          <element name="email" type="tns:emailType"/>
+       </sequence>
+       <attribute name="sex" type="tns:sexType"/>
+    </complexType>
+    
+    <simpleType name="emailType">
+        <restriction base="string">
+            <pattern value="\w*@\w+.[a-zA-Z]{2,6}"></pattern>
+            <minLength value="6"></minLength>
+            <maxLength value="255"></maxLength>
+        </restriction>
+    </simpleType>
+    
+    <simpleType name="ageType">
+        <restriction base="int">
+           <minInclusive value="1"></minInclusive>
+           <maxExclusive value="150"></maxExclusive>
+        </restriction>
+    </simpleType>
+    
+    <simpleType name="sexType">
+        <restriction base="string">
+            <enumeration value="男"></enumeration>
+            <enumeration value="女"></enumeration>
+        </restriction>
+    </simpleType>
+</schema>

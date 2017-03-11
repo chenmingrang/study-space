@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+	<package name="resulttype" namespace="/resulttype" extends="struts-default">
+		<action name="resulttypeAction" class="resulttype.ResulttypeAction">
+			<!-- 方法一
+				默认为转发 
+					* type：指定结果类型，默认为转发"dispatcher"
+			-->
+			<!-- <result name="success" type="dispatcher">/resulttype/success.jsp</result> -->
+			<!-- 方法二 ：标准写法 -->
+			<!-- <result name="success" type="dispatcher">
+			param：参数
+				* name：参数的名称为"location"
+					实际上，是struts2框架底层的StrutsResultSupport类的setLocation()提供的
+					public void setLocation(String location) {
+				        this.location = location;
+				    }
+				* 所谓的参数，应该是set方法或者get方法后面跟的名称才是参数名
+				<param name="location">/resulttype/success.jsp</param>
+			</result> -->
+			<!-- 
+				重定向到jsp：org.apache.struts2.dispatcher.ServletRedirectResult
+			 -->
+			<!-- <result name="success" type="redirect">
+				<param name="location">/resulttype/success.jsp</param>
+			</result> -->
+			<!-- 
+				重定向到action：org.apache.struts2.dispatcher.ServletActionRedirectResult
+					* 无论是重定向到jsp还是重定向到action，底层代码都是一样的
+			 -->
+			<!-- <result name="success" type="redirectAction">
+				
+					param:
+						* actionName：指定 “目的地” 动作的名字。指定的是struts.xml文件action标签的name属性的值
+						* namespace：指定的是struts.xml文件action对应的package下的namespace属性的值
+				
+				<param name="actionName">helloWorldAction</param>
+				<param name="namespace">/primer</param>
+			</result> -->
+			
+		</action>
+	</package>
+</struts>

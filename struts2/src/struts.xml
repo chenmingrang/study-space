@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+	<!-- 
+		constant：配置常量
+			* name：指定的是struts2框架底层提供的default.properties资源文件中配置的"常量"
+			* value：指定的是配置常量的值
+			* 在struts.xml文件中，配置的常量的值会覆盖底层提供的default.properties资源文件中配置的常量的值
+		
+		* 配置struts2框架的页面中请求连接的后缀名，如果指定多个的话，用","隔开
+		* 如果在struts.xml中和struts.properties资源文件中同时进行配置，struts.properties的配置起作用
+		* 因为常量可以在多个配置文件中进行定义，所以我们需要了解下struts2加载常量的搜索顺序:
+			1 struts-default.xml
+			2 struts-plugin.xml
+			3 struts.xml
+			4 struts.properties(自己创建)
+			5 web.xml
+	 -->
+	<!-- <constant name="struts.action.extension" value="do,love"></constant> -->
+	
+	<!-- 配置国际化资源文件修改时，是否重新加载。默认是false为不加载，true是加载 -->
+	<!-- <constant name="struts.i18n.reload" value="true"></constant> -->
+	
+	<!-- 配置struts2框架的配置文件修改时，是否重新加载。默认是false为不加载，true是加载 -->
+	<!-- <constant name="struts.configuration.xml.reload" value="true"></constant> -->
+	
+	<!-- 
+		配置struts2框架的模式
+			* 默认值是false，是生产模式
+			* true是开发模式，需要更多的调试信息
+				### includes:
+				### - struts.i18n.reload = true
+				### - struts.configuration.xml.reload = true
+	 -->
+	<constant name="struts.devMode" value="true"></constant>
+	
+	<!-- 配置动态方法调用，设置成不开启。默认是true是开启状态；false是不开启状态 -->
+	<!-- <constant name="struts.enable.DynamicMethodInvocation" value="false"></constant> -->
+	
+	<!-- 
+		配置所有资源文件，省略后缀名，如果配置多个资源文件时，用","隔开。不仅是国际化资源文件
+		* 类型转换器的错误提示资源文件
+	 -->
+	<constant name="struts.custom.i18n.resources" 
+			value="converter.converter,
+					i18n.resources">
+	</constant>
+	
+	<!-- 配置文件上传的总大小 -->
+	<constant name="struts.multipart.maxSize" value="2097152000"></constant>
+	
+	<!-- 引入自定义配置文件 -->
+	<include file="primer/struts_primer.xml"></include>
+	<include file="resulttype/struts_resulttype.xml"></include>
+	<include file="pattern/struts_pattern.xml"></include>
+	<include file="converter/struts_converter.xml"></include>
+	<include file="context/struts_context.xml"></include>
+	<include file="i18n/struts_i18n.xml"></include>
+	<include file="upload/struts_upload.xml"></include>
+	<include file="loginI18n/struts_loginI18n.xml"></include>
+	<include file="validate/struts_validate.xml"></include>
+	<include file="aop/struts_aop.xml"></include>
+	<include file="aop/struts_aop.xml"></include>
+	<include file="download/struts_download.xml"></include>
+	
+	
+</struts>

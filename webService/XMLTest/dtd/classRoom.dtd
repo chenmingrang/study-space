@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ELEMENT classRoom (claDesc,claName,students)>
+<!ATTLIST classRoom id ID #REQUIRED>
+<!ELEMENT claDesc (#PCDATA)>
+<!ELEMENT claName (#PCDATA)>
+<!ELEMENT students (student+)>
+<!ELEMENT student (stuId,stuName,grade)>
+<!ELEMENT stuId (#PCDATA)>
+<!ELEMENT stuName (#PCDATA)>
+<!ELEMENT grade (#PCDATA)>

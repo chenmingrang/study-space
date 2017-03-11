@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+	<package name="pattern" namespace="/pattern" extends="struts-default">
+		
+		<!-- 配置全局结果类型 -->
+		<global-results>
+			<result name="success">/pattern/successGlobal.jsp</result>
+		</global-results>
+		
+		<!-- 
+			* struts2框架运行时，默认执行action类中的execute()方法 
+			* 在action标签里的method属性：指定的是要执行action类中的哪个方法
+		-->
+		<!-- <action name="bookAction" class="pattern.BookAction" method="add">
+			<result name="success">/pattern/success.jsp</result>
+			<result name="add">/pattern/BookAction.jsp</result>
+		</action> -->
+		<!-- 
+			<a href="${pageContext.request.contextPath}/pattern/a_add.action"> 通配符映射示例(1)</a><br>
+    		<a href="${pageContext.request.contextPath}/pattern/b_add.action"> 通配符映射示例(1)</a><br>
+    		<a href="${pageContext.request.contextPath}/pattern/c_add.action"> 通配符映射示例(1)</a><br>
+		 -->
+		<!-- <action name="a_add" class="pattern.BookAction" method="add">
+			<result name="success">/pattern/success.jsp</result>
+			<result name="add">/pattern/BookAction.jsp</result>
+		</action>
+		<action name="b_add" class="pattern.BookAction" method="add">
+			<result name="success">/pattern/success.jsp</result>
+			<result name="add">/pattern/BookAction.jsp</result>
+		</action>
+		<action name="c_add" class="pattern.BookAction" method="add">
+			<result name="success">/pattern/success.jsp</result>
+			<result name="add">/pattern/BookAction.jsp</result>
+		</action> -->
+		<!-- 以上配置可以改写如下： -->
+		<!-- "*"就是通配符，匹配的是不一样的内容 -->
+	<!-- 	<action name="*_add" class="pattern.BookAction" method="add">
+			<result name="success">/pattern/success.jsp</result>
+			<result name="add">/pattern/BookAction.jsp</result>
+		</action> -->
+		<!-- 
+			<a href="${pageContext.request.contextPath}/pattern/BookAction_add.action"> 图书</a><br>
+    		<a href="${pageContext.request.contextPath}/pattern/UserAction_add.action">用户</a><br>
+		 -->
+		<!-- <action name="BookAction_add" class="pattern.BookAction" method="add">
+			<result name="success">/pattern/success.jsp</result>
+			<result name="add">/pattern/BookAction.jsp</result>
+		</action>
+		<action name="UserAction_add" class="pattern.UserAction" method="add">
+			<result name="success">/pattern/success.jsp</result>
+			<result name="add">/pattern/UserAction.jsp</result>
+		</action> -->
+		<!-- 以上配置可以改写如下： -->
+		<!-- {1}表示的是匹配"*"通配符的第一个子串 -->
+		<!-- <action name="*_add" class="pattern.{1}" method="add">
+			<result name="success">/pattern/success.jsp</result>
+			<result name="add">/pattern/{1}.jsp</result>
+		</action> -->
+		<!-- 
+			<a href="${pageContext.request.contextPath}/pattern/BookAction_add.action">图书添加</a><br>
+		    <a href="${pageContext.request.contextPath}/pattern/BookAction_delete.action">图书删除</a><br>
+		     <br>
+		     <br>
+		    <a href="${pageContext.request.contextPath}/pattern/UserAction_add.action">用户添加</a><br>
+		    <a href="${pageContext.request.contextPath}/pattern/UserAction_delete.action">用户删除</a><br>
+		 -->
+		<!-- <action name="BookAction_add" class="pattern.BookAction" method="add">
+			<result name="add">/pattern/BookAction.jsp</result>
+		</action>
+		<action name="BookAction_delete" class="pattern.BookAction" method="delete">
+			<result name="success">/pattern/success.jsp</result>
+		</action>
+		<action name="UserAction_add" class="pattern.UserAction" method="add">
+			<result name="add">/pattern/UserAction.jsp</result>
+		</action>
+		<action name="UserAction_delete" class="pattern.UserAction" method="delete">
+			<result name="success">/pattern/success.jsp</result>
+		</action> -->
+		<!-- 以上配置可以改写如下： -->
+		<!-- {2}匹配就是"*"通配符的第二个子串 -->
+		<!-- {0}匹配的是"*"通配符的整个串 -->
+		<!-- <action name="*_*" class="pattern.{1}" method="{2}">
+			<result name="success">/pattern/success.jsp</result>
+			<result name="add">/pattern/{1}.jsp</result>
+		</action> -->
+		<!-- 
+			<a href="${pageContext.request.contextPath}/pattern/BookAction!add.action">图书添加</a><br>
+    		<a href="${pageContext.request.contextPath}/pattern/BookAction!delete.action">图书删除</a><br>
+    		动态方法调用：
+    			* 页面中请求连接：namespace+actionName+"!"+执行方法名
+    			* 在struts.xml文件中，不用配置method属性，而是通过页面的连接动态执行指定方法
+    			* 动态方法调用，不经常使用。经常使用的是通配符
+    			* 动态方法调用，默认是开启状态
+    		        <constant name="struts.enable.DynamicMethodInvocation" value="false"></constant>
+		 -->
+		<!-- <action name="BookAction" class="pattern.BookAction">
+			<result name="success">/pattern/success.jsp</result>
+			<result name="add">/pattern/BookAction.jsp</result>
+		</action> -->
+		<!-- 
+			<a href="${pageContext.request.contextPath}/pattern/BookAction_add.action">图书添加</a><br>
+    		<a href="${pageContext.request.contextPath}/pattern/BookAction_delete.action">图书删除</a><br>
+		 -->
+		<!-- <action name="*_*" class="pattern.{1}" method="{2}">
+			<result name="success">/pattern/success.jsp</result>
+			<result name="add">/pattern/{1}.jsp</result>
+		</action> -->
+		<!-- 
+			<a href="${pageContext.request.contextPath}/pattern/BookAction_find.action">图书查找</a><br>
+		 -->
+		<action name="BookAction_find" class="pattern.BookAction" method="find">
+			<!-- 
+				如果局部结果类型和全局结果类型，同时存在
+					* 局部结果类型会覆盖了全局的结果类型
+				
+				局部结果类型和全局结果类型的作用范围：
+					* 全局结果类型：作用于整个package
+					* 局部结果类型：作用于某个action
+			 -->
+			<!-- <result name="success">/pattern/success.jsp</result> -->
+			<result name="success" type="dispatcher">
+			    <param name="location">/pattern/success.jsp</param>
+			</result>
+		</action>
+		
+	</package>
+</struts>

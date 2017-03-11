@@ -1,0 +1,57 @@
+2016-05-04 08:54:22.066  INFO  (ListenerExample.java:48) - ------- Initializing ----------------------
+ 2016-05-04 08:54:22.094  INFO  (StdSchedulerFactory.java:1172) - Using default implementation for ThreadExecutor
+ 2016-05-04 08:54:22.097  INFO  (SimpleThreadPool.java:268) - Job execution threads will use class loader of thread: main
+ 2016-05-04 08:54:22.110  INFO  (SchedulerSignalerImpl.java:61) - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+ 2016-05-04 08:54:22.112  INFO  (QuartzScheduler.java:240) - Quartz Scheduler v.2.2.2 created.
+ 2016-05-04 08:54:22.113  INFO  (RAMJobStore.java:155) - RAMJobStore initialized.
+ 2016-05-04 08:54:22.114  INFO  (QuartzScheduler.java:305) - Scheduler meta-data: Quartz Scheduler (v2.2.2) 'DefaultQuartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+ 2016-05-04 08:54:22.115  INFO  (StdSchedulerFactory.java:1327) - Quartz scheduler 'DefaultQuartzScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+ 2016-05-04 08:54:22.115  INFO  (StdSchedulerFactory.java:1331) - Quartz scheduler version: 2.2.2
+ 2016-05-04 08:54:22.115  INFO  (ListenerExample.java:53) - ------- Initialization Complete -----------
+ 2016-05-04 08:54:22.115  INFO  (ListenerExample.java:54) - ------- Scheduling Jobs -------------------
+ 2016-05-04 08:54:22.126  INFO  (ListenerExample.java:76) - ------- Starting Scheduler ----------------
+ 2016-05-04 08:54:22.126  INFO  (QuartzScheduler.java:575) - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+ 2016-05-04 08:54:22.126  INFO  (ListenerExample.java:81) - ------- Waiting 30 seconds... --------------
+ 2016-05-04 08:54:22.134  DEBUG (QuartzSchedulerThread.java:276) - batch acquisition of 1 triggers
+ 2016-05-04 08:54:22.138  DEBUG (SimpleJobFactory.java:51) - Producing instance of Job 'DEFAULT.job1', class=quartaDemos.demo9.SimpleJob1
+ 2016-05-04 08:54:22.142  DEBUG (QuartzSchedulerThread.java:276) - batch acquisition of 1 triggers
+ 2016-05-04 08:54:22.143  DEBUG (JobRunShell.java:201) - Calling execute on job DEFAULT.job1
+ 2016-05-04 08:54:22.145  INFO  (SimpleJob1.java:62) - SimpleJob1 says: DEFAULT.job1 executing at Wed May 04 08:54:22 CST 2016
+ 2016-05-04 08:54:30.000  DEBUG (SimpleJobFactory.java:51) - Producing instance of Job 'group1.job2', class=quartaDemos.demo9.SimpleJob1
+ 2016-05-04 08:54:30.001  DEBUG (QuartzSchedulerThread.java:276) - batch acquisition of 0 triggers
+ 2016-05-04 08:54:30.001  INFO  (Job1Listener.java:27) - Job1Listener says: Job Is about to be executed.
+ 2016-05-04 08:54:30.002  DEBUG (JobRunShell.java:201) - Calling execute on job group1.job2
+ 2016-05-04 08:54:30.003  INFO  (SimpleJob1.java:62) - SimpleJob1 says: group1.job2 executing at Wed May 04 08:54:30 CST 2016
+ 2016-05-04 08:54:30.004  INFO  (Job1Listener.java:35) - Job1Listener says: Job was executed.
+ 2016-05-04 08:54:30.045  DEBUG (QuartzSchedulerThread.java:276) - batch acquisition of 1 triggers
+ 2016-05-04 08:54:30.047  DEBUG (SimpleJobFactory.java:51) - Producing instance of Job 'DEFAULT.job2', class=quartaDemos.demo9.SimpleJob2
+ 2016-05-04 08:54:30.050  DEBUG (QuartzSchedulerThread.java:276) - batch acquisition of 0 triggers
+ 2016-05-04 08:54:30.050  DEBUG (JobRunShell.java:201) - Calling execute on job DEFAULT.job2
+ 2016-05-04 08:54:30.052  INFO  (SimpleJob2.java:62) - SimpleJob2 says: DEFAULT.job2 executing at Wed May 04 08:54:30 CST 2016
+ 2016-05-04 08:54:52.134  INFO  (ListenerExample.java:90) - ------- Shutting Down ---------------------
+ 2016-05-04 08:54:52.135  INFO  (QuartzScheduler.java:694) - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED shutting down.
+ 2016-05-04 08:54:52.137  INFO  (QuartzScheduler.java:613) - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED paused.
+ 2016-05-04 08:54:52.138  DEBUG (SimpleThreadPool.java:328) - Shutting down threadpool...
+ 2016-05-04 08:54:52.164  DEBUG (SimpleThreadPool.java:612) - WorkerThread is shut down.
+ 2016-05-04 08:54:52.559  DEBUG (SimpleThreadPool.java:612) - WorkerThread is shut down.
+ 2016-05-04 08:54:52.566  DEBUG (SimpleThreadPool.java:612) - WorkerThread is shut down.
+ 2016-05-04 08:54:52.614  DEBUG (SimpleThreadPool.java:612) - WorkerThread is shut down.
+ 2016-05-04 08:54:52.614  DEBUG (SimpleThreadPool.java:612) - WorkerThread is shut down.
+ 2016-05-04 08:54:52.614  DEBUG (SimpleThreadPool.java:612) - WorkerThread is shut down.
+ 2016-05-04 08:54:52.614  DEBUG (SimpleThreadPool.java:612) - WorkerThread is shut down.
+ 2016-05-04 08:54:52.614  DEBUG (SimpleThreadPool.java:612) - WorkerThread is shut down.
+ 2016-05-04 08:54:52.614  DEBUG (SimpleThreadPool.java:612) - WorkerThread is shut down.
+ 2016-05-04 08:54:52.614  DEBUG (SimpleThreadPool.java:612) - WorkerThread is shut down.
+ 2016-05-04 08:54:52.620  DEBUG (SimpleThreadPool.java:393) - No executing jobs remaining, all threads stopped.
+ 2016-05-04 08:54:52.621  DEBUG (SimpleThreadPool.java:395) - Shutdown of threadpool complete.
+ 2016-05-04 08:54:52.622  INFO  (QuartzScheduler.java:771) - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED shutdown complete.
+ 2016-05-04 08:54:52.622  INFO  (ListenerExample.java:92) - ------- Shutdown Complete -----------------
+ 2016-05-04 08:54:52.623  INFO  (ListenerExample.java:94) - Executed 3 jobs.
+ 

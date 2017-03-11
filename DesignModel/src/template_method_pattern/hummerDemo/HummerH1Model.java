@@ -1,0 +1,34 @@
+package template_method_pattern.hummerDemo;
+
+public class HummerH1Model extends HummerModel{
+	private boolean alarmFlag=true;
+
+	@Override
+	protected void start() {
+		System.out.println("H1发动");
+	}
+
+	@Override
+	protected void stop() {
+		System.out.println("H1停车");
+	}
+
+	@Override
+	protected void alarm() {
+		System.out.println("H1鸣笛");
+	}
+
+	@Override
+	protected void engineBoom() {
+		System.out.println("H1的引擎声");
+	}
+	
+	@Override
+	protected boolean isAlarm(){
+		return alarmFlag;
+	}
+
+	public void setAlarm(boolean isAlarm){
+		this.alarmFlag=isAlarm;
+	}
+}

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 几个元素都可以出现 -->
+<!-- <book xmlns="http://www.example.org/Test03"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      >
+    <title>thinking in java</title>
+    <content>java金典书籍</content>
+</book> -->
+<!-- <title xmlns="http://www.example.org/Test03"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      thinking in java
+</title> -->
+<content xmlns="http://www.example.org/Test03"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    java学习几点教材
+</content>

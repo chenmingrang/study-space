@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classroom xmlns="http://www.example.org/ClassRoom"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+     <grade>3</grade>
+     <name>三年二班</name>
+     <stus>
+         <student>
+             <name>周杰伦</name>
+             <sex>M</sex>
+         </student>
+         <student>
+             <name>叶惠美</name>
+             <sex>F</sex>
+         </student>
+     </stus>
+</classroom>

@@ -1,0 +1,137 @@
+2016-05-04 11:15:33.553  INFO  (SimpleTriggerExample.java:49) - ------- Initializing -------------------
+ 2016-05-04 11:15:33.583  INFO  (StdSchedulerFactory.java:1172) - Using default implementation for ThreadExecutor
+ 2016-05-04 11:15:33.585  INFO  (SimpleThreadPool.java:268) - Job execution threads will use class loader of thread: main
+ 2016-05-04 11:15:33.598  INFO  (SchedulerSignalerImpl.java:61) - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+ 2016-05-04 11:15:33.600  INFO  (QuartzScheduler.java:240) - Quartz Scheduler v.2.2.2 created.
+ 2016-05-04 11:15:33.601  INFO  (RAMJobStore.java:155) - RAMJobStore initialized.
+ 2016-05-04 11:15:33.602  INFO  (QuartzScheduler.java:305) - Scheduler meta-data: Quartz Scheduler (v2.2.2) 'DefaultQuartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 4 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+ 2016-05-04 11:15:33.602  INFO  (StdSchedulerFactory.java:1327) - Quartz scheduler 'DefaultQuartzScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+ 2016-05-04 11:15:33.602  INFO  (StdSchedulerFactory.java:1331) - Quartz scheduler version: 2.2.2
+ 2016-05-04 11:15:33.603  INFO  (SimpleTriggerExample.java:55) - ------- Initialization Complete --------
+ 2016-05-04 11:15:33.603  INFO  (SimpleTriggerExample.java:57) - ------- Scheduling Jobs ----------------
+ 2016-05-04 11:15:33.618  INFO  (SimpleTriggerExample.java:71) - group1.job1 will run at: Wed May 04 11:15:45 CST 2016 and repeat: 0 times, every 0 seconds
+ 2016-05-04 11:15:33.619  INFO  (SimpleTriggerExample.java:80) - group1.job2 will run at: Wed May 04 11:15:45 CST 2016 and repeat: 0 times, every 0 seconds
+ 2016-05-04 11:15:33.620  INFO  (SimpleTriggerExample.java:91) - group1.job3 will run at: Wed May 04 11:15:45 CST 2016 and repeat: 10 times, every 10 seconds
+ 2016-05-04 11:15:33.620  INFO  (SimpleTriggerExample.java:101) - group1.job3 will [also] run at: Wed May 04 11:15:45 CST 2016 and repeat: 2 times, every 10 seconds
+ 2016-05-04 11:15:33.621  INFO  (SimpleTriggerExample.java:112) - group1.job4 will run at: Wed May 04 11:15:45 CST 2016 and repeat: 5 times, every 10 seconds
+ 2016-05-04 11:15:33.624  INFO  (SimpleTriggerExample.java:122) - group1.job5 will run at: Wed May 04 11:20:33 CST 2016 and repeat: 0 times, every 0 seconds
+ 2016-05-04 11:15:33.624  INFO  (SimpleTriggerExample.java:132) - group1.job6 will run at: Wed May 04 11:15:45 CST 2016 and repeat: -1 times, every 40 seconds
+ 2016-05-04 11:15:33.625  INFO  (SimpleTriggerExample.java:135) - ------- Starting Scheduler ----------------
+ 2016-05-04 11:15:33.625  INFO  (QuartzScheduler.java:575) - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+ 2016-05-04 11:15:33.625  INFO  (SimpleTriggerExample.java:141) - ------- Started Scheduler -----------------
+ 2016-05-04 11:15:33.626  DEBUG (QuartzSchedulerThread.java:276) - batch acquisition of 1 triggers
+ 2016-05-04 11:15:33.627  INFO  (SimpleTriggerExample.java:151) - group1.job7 will run at: Wed May 04 11:15:45 CST 2016 and repeat: 20 times, every 300 seconds
+ 2016-05-04 11:15:33.627  INFO  (SimpleTriggerExample.java:159) - 'Manually' triggering job8...
+ 2016-05-04 11:15:33.627  DEBUG (QuartzSchedulerThread.java:276) - batch acquisition of 1 triggers
+ 2016-05-04 11:15:33.627  INFO  (SimpleTriggerExample.java:162) - ------- Waiting 30 seconds... --------------
+ 2016-05-04 11:15:33.628  DEBUG (QuartzSchedulerThread.java:276) - batch acquisition of 1 triggers
+ 2016-05-04 11:15:33.630  DEBUG (SimpleJobFactory.java:51) - Producing instance of Job 'group1.job8', class=quartaDemos.demo2.SimpleJob
+ 2016-05-04 11:15:33.632  DEBUG (QuartzSchedulerThread.java:276) - batch acquisition of 1 triggers
+ 2016-05-04 11:15:33.632  DEBUG (JobRunShell.java:201) - Calling execute on job group1.job8
+ 2016-05-04 11:15:33.633  INFO  (SimpleJob.java:20) - SimpleJob says: group1.job8 executing at Wed May 04 11:15:33 CST 2016
+ 2016-05-04 11:15:45.001  DEBUG (SimpleJobFactory.java:51) - Producing instance of Job 'group1.job1', class=quartaDemos.demo2.SimpleJob
+ 2016-05-04 11:15:45.002  DEBUG (QuartzSchedulerThread.java:276) - batch acquisition of 1 triggers
+ 2016-05-04 11:15:45.002  DEBUG (SimpleJobFactory.java:51) - Producing instance of Job 'group1.job2', class=quartaDemos.demo2.SimpleJob
+ 2016-05-04 11:15:45.002  DEBUG (JobRunShell.java:201) - Calling execute on job group1.job1
+ 2016-05-04 11:15:45.003  DEBUG (JobRunShell.java:201) - Calling execute on job group1.job2
+ 2016-05-04 11:15:45.003  DEBUG (QuartzSchedulerThread.java:276) - batch acquisition of 1 triggers
+ 2016-05-04 11:15:45.010  DEBUG (SimpleJobFactory.java:51) - Producing instance of Job 'group1.job3', class=quartaDemos.demo2.SimpleJob
+ 2016-05-04 11:15:45.011  DEBUG (QuartzSchedulerThread.java:276) - batch acquisition of 1 triggers
+ 2016-05-04 11:15:45.013  DEBUG (SimpleJobFactory.java:51) - Producing instance of Job 'group1.job4', class=quartaDemos.demo2.SimpleJob
+ 2016-05-04 11:15:45.003  INFO  (SimpleJob.java:20) - SimpleJob says: group1.job1 executing at Wed May 04 11:15:45 CST 2016
+ 2016-05-04 11:15:45.017  DEBUG (QuartzSchedulerThread.java:276) - batch acquisition of 1 triggers
+ 2016-05-04 11:15:45.019  DEBUG (SimpleJobFactory.java:51) - Producing instance of Job 'group1.job6', class=quartaDemos.demo2.SimpleJob
+ 2016-05-04 11:15:45.016  DEBUG (JobRunShell.java:201) - Calling execute on job group1.job3
+ 2016-05-04 11:15:45.010  INFO  (SimpleJob.java:20) - SimpleJob says: group1.job2 executing at Wed May 04 11:15:45 CST 2016
+ 2016-05-04 11:15:45.021  DEBUG (QuartzSchedulerThread.java:276) - batch acquisition of 1 triggers
+ 2016-05-04 11:15:45.022  INFO  (SimpleJob.java:20) - SimpleJob says: group1.job3 executing at Wed May 04 11:15:45 CST 2016
+ 2016-05-04 11:15:45.020  DEBUG (JobRunShell.java:201) - Calling execute on job group1.job6
+ 2016-05-04 11:15:45.018  DEBUG (JobRunShell.java:201) - Calling execute on job group1.job4
+ 2016-05-04 11:15:45.023  INFO  (SimpleJob.java:20) - SimpleJob says: group1.job6 executing at Wed May 04 11:15:45 CST 2016
+ 2016-05-04 11:15:45.022  DEBUG (SimpleJobFactory.java:51) - Producing instance of Job 'group1.job7', class=quartaDemos.demo2.SimpleJob
+ 2016-05-04 11:15:45.028  DEBUG (QuartzSchedulerThread.java:276) - batch acquisition of 1 triggers
+ 2016-05-04 11:15:45.029  DEBUG (SimpleJobFactory.java:51) - Producing instance of Job 'group1.job3', class=quartaDemos.demo2.SimpleJob
+ 2016-05-04 11:15:45.024  INFO  (SimpleJob.java:20) - SimpleJob says: group1.job4 executing at Wed May 04 11:15:45 CST 2016
+ 2016-05-04 11:15:45.030  DEBUG (JobRunShell.java:201) - Calling execute on job group1.job3
+ 2016-05-04 11:15:45.030  DEBUG (QuartzSchedulerThread.java:276) - batch acquisition of 1 triggers
+ 2016-05-04 11:15:45.029  DEBUG (JobRunShell.java:201) - Calling execute on job group1.job7
+ 2016-05-04 11:15:45.031  INFO  (SimpleJob.java:20) - SimpleJob says: group1.job3 executing at Wed May 04 11:15:45 CST 2016
+ 2016-05-04 11:15:45.031  INFO  (SimpleJob.java:20) - SimpleJob says: group1.job7 executing at Wed May 04 11:15:45 CST 2016
+ 2016-05-04 11:15:55.002  DEBUG (SimpleJobFactory.java:51) - Producing instance of Job 'group1.job3', class=quartaDemos.demo2.SimpleJob
+ 2016-05-04 11:15:55.003  DEBUG (QuartzSchedulerThread.java:276) - batch acquisition of 1 triggers
+ 2016-05-04 11:15:55.005  DEBUG (JobRunShell.java:201) - Calling execute on job group1.job3
+ 2016-05-04 11:15:55.005  DEBUG (SimpleJobFactory.java:51) - Producing instance of Job 'group1.job4', class=quartaDemos.demo2.SimpleJob
+ 2016-05-04 11:15:55.005  INFO  (SimpleJob.java:20) - SimpleJob says: group1.job3 executing at Wed May 04 11:15:55 CST 2016
+ 2016-05-04 11:15:55.006  DEBUG (JobRunShell.java:201) - Calling execute on job group1.job4
+ 2016-05-04 11:15:55.006  DEBUG (QuartzSchedulerThread.java:276) - batch acquisition of 1 triggers
+ 2016-05-04 11:15:55.008  INFO  (SimpleJob.java:20) - SimpleJob says: group1.job4 executing at Wed May 04 11:15:55 CST 2016
+ 2016-05-04 11:15:55.008  DEBUG (SimpleJobFactory.java:51) - Producing instance of Job 'group1.job3', class=quartaDemos.demo2.SimpleJob
+ 2016-05-04 11:15:55.010  DEBUG (QuartzSchedulerThread.java:276) - batch acquisition of 1 triggers
+ 2016-05-04 11:15:55.010  DEBUG (JobRunShell.java:201) - Calling execute on job group1.job3
+ 2016-05-04 11:15:55.011  INFO  (SimpleJob.java:20) - SimpleJob says: group1.job3 executing at Wed May 04 11:15:55 CST 2016
+ 2016-05-04 11:16:03.629  INFO  (SimpleTriggerExample.java:174) - ------- Rescheduling... --------------------
+ 2016-05-04 11:16:03.630  INFO  (SimpleTriggerExample.java:179) - job7 rescheduled to run at: Wed May 04 11:15:45 CST 2016
+ 2016-05-04 11:16:03.630  DEBUG (QuartzSchedulerThread.java:276) - batch acquisition of 1 triggers
+ 2016-05-04 11:16:03.631  INFO  (SimpleTriggerExample.java:181) - ------- Waiting five minutes... ------------
+ 2016-05-04 11:16:03.631  DEBUG (SimpleJobFactory.java:51) - Producing instance of Job 'group1.job7', class=quartaDemos.demo2.SimpleJob
+ 2016-05-04 11:16:03.633  DEBUG (QuartzSchedulerThread.java:276) - batch acquisition of 1 triggers
+ 2016-05-04 11:16:03.633  DEBUG (JobRunShell.java:201) - Calling execute on job group1.job7
+ 2016-05-04 11:16:03.634  INFO  (SimpleJob.java:20) - SimpleJob says: group1.job7 executing at Wed May 04 11:16:03 CST 2016
+ 2016-05-04 11:16:05.000  DEBUG (SimpleJobFactory.java:51) - Producing instance of Job 'group1.job3', class=quartaDemos.demo2.SimpleJob
+ 2016-05-04 11:16:05.001  DEBUG (QuartzSchedulerThread.java:276) - batch acquisition of 1 triggers
+ 2016-05-04 11:16:05.001  DEBUG (JobRunShell.java:201) - Calling execute on job group1.job3
+ 2016-05-04 11:16:05.002  DEBUG (SimpleJobFactory.java:51) - Producing instance of Job 'group1.job4', class=quartaDemos.demo2.SimpleJob
+ 2016-05-04 11:16:05.003  INFO  (SimpleJob.java:20) - SimpleJob says: group1.job3 executing at Wed May 04 11:16:05 CST 2016
+ 2016-05-04 11:16:05.004  DEBUG (JobRunShell.java:201) - Calling execute on job group1.job4
+ 2016-05-04 11:16:05.004  DEBUG (QuartzSchedulerThread.java:276) - batch acquisition of 1 triggers
+ 2016-05-04 11:16:05.006  INFO  (SimpleJob.java:20) - SimpleJob says: group1.job4 executing at Wed May 04 11:16:05 CST 2016
+ 2016-05-04 11:16:05.006  DEBUG (SimpleJobFactory.java:51) - Producing instance of Job 'group1.job3', class=quartaDemos.demo2.SimpleJob
+ 2016-05-04 11:16:05.009  DEBUG (QuartzSchedulerThread.java:276) - batch acquisition of 1 triggers
+ 2016-05-04 11:16:05.011  DEBUG (JobRunShell.java:201) - Calling execute on job group1.job3
+ 2016-05-04 11:16:05.012  INFO  (SimpleJob.java:20) - SimpleJob says: group1.job3 executing at Wed May 04 11:16:05 CST 2016
+ 2016-05-04 11:16:46.457  INFO  (SimpleTriggerExample.java:49) - ------- Initializing -------------------
+ 2016-05-04 11:16:46.485  INFO  (StdSchedulerFactory.java:1172) - Using default implementation for ThreadExecutor
+ 2016-05-04 11:16:46.488  INFO  (SimpleThreadPool.java:268) - Job execution threads will use class loader of thread: main
+ 2016-05-04 11:16:46.503  INFO  (SchedulerSignalerImpl.java:61) - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+ 2016-05-04 11:16:46.505  INFO  (QuartzScheduler.java:240) - Quartz Scheduler v.2.2.2 created.
+ 2016-05-04 11:16:46.506  INFO  (RAMJobStore.java:155) - RAMJobStore initialized.
+ 2016-05-04 11:16:46.507  INFO  (QuartzScheduler.java:305) - Scheduler meta-data: Quartz Scheduler (v2.2.2) 'DefaultQuartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 5 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+ 2016-05-04 11:16:46.507  INFO  (StdSchedulerFactory.java:1327) - Quartz scheduler 'DefaultQuartzScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+ 2016-05-04 11:16:46.508  INFO  (StdSchedulerFactory.java:1331) - Quartz scheduler version: 2.2.2
+ 2016-05-04 11:16:46.508  INFO  (SimpleTriggerExample.java:55) - ------- Initialization Complete --------
+ 2016-05-04 11:16:46.508  INFO  (SimpleTriggerExample.java:57) - ------- Scheduling Jobs ----------------
+ 2016-05-04 11:16:46.518  INFO  (SimpleTriggerExample.java:71) - group1.job1 will run at: Wed May 04 11:17:00 CST 2016 and repeat: 0 times, every 0 seconds
+ 2016-05-04 11:16:46.519  INFO  (SimpleTriggerExample.java:80) - group1.job2 will run at: Wed May 04 11:17:00 CST 2016 and repeat: 0 times, every 0 seconds
+ 2016-05-04 11:16:46.519  INFO  (SimpleTriggerExample.java:91) - group1.job3 will run at: Wed May 04 11:17:00 CST 2016 and repeat: 10 times, every 10 seconds
+ 2016-05-04 11:16:46.520  INFO  (SimpleTriggerExample.java:101) - group1.job3 will [also] run at: Wed May 04 11:17:00 CST 2016 and repeat: 2 times, every 10 seconds
+ 2016-05-04 11:16:46.520  INFO  (SimpleTriggerExample.java:112) - group1.job4 will run at: Wed May 04 11:17:00 CST 2016 and repeat: 5 times, every 10 seconds
+ 2016-05-04 11:16:46.523  INFO  (SimpleTriggerExample.java:122) - group1.job5 will run at: Wed May 04 11:21:46 CST 2016 and repeat: 0 times, every 0 seconds
+ 2016-05-04 11:16:46.523  INFO  (SimpleTriggerExample.java:132) - group1.job6 will run at: Wed May 04 11:17:00 CST 2016 and repeat: -1 times, every 40 seconds
+ 2016-05-04 11:16:46.523  INFO  (SimpleTriggerExample.java:135) - ------- Starting Scheduler ----------------
+ 2016-05-04 11:16:46.524  INFO  (QuartzScheduler.java:575) - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+ 2016-05-04 11:16:46.524  INFO  (SimpleTriggerExample.java:141) - ------- Started Scheduler -----------------
+ 2016-05-04 11:16:46.526  DEBUG (QuartzSchedulerThread.java:276) - batch acquisition of 1 triggers
+ 2016-05-04 11:16:46.526  INFO  (SimpleTriggerExample.java:151) - group1.job7 will run at: Wed May 04 11:17:00 CST 2016 and repeat: 20 times, every 300 seconds
+ 2016-05-04 11:16:46.526  INFO  (SimpleTriggerExample.java:159) - 'Manually' triggering job8...
+ 2016-05-04 11:16:46.526  DEBUG (QuartzSchedulerThread.java:276) - batch acquisition of 1 triggers
+ 2016-05-04 11:16:46.527  INFO  (SimpleTriggerExample.java:162) - ------- Waiting 30 seconds... --------------
+ 2016-05-04 11:16:46.527  DEBUG (QuartzSchedulerThread.java:276) - batch acquisition of 1 triggers
+ 2016-05-04 11:16:46.530  DEBUG (SimpleJobFactory.java:51) - Producing instance of Job 'group1.job8', class=quartaDemos.demo2.SimpleJob
+ 2016-05-04 11:16:46.531  DEBUG (QuartzSchedulerThread.java:276) - batch acquisition of 1 triggers
+ 2016-05-04 11:16:46.532  DEBUG (JobRunShell.java:201) - Calling execute on job group1.job8
+ 2016-05-04 11:16:46.532  INFO  (SimpleJob.java:20) - SimpleJob says: group1.job8 executing at Wed May 04 11:16:46 CST 2016
+ 

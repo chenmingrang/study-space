@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<!-- 
+		class元素是用来描述持久化类
+		   name属性  类的全名
+	 	   table 该类对应的表名  可以不写，如果不写默认值就是类名
+	 	   catalog 数据库的名字  一般不用写
+	 -->
+	<class name="state.Person" table="person">
+		<!-- 
+			主键
+			  name描述的是属性的名称
+			  column  数据库的字段的名称
+			  type    类型
+			  length  长度
+		 -->
+		<id name="pid" type="java.lang.Long" length="40">
+			<column name="pid"></column>
+			<!--主键的产生器
+				    increment 由hibernate产生
+			 -->
+			<generator class="increment"></generator>
+		</id>
+		<!--property是用来描述一般属性-->
+		<property name="pname" type="java.lang.String" length="20">
+			<!-- column可以不写，如果不写，默认属性的名称-->
+			<column name="pname"></column>
+		</property>
+		<property name="psex" type="java.lang.String" length="5"></property>
+	</class>
+</hibernate-mapping>
