@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>返回函数.html</title>
+	
+    <meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
+    <meta http-equiv="description" content="this is my page">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <script type="text/javascript">
+       function add(a,b)
+       {
+          b=b||0;
+          var s=a+b;
+          var ret=function(a)
+          {
+             return add(a,s);
+          };
+          ret.valueOf=ret.toString=function()
+          {
+             return s;
+          };
+          return ret;
+       }
+       document.write(add(5)+"<br/>");
+       document.write(add(5)(10)+"<br/>");
+       document.write(add(5)(10)(18)+"<br/>");
+    </script>
+  </head>
+  
+  <body>
+    This is my HTML page. <br>
+  </body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>callTest.html</title>
+	
+    <meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
+    <meta http-equiv="description" content="this is my page">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <script type="text/javascript">
+       function show()
+       {
+         alert(this);
+       };
+       //window对象
+       //show();
+       //show.call(window,12);
+       
+       function show2(a,b)
+       {
+          alert("this是"+this+"\na："+"\nb:"+b);
+       }
+       
+       show2.call("abc",2,7);
+    </script>
+  </head>
+  
+  <body>
+    This is my HTML page. <br>
+  </body>
+</html>

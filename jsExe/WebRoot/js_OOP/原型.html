@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>原型.html</title>
+	
+    <meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
+    <meta http-equiv="description" content="this is my page">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <script type="text/javascript">
+        var arr1=new Array(12,34,56,78);
+        var arr2=new Array(13,57,79,24);
+        var arr3=[24,45,67,80];
+        Array.prototype.sum=function()
+        {
+           var res=0;
+           for(var i=0;i<this.length;i++)
+           {
+              res+=this[i];
+           }
+           return res;
+        };
+        alert(arr1.sum());
+        alert(arr2.sum());
+        alert(arr3.sum());
+    </script>
+  </head>
+  
+  <body>
+    This is my HTML page. <br>
+  </body>
+</html>

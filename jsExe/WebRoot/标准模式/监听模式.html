@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>监听模式.html</title>
+	
+    <meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
+    <meta http-equiv="description" content="this is my page">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <script type="text/javascript">
+        var obj = new Object();
+        obj.x = 100;
+        var obsever = new Object();
+        obsever.x = obj.x;
+        obsever.target = obj;
+        obsever.checkXProperties = function()
+        {
+            if(this.target.x != this.x)
+            {
+               var vet = {oldValue:this.x,value:this.target.x};
+               this.onXPropertiesChange(vet);
+               this.x = this.target.x;
+            }  
+        };
+        obsever.onXPropertiesChange =function(event)
+        {
+            document.getElementById("log").value +="value change:from "+
+               event.oldValue + " to " +event.value + "\n";
+        };
+        setInterval("obsever.checkXProperties()",100);
+    </script>
+  </head>
+     <input id="val" type="text" value="200"/>
+     <input type="button" onclick="javascript:obj.x = document.getElementById('val').value;" value="改变obj的x值"/><br>
+     <textarea style="width: 400px;height: 300px;" id="log"></textarea>
+  <body>
+     
+  </body>
+</html>

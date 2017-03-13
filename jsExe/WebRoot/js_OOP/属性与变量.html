@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>属性与变量.html</title>
+	
+    <meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
+    <meta http-equiv="description" content="this is my page">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <script type="text/javascript">
+       function aa()
+       {
+         alert(123);
+       }
+       
+       var arr=[1,2,3,4];
+       arr.aa=function()
+       {
+           alert(123);
+       };
+       
+       arr.a=2223;
+       arr.show=function()
+       {
+          alert("a="+this.a);
+       };
+       
+       aa();
+       arr.aa();
+       arr.show();
+       
+       var a=111;
+       alert(a);
+       var arr2=[1,1,1,1];
+       arr2.a=111;
+       alert(arr2.a);
+    </script>
+  </head>
+  
+  <body>
+  </body>
+</html>

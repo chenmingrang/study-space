@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>oop_原型.html</title>
+	
+    <meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
+    <meta http-equiv="description" content="this is my page">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <script type="text/javascript">
+       function createPerson(name,qq)
+       {
+          this.name=name;
+          this.qq=qq;
+       }
+       
+       createPerson.prototype.showName=function()
+       {
+          alert("我的名字叫:"+this.name);
+       };
+       createPerson.prototype.showQq=function()
+       {
+          alert("我的qq号是:"+this.qq);       
+       };
+       
+       var obj1=new createPerson('Tim','1234567');
+       var obj2=new createPerson('Green','348797');
+       obj1.showName();
+       obj1.showQq();
+       obj2.showName();
+       obj2.showQq();
+       alert(obj1.showName==obj2.showName);
+    </script>
+  </head>
+  
+  <body>
+    This is my HTML page. <br>
+  </body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>原型2.html</title>
+	
+    <meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
+    <meta http-equiv="description" content="this is my page">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <script type="text/javascript">
+        function dwn(s)
+        {
+           document.write(s+"<br/>");
+        }
+        function Point2D(x,y)
+        {
+           this.x = x;
+           this.y = y;
+        }
+        Point2D.prototype.x = 0;
+        Point2D.prototype.y = 0;
+        function ColorPoint2D(x,y,c)
+        {
+           this.x = x;
+           this.y = y;
+        }
+        ColorPoint2D.prototype = Point2D;
+        Point2D.x = 43;
+        //ColorPoint2D.prototype = new Point2D(5,10);
+        //ColorPoint2D.prototype.x = 6;
+        //ColorPoint2D.prototype.y = 1;
+        
+        var cp = new ColorPoint2D(10,20,"red");
+        dwn(cp.x);//先查找cp本身的属性：10
+        delete cp.x;
+        dwn(cp.x);//删除本身属性后，查找原型链上的属性：1
+        delete ColorPoint2D.prototype.x;
+        dwn(cp.x);//删除后继续查找更上层原型链上的属性：0
+        
+    </script>
+  </head>
+  <body>
+    This is my HTML page. <br>
+  </body>
+</html>

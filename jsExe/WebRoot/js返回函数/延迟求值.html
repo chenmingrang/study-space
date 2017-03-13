@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>延迟求值.html</title>
+	
+    <meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
+    <meta http-equiv="description" content="this is my page">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <script type="text/javascript">
+        var func1=function()
+        {
+           var s=0;
+           for(var i=0;i<100;i++)
+           {
+             s+=i;
+           } 
+           return s;
+        };
+        
+        var func2=function()
+        {
+          var s="a";
+          for(var i=0;i<100;i++)
+          {
+             s+=i;
+          }
+          return s;
+        };
+        
+        function func3(s1,s2)
+        {
+            if(Math.random()>0.5)
+               return s1();
+            return s2();
+        };
+        alert(func3(func1,func2));
+    </script>
+  </head>
+  
+  <body>
+    This is my HTML page. <br>
+  </body>
+</html>

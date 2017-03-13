@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>hashTable.html</title>
+	
+    <meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
+    <meta http-equiv="description" content="this is my page">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <!--<link rel="stylesheet" type="text/css" href="./styles.css">-->
+    <script type="text/javascript">
+        function HashTable()
+        {
+           //保留字
+           var specialKey=[
+             "valueOf",
+             "hasOwnProperty",
+             "isPrototypeOf",
+             "propertyIsEnumerable",
+             "prototype",
+             "constuctor",
+             "toLocalString",
+             "toString",
+           ];
+           var specialvalue=new Array(specialKey.length);
+           var specialflag=new Array(specialKey.length);
+           var normalHashtable={};
+           this.insert=function(key,value)
+           {
+               for(var i=0;i<specialKey.length;i++)
+               {
+                  if(key==specialKey[i])
+                  {
+                     if(!specialflag[i])
+                     {
+                        specialvalue[i]=value;
+                        specialflag[i]=true;
+                        return true;
+                     }
+                     else
+                         return false;   
+                  }
+               } 
+               if(key in normalHashtable)
+                  return false;
+               normalHashtable[key]=value;
+               return true;        
+           };
+           
+           this.find=function(key)
+           {
+              for(var i=0;i<specialKey.length;i++)
+              {
+                  if(key==specialKey[i])
+                  {
+                     return specialvalue[i];
+                  }
+              }
+              return normalHashtable[key];
+           };
+        }
+        
+        var t1=new HashTable();
+        console.log(t1.insert("prototype", "idea"));
+        console.log(t1.insert("prototype", "idea"));
+        console.log(t1.find("prototype"));
+    </script>
+  </head>
+  
+  <body>
+    <h1>hashTable</h1>
+  </body>
+</html>

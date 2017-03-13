@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>new.html</title>
+    <meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
+    <meta http-equiv="description" content="this is my page">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <script type="text/javascript">
+       function createPerson(name,qq)//构造函数
+       {
+           //原料
+           var obj=new Object();
+           //加工
+           obj.name=name;
+           obj.qq=qq;
+           obj.showName=function()
+	       {
+	          alert("我的名字叫："+this.name);
+	       };
+	       obj.showQq=function()
+	       {
+	           alert("我的QQ号："+this.qq);
+	       };
+	       //出厂
+	       return obj;
+       };
+       
+       var obj=createPerson("张三", "234553");
+       obj.showName();
+       obj.showQq();
+       
+       var obj2=createPerson("李四", "5569093");
+       obj2.showName();
+       obj2.showQq();
+       
+       alert(obj.showName==obj2.showName);
+    </script>
+  </head>
+  <body>
+  </body>
+</html>

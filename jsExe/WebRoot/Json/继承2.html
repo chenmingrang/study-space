@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>继承.html</title>
+	
+    <meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
+    <meta http-equiv="description" content="this is my page">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <script type="text/javascript">
+       function A()
+       {
+          this.abc=13;
+       }
+       A.prototype.show=function()
+       {
+          alert(this.abc);
+       };
+       
+       function B()
+       {
+          //this->new B()
+          A.call(this);
+       }
+       //prototype是引用类型
+       //B.prototype=A.prototype;引用同一个原型，A和B具有相同的原型
+       //B有A的，A却没有B的
+       for(var i in A.prototype)
+       {
+          B.prototype[i]=A.prototype[i];
+       }
+       B.prototype.fn=function()
+       {
+          alert("abc");
+       };
+       console.log(B.prototype);
+       console.log(A.prototype);
+       var objB=new B();
+       var objA=new A();
+       objA.fn();//abc
+    </script>
+  </head>
+  
+  <body>
+    This is my HTML page. <br>
+  </body>
+</html>

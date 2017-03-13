@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>exe02.html</title>
+    <meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
+    <meta http-equiv="description" content="this is my page">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <style type="text/css">
+       #div1{
+          width:200px;
+          height: 200px;
+          background: red;
+       }
+    </style>
+    <script type="text/javascript">
+       function change(param){
+           var div1=document.getElementById("div1");
+           if(param=="red"){
+              div1.style.width="300px";
+              div1.style.height="300px";
+              div1.style.background="red";
+           }else{
+              div1.style.width="200px";
+              div1.style.height="200px";
+              div1.style.background="green";
+           }
+       }
+    </script>
+  </head>
+  <body>
+     <input id="div1" onmousemove="change('red');" onmouseout="change('green');"/>
+  </body>
+</html>

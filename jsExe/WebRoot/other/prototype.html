@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>prototype.html</title>
+    <meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
+    <meta http-equiv="description" content="this is my page">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <script type="text/javascript">
+        function ArrayList(array){
+            this._arr=typeof(array)=="string"?array.split(","):array;
+        }
+        ArrayList.prototype.$each=function(closure)
+        {
+           var ret=[];
+           for(var i=0;i<this._arr.length;i++)
+           {
+             ret.push(closure.call(this,this._arr[i]));
+           }
+           return ret;
+        }
+        ArrayList.prototype.add=function(num)
+        {
+           return this.$each(function(a){return parseFloat(a)+parseFloat(num);})
+        }
+         ArrayList.prototype.multiply=function(num)
+        {
+           return this.$each(function(a){return parseFloat(a)*parseFloat(num);})
+        }
+    </script>
+  </head>
+  
+  <body>
+     <input id="list" type="text" value="1,2,3,4"/>
+     <input id="num" type="text" value="2"/>
+     <input type="button" value="Add" onclick="result.value=(new ArrayList(list.value)).add(num.value)"/>
+     <input type="button" value="Multiply" onclick="result.value=(new ArrayList(list.value)).multiply(num.value)"/>
+     <br/>
+     <input type="text" id="result"/>
+  </body>
+</html>

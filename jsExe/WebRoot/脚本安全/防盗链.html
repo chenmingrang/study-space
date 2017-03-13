@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>防盗链.html</title>
+    <meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
+    <meta http-equiv="description" content="this is my page">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  </head>
+  <script type="text/javascript">
+    //让页面永远不出现在框架中
+    if(top.location != self.location)
+    {
+       top.location = self.location;
+    }     
+    
+    //或者
+    /* try
+    {
+       if(!/51js/.test(top.document.domain))
+       {
+          top.location = self.location;
+       }
+    }catch(ex)
+    {
+       top.location = self.location;
+    } */
+    //下面这个方法可以让页面避免盗链，只能出现在自己的源内，但这样也禁止了搜索引擎、收藏夹和其他友好的链接：
+    /* if(!/51js/.test(document.referrer))
+      self.location = "http:///www.51js.com/warning.html"; */
+  </script>
+  
+  <body>
+     <h1>防盗链测试页面</h1>
+  </body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>事件处理模式.html</title>
+	
+    <meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
+    <meta http-equiv="description" content="this is my page">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <script type="text/javascript">
+        function dispatchEvent(owner,enentType,eventArgs)
+        {
+           if(owner && owner["on"+enentType])
+           {
+              setTimeout(function(){owner["on"+enentType](eventArgs);}, 1);
+           }
+        }
+        
+        function randomSerials(len)
+        {
+           function randpmSingnal()
+           {
+              return Math.random() > 0.5 ? 1 : 0;
+           }
+           var ret = [];
+           for(var i=0;i<len;i++)
+           {
+             ret.push(randpmSingnal());
+           }
+           return ret;
+        }    
+        
+        function Differ(obl)
+        {
+           var buffer = new Array(obl);
+           var time = 0;
+           this.readBuffer = function()
+           {
+              var buf = buffer;
+              //buffer = new Array(obl);
+              time = 0;
+              return buf;
+           };
+           
+           this.bufferSize = function()
+           {
+              return obl;
+           };
+           
+           this.input = function(serials)
+           {
+              for(var i=1;i<serials.length;i++)
+              {
+                  var signal = Math.abs(serials[i]-serials[i-1]);
+                  buffer[time++%obl] = signal;
+                  if(signal)
+                  {
+                     dispatchEvent(this, "signalchange", 
+                        {input:serials,time:time,buffer:buffer.slice(0)});
+                  }
+              }
+           };
+        }
+        
+        var inputSerials = randomSerials(20);
+        console.log(inputSerials);
+        var differ10 = new Differ(20);
+        differ10.input(inputSerials);
+        console.log(differ10.readBuffer());
+        differ10.onsignalchange = function(eventArgs)
+        {
+           console.log(eventArgs.time);
+        };
+        differ10.input(inputSerials);
+    </script>
+  </head>
+  
+  <body>
+    This is my HTML page. <br>
+  </body>
+</html>

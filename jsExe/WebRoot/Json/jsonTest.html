@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>jsonTest.html</title>
+	
+    <meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
+    <meta http-equiv="description" content="this is my page">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <script type="text/javascript">
+       var json1=
+       {
+           a:2,
+           b:5,
+           c:"ssss",
+           d:function()
+           {
+             alert("a");
+           }
+       };
+     //  json1.d();
+     var json2=
+     {
+        a:12,
+        show:function()
+        {
+           alert(this.a);
+        }
+     };
+     //json2.show();
+     var json3=
+     {
+        name:"chen",
+        qq:"2345679",
+        showName:function()
+        {
+          alert("我叫："+this.name);
+        },
+        showQq:function()
+        {
+           alert("我的qq号码："+this.qq);
+        }
+     };
+     json3.showName();
+     json3.showQq();
+    </script>
+  </head>
+  <body>
+    <h1>jsonTest</h1>
+  </body>
+</html>

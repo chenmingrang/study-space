@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-module
+  type="WEB"
+  name="jsExe"
+  id="myeclipse.1473254256962"
+  context-root="/jsExe"
+  j2ee-spec="5.0"
+  archive="jsExe.war">
+  <attributes>
+    <attribute name="webrootdir" value="WebRoot" />
+  </attributes>
+</project-module>
+

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>exe01.html</title>
+    <meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
+    <meta http-equiv="description" content="this is my page">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <style>
+        #div1 {width:200px; height:200px; background:red;}
+    </style>
+    <script type="text/javascript">
+        function setStyle(param,value){
+           var div=document.getElementById("div1");
+           div.style[param]=value;
+        }
+    </script>
+  </head>
+  <body>
+     <input value="changeY" type="button" onclick="setStyle('background','yellow')"/>
+     <input value="changeR" type="button" onclick="setStyle('background','red')"/>
+     <input value="changeP" type="button" onclick="setStyle('background','purple')"/>
+     <div id="div1"></div>
+  </body>
+</html>

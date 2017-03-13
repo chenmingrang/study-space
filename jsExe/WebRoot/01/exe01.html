@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>exe01.html</title>
+    <meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
+    <meta http-equiv="description" content="this is my page">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <style>
+        #div1{width:100xp;
+              height:200px;
+              background: #ccc;
+              display:none;
+              }
+    </style>
+    <script type="text/javascript">
+        function show(){
+           var oDiv=document.getElementById("div1");
+           if(oDiv.style.display=='block'){
+              oDiv.style.display='none';
+           }else{
+              oDiv.style.display="block";
+           }
+        }
+    </script>
+  </head>
+  
+  <body>
+     <input type="button" value="show/hide" onclick="show();"/>
+     <div id="div1"></div>
+  </body>
+</html>

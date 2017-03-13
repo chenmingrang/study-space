@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>test01.html</title>
+    <meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
+    <meta http-equiv="description" content="this is my page">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  </head>
+  <body>
+    wHAT ARE YOUR DOING!<br>
+    iM THINGING!<br>
+    2016-10-17 AM 10:47;
+  </body>
+  <script type="text/javascript">
+      var regex=/(\d)|([a-z])|([A-Z])/g;
+      function regexCode(s,a,b,c)
+      {
+          //s是匹配regex的完整内容
+        /*   console.log("s="+s);
+          console.log("a="+a);
+          console.log("b="+b);
+          console.log("c="+c); */
+          return a ? "<font color='red'>"+s+"</font>" : (b ? s.toUpperCase() : s.toLowerCase());
+      }
+      document.body.innerHTML= document.body.innerHTML.replace(regex, regexCode);
+      var str="JavaScript is not Java.";
+      var regex1=/([Jj]ava)(Script)?/;
+      var regex2=/([Jj]ava)(Script)?/g;
+      console.log(str.match(regex1));//"JavaScript", "Java", "Script"
+      alert(str.match(regex1).length);//3
+      console.log(str.match(regex2));//"JavaScript", "Java"
+      var str2="Java1Script is not Java.";
+      console.log(str2.match(regex1));//"Java", "Java", undefined
+      
+      console.log("<===========================exec=============================>");
+      var strIDCard="411522199003034817";
+      var regexID=/\d{6}([12]\d{3})([01]\d)([0123]\d)\d{4}/;
+      var id=regexID.exec(strIDCard);
+      console.log("id:"+strIDCard+";生日："+id[1]+"年"+id[2]+"月"+id[3]+"日");
+      
+      console.log("<===========================exec=============================>");
+      function prefixInteger(num,length)
+      {
+         return (Array(length).join('0')+num).slice(-length);
+      }
+      var sl = 99;
+      var qh = "009990000001";
+      var qh_sz = qh.match(/[0-9]+$/)[0];
+	  var qh_yw = qh.substring(0,qh.length-qh_sz.length);
+	  if(qh_yw == "")
+	  {
+	      alert("号码中不含英文！");
+	  }
+	  var zh_sz = prefixInteger(parseInt(qh_sz,10)+sl*1-1,qh_sz.length);
+	  var qh_new_sz = prefixInteger(parseInt(qh_sz,10)+sl*1,qh_sz.length);
+	  var zh = qh_yw +""+ zh_sz;
+	  var qh_new = qh_yw +""+ qh_new_sz;
+	  console.log("zh = "+zh+";qh_new = "+qh_new);
+  </script>
+</html>

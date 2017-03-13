@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>test.html</title>
+	
+    <meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
+    <meta http-equiv="description" content="this is my page">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  </head>
+  
+  <body>
+    <input type="button" name="Button" value="语言设置"/>
+    <input type="button" name="Submit2" value="整理收藏夹" onclick=""/>
+  </body>
+  <script type="text/javascript">
+       document.getElementsByName("Button")[0].onclick = function()
+       {
+           console.log(external);
+           if(typeof external.ShowBrowserUI != "undefined")
+           {
+               window.external.ShowBrowserUI('LanguageDialog', null);
+           }else{
+               alert("请使用ie浏览器进行此操作！");
+           }
+       };
+       document.getElementsByName("Submit2")[0].onclick = function()
+       {
+            if(typeof external.ShowBrowserUI != "undefined")
+            {
+              window.external.ShowBrowserUI('OrganizeFavorites', null);
+            }else{
+               alert("请使用ie浏览器进行此操作！");
+            }
+       };
+  </script>
+</html>
