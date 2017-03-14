@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<articles>
+   <arcticle category="xml">
+      <title>XML 概述</title>
+      <author>janet</author>
+      <email>jnetsfei@yahoo.com.cn</email>
+      <date>20170307</date>
+   </arcticle>
+   <arcticle category="java">
+      <title>java 基本语法</title>
+      <author>janet</author>
+      <email>jnetsfei@yahoo.com.cn</email>
+      <date>20170307</date>
+   </arcticle>
+   <arcticle category="c++">
+      <title>thinking in c++</title>
+      <author>janet</author>
+      <email>jnetsfei@yahoo.com.cn</email>
+      <date>20170307</date>
+   </arcticle>
+   <arcticle category="python">
+      <title>python 基本语法</title>
+      <author>janet</author>
+      <email>jnetsfei@yahoo.com.cn</email>
+      <date>20170307</date>
+   </arcticle>
+</articles>

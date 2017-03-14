@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<articles>
+  <article>
+	<author>cmr</author>
+	<email>cmr@126.com</email>
+	<title>thinking in java</title>
+  </article>
+  <article>
+	<author>chen</author>
+	<email>chen@126.com</email>
+	<title>thinking in python</title>
+  </article>
+</articles>
