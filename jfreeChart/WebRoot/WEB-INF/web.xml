@@ -11,10 +11,43 @@
     <servlet-name>PieChartServlet</servlet-name>
     <servlet-class>co.chen.www.PieChartServlet</servlet-class>
   </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>BarChartServlet</servlet-name>
+    <servlet-class>co.chen.www.BarChartServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>BarChartServlet2</servlet-name>
+    <servlet-class>co.chen.www.BarChartServlet2</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>javaBarChartServlet3</servlet-name>
+    <servlet-class>co.chen.www.BarChartServlet3</servlet-class>
+  </servlet>
+
+
+
 
   <servlet-mapping>
     <servlet-name>PieChartServlet</servlet-name>
     <url-pattern>/pie</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>BarChartServlet</servlet-name>
+    <url-pattern>/barChart</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>BarChartServlet2</servlet-name>
+    <url-pattern>/barChart2</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>javaBarChartServlet3</servlet-name>
+    <url-pattern>/barChart3</url-pattern>
   </servlet-mapping>	
   <welcome-file-list>
     <welcome-file>index.jsp</welcome-file>
