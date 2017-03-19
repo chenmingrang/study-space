@@ -125,7 +125,8 @@
              Documentation at: /docs/config/valve.html
              Note: The pattern used is equivalent to using pattern="common" -->
         <Valve className="org.apache.catalina.valves.AccessLogValve" directory="logs" pattern="%h %l %u %t &quot;%r&quot; %s %b" prefix="localhost_access_log." suffix=".txt"/>
-
+      <Context docBase="D:\apache-tomcat-7.0.75\webapps" path="" reloadable="true"/>
+      
       <Context docBase="jfreeChart" path="/jfreeChart" reloadable="false" source="org.eclipse.jst.jee.server:jfreeChart"/><Context docBase="struts2" path="/struts2" reloadable="false" source="org.eclipse.jst.jee.server:struts2"/></Host>
     </Engine>
   </Service>
