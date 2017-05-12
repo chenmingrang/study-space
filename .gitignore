@@ -5,3 +5,8 @@
 **/.settings
 **/bin
 **/classes
+**/.idea
+**/dist
+**/.externalToolBuilders
+**/*.iml
+**/*.bak
