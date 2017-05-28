@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<server SERVER_NAME="jBoss" auto-publish-setting="2" auto-publish-time="1" hostname="localhost" id="JBoss AS v5.x at localhost" name="JBoss5.0.1" runtime-id="JBoss 5.0 Runtime" server-location="D:\jboss-5.0.1.GA" server-type="com.genuitec.jboss.core.server.v5" server-type-id="com.genuitec.jboss.core.server.v5" start-timeout="240" stop-timeout="240" timestamp="5"/>

@@ -17,7 +17,7 @@
     //Context.PROVIDER_URL  ===> localhost:port
     //java.naming.factory.url.pkgs  ===> org.jboss.naming:org.jnp.interfaces可选
     props.setProperty(Context.INITIAL_CONTEXT_FACTORY,"weblogic.jndi.WLInitialContextFactory");
-    props.setProperty(Context.PROVIDER_URL, "t3://192.168.71.1:7001");
+    props.setProperty(Context.PROVIDER_URL, "t3://127.0.0.1:7002");
     InitialContext ctx = new InitialContext(props);
     //#后面的包路径必须和ejb中一致
     //如果是JBoss部署写成HelloWord/remote即可
@@ -28,6 +28,13 @@
     bean = (StatefulBeanRemote)session.getAttribute("sfsb");
   }
   String bookname = request.getParameter("bookname");
+  String clear = request.getParameter("clear");
+  if("true".equals(clear)){
+      System.out.println(1111);
+      System.out.println(bean.list());
+      //对此对象进项操作不能影响远程对象低的状态
+      bean.list().clear();
+  }
   if(bookname!=null){
     bookname = new String(bookname.getBytes("ISO8859_1"),"utf-8");
     bean.add(bookname);
@@ -42,6 +49,7 @@
   <tr><td>abc</td><td><a href="index.jsp?bookname=abc">mai</a></td></tr>
   <tr><td>def</td><td><a href="index.jsp?bookname=def">mai</a></td></tr>
   <tr><td>ghi</td><td><a href="index.jsp?bookname=ghi">mai</a></td></tr>
+  <tr><td></td><td><a href="index.jsp?clear=true">清楚所有书籍</a></td></tr>
 </table>
 </body>
 </html>
