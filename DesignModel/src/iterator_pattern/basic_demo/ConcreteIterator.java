@@ -16,7 +16,7 @@ public class ConcreteIterator implements Iterator {
 
     @Override
     public Object next() {
-        Object result = null;
+        Object result;
         if(hasNext()){
             result = this.vector.get(this.cursor++);
         }else {
@@ -35,7 +35,9 @@ public class ConcreteIterator implements Iterator {
 
     @Override
     public boolean remove() {
-        this.vector.remove(this.cursor);
+        //游标返回遍历前的位置
+        this.vector.remove(this.cursor-1);
+        this.cursor--;
         return true;
     }
 }

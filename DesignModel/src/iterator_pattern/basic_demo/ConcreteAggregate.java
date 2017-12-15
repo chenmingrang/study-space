@@ -21,4 +21,11 @@ public class ConcreteAggregate implements Aggregate {
     public Iterator iterator() {
         return new ConcreteIterator(this.vector);
     }
+
+    @Override
+    public String toString() {
+        return "ConcreteAggregate{" +
+                "vector=" + vector +
+                '}';
+    }
 }
